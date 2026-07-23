@@ -37,7 +37,7 @@ reportextension 60034 "Credit Memo" extends 10573
             {
 
             }
-            column(CountryRegionCode; CountryofRegion)
+            column(CountryRegionCode; ShipToAdd[8])
             {
 
             }
@@ -58,14 +58,15 @@ reportextension 60034 "Credit Memo" extends 10573
                 ShipToAdd[5] := "Sales Cr.Memo Header"."Ship-to City";
                 ShipToAdd[6] := "Sales Cr.Memo Header"."Ship-to Post Code";
                 ShipToAdd[7] := "Sales Cr.Memo Header"."Ship-to County";
-                CompressArray(ShipToAdd);
 
                 Clear(CountryofRegion);
                 L_CountryRegion.Reset();
                 L_CountryRegion.SetRange(Code, G_CompanyInfo."Country/Region Code");
                 if L_CountryRegion.FindFirst() then begin
-                    CountryofRegion := L_CountryRegion.Name;
+                    ShipToAdd[8] := L_CountryRegion.Name;
                 end;
+                CompressArray(ShipToAdd);
+
             end;
 
         }

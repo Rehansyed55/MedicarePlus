@@ -70,7 +70,7 @@ reportextension 60032 "PostedSalesInvoice" extends 10572
             {
 
             }
-            column(CountryRegionCode; CountryofRegion)
+            column(CountryRegionCode; ShipToAdd[8])
             {
 
             }
@@ -89,18 +89,18 @@ reportextension 60032 "PostedSalesInvoice" extends 10572
                 ShipToAdd[2] := "Sales Invoice Header"."Ship-to Contact";
                 ShipToAdd[3] := "Sales Invoice Header"."Ship-to Address";
                 ShipToAdd[4] := "Sales Invoice Header"."Ship-to Address 2";
-
                 ShipToAdd[5] := "Sales Invoice Header"."Ship-to City";
                 ShipToAdd[6] := "Sales Invoice Header"."Ship-to Post Code";
                 ShipToAdd[7] := "Sales Invoice Header"."Ship-to County";
-                CompressArray(ShipToAdd);
 
                 Clear(CountryofRegion);
                 L_CountryRegion.Reset();
                 L_CountryRegion.SetRange(Code, G_CompanyInfo."Country/Region Code");
                 if L_CountryRegion.FindFirst() then begin
-                    CountryofRegion := L_CountryRegion.Name;
+                    ShipToAdd[8] := L_CountryRegion.Name;
                 end;
+                CompressArray(ShipToAdd);
+
             end;
 
         }
