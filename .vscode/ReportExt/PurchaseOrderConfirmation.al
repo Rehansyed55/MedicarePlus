@@ -10,12 +10,5 @@ reportextension 60033 "PurchaseOrder" extends Order
         // Add changes to the requestpage here
     }
 
-    rendering
-    {
-        layout(LayoutName)
-        {
-            Type = RDLC;
-            LayoutFile = 'mylayout.rdl';
-        }
-    }
+
 }

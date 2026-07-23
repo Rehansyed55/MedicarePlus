@@ -10,12 +10,5 @@ reportextension 60031 "Blanket Purchase Order Ext" extends "Blanket Purchase Ord
         // Add changes to the requestpage here
     }
 
-    rendering
-    {
-        layout(LayoutName)
-        {
-            Type = RDLC;
-            LayoutFile = 'mylayout.rdl';
-        }
-    }
+
 }
