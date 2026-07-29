@@ -10,7 +10,14 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "1fff813d-f8b0-4829-a1ac-2c47192184ea",
+      "name": "MedicarePlus_Customization",
+      "publisher": "Default Publisher",
+      "version": "1.0.0.0"
+    }
+  ],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "20.0.0.0",
