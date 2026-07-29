@@ -1,7 +1,7 @@
 report 60032 "Purchase Order Analysis(PDN)"
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './Purchase Order Analysis(PDN).rdl';
+    RDLCLayout = 'PurchaseOrderAnalysis.rdl';
     Caption = 'Purchase Order Analysis';
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = all;

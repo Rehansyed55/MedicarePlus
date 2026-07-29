@@ -11,441 +11,6 @@
       <rd:DataSourceID>22203fef-a2c3-4b96-9a54-8c5c06ffe0a4</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="STRSUBSTNO_Text000_PeriodText_">
-          <DataField>STRSUBSTNO_Text000_PeriodText_</DataField>
-        </Field>
-        <Field Name="COMPANYNAME">
-          <DataField>COMPANYNAME</DataField>
-        </Field>
-        <Field Name="FORMAT_TODAY_0_4_">
-          <DataField>FORMAT_TODAY_0_4_</DataField>
-        </Field>
-        <Field Name="USERID">
-          <DataField>USERID</DataField>
-        </Field>
-        <Field Name="CurrReport_PAGENO">
-          <DataField>CurrReport_PAGENO</DataField>
-        </Field>
-        <Field Name="Customer_TABLECAPTION__________CustFilter">
-          <DataField>Customer_TABLECAPTION__________CustFilter</DataField>
-        </Field>
-        <Field Name="Sales_Header__TABLECAPTION__________SalesheaderFilter">
-          <DataField>Sales_Header__TABLECAPTION__________SalesheaderFilter</DataField>
-        </Field>
-        <Field Name="Customer_Name">
-          <DataField>Customer_Name</DataField>
-        </Field>
-        <Field Name="Customer__Phone_No__">
-          <DataField>Customer__Phone_No__</DataField>
-        </Field>
-        <Field Name="Customer__No__">
-          <DataField>Customer__No__</DataField>
-        </Field>
-        <Field Name="Customer__Balance__LCY__">
-          <DataField>Customer__Balance__LCY__</DataField>
-        </Field>
-        <Field Name="Customer__Balance__LCY__Format">
-          <DataField>Customer__Balance__LCY__Format</DataField>
-        </Field>
-        <Field Name="Customer__Credit_Limit__LCY__">
-          <DataField>Customer__Credit_Limit__LCY__</DataField>
-        </Field>
-        <Field Name="Customer__Credit_Limit__LCY__Format">
-          <DataField>Customer__Credit_Limit__LCY__Format</DataField>
-        </Field>
-        <Field Name="Customer_Customer_Name">
-          <DataField>Customer_Customer_Name</DataField>
-        </Field>
-        <Field Name="Sales_Line__Quantity">
-          <DataField>Sales_Line__Quantity</DataField>
-        </Field>
-        <Field Name="Sales_Line__QuantityFormat">
-          <DataField>Sales_Line__QuantityFormat</DataField>
-        </Field>
-        <Field Name="SalesAmount">
-          <DataField>SalesAmount</DataField>
-        </Field>
-        <Field Name="SalesAmountFormat">
-          <DataField>SalesAmountFormat</DataField>
-        </Field>
-        <Field Name="CostAmount">
-          <DataField>CostAmount</DataField>
-        </Field>
-        <Field Name="CostAmountFormat">
-          <DataField>CostAmountFormat</DataField>
-        </Field>
-        <Field Name="Profit">
-          <DataField>Profit</DataField>
-        </Field>
-        <Field Name="ProfitFormat">
-          <DataField>ProfitFormat</DataField>
-        </Field>
-        <Field Name="ProfitPct">
-          <DataField>ProfitPct</DataField>
-        </Field>
-        <Field Name="ProfitPctFormat">
-          <DataField>ProfitPctFormat</DataField>
-        </Field>
-        <Field Name="cnt5">
-          <DataField>cnt5</DataField>
-        </Field>
-        <Field Name="cnt4">
-          <DataField>cnt4</DataField>
-        </Field>
-        <Field Name="cnt3">
-          <DataField>cnt3</DataField>
-        </Field>
-        <Field Name="cnt2">
-          <DataField>cnt2</DataField>
-        </Field>
-        <Field Name="cnt1">
-          <DataField>cnt1</DataField>
-        </Field>
-        <Field Name="Cnt1Per">
-          <DataField>Cnt1Per</DataField>
-        </Field>
-        <Field Name="Cnt1PerFormat">
-          <DataField>Cnt1PerFormat</DataField>
-        </Field>
-        <Field Name="Cnt2Per">
-          <DataField>Cnt2Per</DataField>
-        </Field>
-        <Field Name="Cnt2PerFormat">
-          <DataField>Cnt2PerFormat</DataField>
-        </Field>
-        <Field Name="Cnt3Per">
-          <DataField>Cnt3Per</DataField>
-        </Field>
-        <Field Name="Cnt3PerFormat">
-          <DataField>Cnt3PerFormat</DataField>
-        </Field>
-        <Field Name="Cnt4Per">
-          <DataField>Cnt4Per</DataField>
-        </Field>
-        <Field Name="Cnt4PerFormat">
-          <DataField>Cnt4PerFormat</DataField>
-        </Field>
-        <Field Name="NormalQty">
-          <DataField>NormalQty</DataField>
-        </Field>
-        <Field Name="NormalQtyFormat">
-          <DataField>NormalQtyFormat</DataField>
-        </Field>
-        <Field Name="MediumQty">
-          <DataField>MediumQty</DataField>
-        </Field>
-        <Field Name="MediumQtyFormat">
-          <DataField>MediumQtyFormat</DataField>
-        </Field>
-        <Field Name="EasyQty">
-          <DataField>EasyQty</DataField>
-        </Field>
-        <Field Name="EasyQtyFormat">
-          <DataField>EasyQtyFormat</DataField>
-        </Field>
-        <Field Name="DifficultQty">
-          <DataField>DifficultQty</DataField>
-        </Field>
-        <Field Name="DifficultQtyFormat">
-          <DataField>DifficultQtyFormat</DataField>
-        </Field>
-        <Field Name="DifficultValue">
-          <DataField>DifficultValue</DataField>
-        </Field>
-        <Field Name="DifficultValueFormat">
-          <DataField>DifficultValueFormat</DataField>
-        </Field>
-        <Field Name="NormalValue">
-          <DataField>NormalValue</DataField>
-        </Field>
-        <Field Name="NormalValueFormat">
-          <DataField>NormalValueFormat</DataField>
-        </Field>
-        <Field Name="EasyValue">
-          <DataField>EasyValue</DataField>
-        </Field>
-        <Field Name="EasyValueFormat">
-          <DataField>EasyValueFormat</DataField>
-        </Field>
-        <Field Name="MediumValue">
-          <DataField>MediumValue</DataField>
-        </Field>
-        <Field Name="MediumValueFormat">
-          <DataField>MediumValueFormat</DataField>
-        </Field>
-        <Field Name="SalesAmount_Control1000000035">
-          <DataField>SalesAmount_Control1000000035</DataField>
-        </Field>
-        <Field Name="SalesAmount_Control1000000035Format">
-          <DataField>SalesAmount_Control1000000035Format</DataField>
-        </Field>
-        <Field Name="Sales_Line__Quantity_Control1000000036">
-          <DataField>Sales_Line__Quantity_Control1000000036</DataField>
-        </Field>
-        <Field Name="Sales_Line__Quantity_Control1000000036Format">
-          <DataField>Sales_Line__Quantity_Control1000000036Format</DataField>
-        </Field>
-        <Field Name="Sales_Order_Customer_Item_Wise_ProfitCaption">
-          <DataField>Sales_Order_Customer_Item_Wise_ProfitCaption</DataField>
-        </Field>
-        <Field Name="All_amounts_are_in_LCYCaption">
-          <DataField>All_amounts_are_in_LCYCaption</DataField>
-        </Field>
-        <Field Name="CurrReport_PAGENOCaption">
-          <DataField>CurrReport_PAGENOCaption</DataField>
-        </Field>
-        <Field Name="Item_No_Caption">
-          <DataField>Item_No_Caption</DataField>
-        </Field>
-        <Field Name="DescriptionCaption">
-          <DataField>DescriptionCaption</DataField>
-        </Field>
-        <Field Name="Posting_DateCaption">
-          <DataField>Posting_DateCaption</DataField>
-        </Field>
-        <Field Name="Customer_Order_No_Caption">
-          <DataField>Customer_Order_No_Caption</DataField>
-        </Field>
-        <Field Name="Order_No_Caption">
-          <DataField>Order_No_Caption</DataField>
-        </Field>
-        <Field Name="Order_QuantityCaption">
-          <DataField>Order_QuantityCaption</DataField>
-        </Field>
-        <Field Name="Unit_of_MeasureCaption">
-          <DataField>Unit_of_MeasureCaption</DataField>
-        </Field>
-        <Field Name="AmountCaption">
-          <DataField>AmountCaption</DataField>
-        </Field>
-        <Field Name="Cost_AmountCaption">
-          <DataField>Cost_AmountCaption</DataField>
-        </Field>
-        <Field Name="Cost_Per_UnitCaption">
-          <DataField>Cost_Per_UnitCaption</DataField>
-        </Field>
-        <Field Name="Price_Per_UnitCaption">
-          <DataField>Price_Per_UnitCaption</DataField>
-        </Field>
-        <Field Name="ProfitCaption">
-          <DataField>ProfitCaption</DataField>
-        </Field>
-        <Field Name="Profit__Caption">
-          <DataField>Profit__Caption</DataField>
-        </Field>
-        <Field Name="Wholesales_Price_D_Caption">
-          <DataField>Wholesales_Price_D_Caption</DataField>
-        </Field>
-        <Field Name="Sales_Base_Price_E_Caption">
-          <DataField>Sales_Base_Price_E_Caption</DataField>
-        </Field>
-        <Field Name="Customer__Phone_No__Caption">
-          <DataField>Customer__Phone_No__Caption</DataField>
-        </Field>
-        <Field Name="Customer__Balance__LCY__Caption">
-          <DataField>Customer__Balance__LCY__Caption</DataField>
-        </Field>
-        <Field Name="Customer__Credit_Limit__LCY__Caption">
-          <DataField>Customer__Credit_Limit__LCY__Caption</DataField>
-        </Field>
-        <Field Name="NormalCaption">
-          <DataField>NormalCaption</DataField>
-        </Field>
-        <Field Name="MediumCaption">
-          <DataField>MediumCaption</DataField>
-        </Field>
-        <Field Name="EasyCaption">
-          <DataField>EasyCaption</DataField>
-        </Field>
-        <Field Name="DifficultCaption">
-          <DataField>DifficultCaption</DataField>
-        </Field>
-        <Field Name="Total_LinesCaption">
-          <DataField>Total_LinesCaption</DataField>
-        </Field>
-        <Field Name="Difficult__Caption">
-          <DataField>Difficult__Caption</DataField>
-        </Field>
-        <Field Name="Easy__Caption">
-          <DataField>Easy__Caption</DataField>
-        </Field>
-        <Field Name="Medium__Caption">
-          <DataField>Medium__Caption</DataField>
-        </Field>
-        <Field Name="Normal__Caption">
-          <DataField>Normal__Caption</DataField>
-        </Field>
-        <Field Name="Normal_UnitsCaption">
-          <DataField>Normal_UnitsCaption</DataField>
-        </Field>
-        <Field Name="Medium_UnitsCaption">
-          <DataField>Medium_UnitsCaption</DataField>
-        </Field>
-        <Field Name="Easy_UnitsCaption">
-          <DataField>Easy_UnitsCaption</DataField>
-        </Field>
-        <Field Name="Difficult_UnitsCaption">
-          <DataField>Difficult_UnitsCaption</DataField>
-        </Field>
-        <Field Name="Difficult_ValueCaption">
-          <DataField>Difficult_ValueCaption</DataField>
-        </Field>
-        <Field Name="Easy_ValueCaption">
-          <DataField>Easy_ValueCaption</DataField>
-        </Field>
-        <Field Name="Medium_ValueCaption">
-          <DataField>Medium_ValueCaption</DataField>
-        </Field>
-        <Field Name="Normal_ValueCaption">
-          <DataField>Normal_ValueCaption</DataField>
-        </Field>
-        <Field Name="Total_ValueCaption">
-          <DataField>Total_ValueCaption</DataField>
-        </Field>
-        <Field Name="Total_UnitsCaption">
-          <DataField>Total_UnitsCaption</DataField>
-        </Field>
-        <Field Name="Sales_Order_No_______Sales_Header___No__">
-          <DataField>Sales_Order_No_______Sales_Header___No__</DataField>
-        </Field>
-        <Field Name="Sales_Order_No_______Sales_Header___No___Control1040052">
-          <DataField>Sales_Order_No_______Sales_Header___No___Control1040052</DataField>
-        </Field>
-        <Field Name="Sales_Line__Quantity_Control1040038">
-          <DataField>Sales_Line__Quantity_Control1040038</DataField>
-        </Field>
-        <Field Name="Sales_Line__Quantity_Control1040038Format">
-          <DataField>Sales_Line__Quantity_Control1040038Format</DataField>
-        </Field>
-        <Field Name="SalesAmount_Control1040040">
-          <DataField>SalesAmount_Control1040040</DataField>
-        </Field>
-        <Field Name="SalesAmount_Control1040040Format">
-          <DataField>SalesAmount_Control1040040Format</DataField>
-        </Field>
-        <Field Name="CostAmount_Control1040042">
-          <DataField>CostAmount_Control1040042</DataField>
-        </Field>
-        <Field Name="CostAmount_Control1040042Format">
-          <DataField>CostAmount_Control1040042Format</DataField>
-        </Field>
-        <Field Name="Profit_Control1040043">
-          <DataField>Profit_Control1040043</DataField>
-        </Field>
-        <Field Name="Profit_Control1040043Format">
-          <DataField>Profit_Control1040043Format</DataField>
-        </Field>
-        <Field Name="ProfitPct_Control1040044">
-          <DataField>ProfitPct_Control1040044</DataField>
-        </Field>
-        <Field Name="ProfitPct_Control1040044Format">
-          <DataField>ProfitPct_Control1040044Format</DataField>
-        </Field>
-        <Field Name="Sales_Header_Document_Type">
-          <DataField>Sales_Header_Document_Type</DataField>
-        </Field>
-        <Field Name="Sales_Header_No_">
-          <DataField>Sales_Header_No_</DataField>
-        </Field>
-        <Field Name="Sales_Header_Sell_to_Customer_No_">
-          <DataField>Sales_Header_Sell_to_Customer_No_</DataField>
-        </Field>
-        <Field Name="Sales_Line__Sales_Line___No__">
-          <DataField>Sales_Line__Sales_Line___No__</DataField>
-        </Field>
-        <Field Name="Sales_Line__Description__Sales_Line___Description_2_">
-          <DataField>Sales_Line__Description__Sales_Line___Description_2_</DataField>
-        </Field>
-        <Field Name="Sales_Header___Posting_Date_">
-          <DataField>Sales_Header___Posting_Date_</DataField>
-        </Field>
-        <Field Name="Sales_Header___External_Document_No__">
-          <DataField>Sales_Header___External_Document_No__</DataField>
-        </Field>
-        <Field Name="Sales_Line__Sales_Line___Document_No__">
-          <DataField>Sales_Line__Sales_Line___Document_No__</DataField>
-        </Field>
-        <Field Name="Sales_Line__Sales_Line__Quantity">
-          <DataField>Sales_Line__Sales_Line__Quantity</DataField>
-        </Field>
-        <Field Name="Sales_Line__Sales_Line__QuantityFormat">
-          <DataField>Sales_Line__Sales_Line__QuantityFormat</DataField>
-        </Field>
-        <Field Name="Sales_Line__Sales_Line___Unit_of_Measure_Code_">
-          <DataField>Sales_Line__Sales_Line___Unit_of_Measure_Code_</DataField>
-        </Field>
-        <Field Name="SalesAmount_Control1040031">
-          <DataField>SalesAmount_Control1040031</DataField>
-        </Field>
-        <Field Name="SalesAmount_Control1040031Format">
-          <DataField>SalesAmount_Control1040031Format</DataField>
-        </Field>
-        <Field Name="CostAmount_Control1040033">
-          <DataField>CostAmount_Control1040033</DataField>
-        </Field>
-        <Field Name="CostAmount_Control1040033Format">
-          <DataField>CostAmount_Control1040033Format</DataField>
-        </Field>
-        <Field Name="CostPerUnit">
-          <DataField>CostPerUnit</DataField>
-        </Field>
-        <Field Name="CostPerUnitFormat">
-          <DataField>CostPerUnitFormat</DataField>
-        </Field>
-        <Field Name="PricePerUnit">
-          <DataField>PricePerUnit</DataField>
-        </Field>
-        <Field Name="PricePerUnitFormat">
-          <DataField>PricePerUnitFormat</DataField>
-        </Field>
-        <Field Name="Profit_Control1040036">
-          <DataField>Profit_Control1040036</DataField>
-        </Field>
-        <Field Name="Profit_Control1040036Format">
-          <DataField>Profit_Control1040036Format</DataField>
-        </Field>
-        <Field Name="ProfitPct_Control1040037">
-          <DataField>ProfitPct_Control1040037</DataField>
-        </Field>
-        <Field Name="ProfitPct_Control1040037Format">
-          <DataField>ProfitPct_Control1040037Format</DataField>
-        </Field>
-        <Field Name="recSalesprice__Unit_Price_">
-          <DataField>recSalesprice__Unit_Price_</DataField>
-        </Field>
-        <Field Name="recSalesprice__Unit_Price_Format">
-          <DataField>recSalesprice__Unit_Price_Format</DataField>
-        </Field>
-        <Field Name="recSalesprice1__Unit_Price_">
-          <DataField>recSalesprice1__Unit_Price_</DataField>
-        </Field>
-        <Field Name="recSalesprice1__Unit_Price_Format">
-          <DataField>recSalesprice1__Unit_Price_Format</DataField>
-        </Field>
-        <Field Name="Sales_Line_Document_Type">
-          <DataField>Sales_Line_Document_Type</DataField>
-        </Field>
-        <Field Name="Sales_Line_Line_No_">
-          <DataField>Sales_Line_Line_No_</DataField>
-        </Field>
-        <Field Name="Sales_Line_Sell_to_Customer_No_">
-          <DataField>Sales_Line_Sell_to_Customer_No_</DataField>
-        </Field>
-      </Fields>
-      <rd:DataSetInfo>
-        <rd:DataSetName>DataSet</rd:DataSetName>
-        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
-        <rd:TableName>Result</rd:TableName>
-      </rd:DataSetInfo>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -9748,12 +9313,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -9793,4 +9352,434 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>685bcf6d-7254-4665-ba58-ab8b1acf61b9</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="STRSUBSTNO_Text000_PeriodText_">
+          <DataField>STRSUBSTNO_Text000_PeriodText_</DataField>
+        </Field>
+        <Field Name="COMPANYNAME">
+          <DataField>COMPANYNAME</DataField>
+        </Field>
+        <Field Name="FORMAT_TODAY_0_4_">
+          <DataField>FORMAT_TODAY_0_4_</DataField>
+        </Field>
+        <Field Name="USERID">
+          <DataField>USERID</DataField>
+        </Field>
+        <Field Name="CurrReport_PAGENO">
+          <DataField>CurrReport_PAGENO</DataField>
+        </Field>
+        <Field Name="Customer_TABLECAPTION__________CustFilter">
+          <DataField>Customer_TABLECAPTION__________CustFilter</DataField>
+        </Field>
+        <Field Name="Sales_Header__TABLECAPTION__________SalesheaderFilter">
+          <DataField>Sales_Header__TABLECAPTION__________SalesheaderFilter</DataField>
+        </Field>
+        <Field Name="Customer_Name">
+          <DataField>Customer_Name</DataField>
+        </Field>
+        <Field Name="Customer__Phone_No__">
+          <DataField>Customer__Phone_No__</DataField>
+        </Field>
+        <Field Name="Customer__No__">
+          <DataField>Customer__No__</DataField>
+        </Field>
+        <Field Name="Customer__Balance__LCY__">
+          <DataField>Customer__Balance__LCY__</DataField>
+        </Field>
+        <Field Name="Customer__Balance__LCY__Format">
+          <DataField>Customer__Balance__LCY__Format</DataField>
+        </Field>
+        <Field Name="Customer__Credit_Limit__LCY__">
+          <DataField>Customer__Credit_Limit__LCY__</DataField>
+        </Field>
+        <Field Name="Customer__Credit_Limit__LCY__Format">
+          <DataField>Customer__Credit_Limit__LCY__Format</DataField>
+        </Field>
+        <Field Name="Customer_Customer_Name">
+          <DataField>Customer_Customer_Name</DataField>
+        </Field>
+        <Field Name="Sales_Line__Quantity">
+          <DataField>Sales_Line__Quantity</DataField>
+        </Field>
+        <Field Name="Sales_Line__QuantityFormat">
+          <DataField>Sales_Line__QuantityFormat</DataField>
+        </Field>
+        <Field Name="SalesAmount">
+          <DataField>SalesAmount</DataField>
+        </Field>
+        <Field Name="SalesAmountFormat">
+          <DataField>SalesAmountFormat</DataField>
+        </Field>
+        <Field Name="CostAmount">
+          <DataField>CostAmount</DataField>
+        </Field>
+        <Field Name="CostAmountFormat">
+          <DataField>CostAmountFormat</DataField>
+        </Field>
+        <Field Name="Profit">
+          <DataField>Profit</DataField>
+        </Field>
+        <Field Name="ProfitFormat">
+          <DataField>ProfitFormat</DataField>
+        </Field>
+        <Field Name="ProfitPct">
+          <DataField>ProfitPct</DataField>
+        </Field>
+        <Field Name="ProfitPctFormat">
+          <DataField>ProfitPctFormat</DataField>
+        </Field>
+        <Field Name="cnt5">
+          <DataField>cnt5</DataField>
+        </Field>
+        <Field Name="cnt4">
+          <DataField>cnt4</DataField>
+        </Field>
+        <Field Name="cnt3">
+          <DataField>cnt3</DataField>
+        </Field>
+        <Field Name="cnt2">
+          <DataField>cnt2</DataField>
+        </Field>
+        <Field Name="cnt1">
+          <DataField>cnt1</DataField>
+        </Field>
+        <Field Name="Cnt1Per">
+          <DataField>Cnt1Per</DataField>
+        </Field>
+        <Field Name="Cnt1PerFormat">
+          <DataField>Cnt1PerFormat</DataField>
+        </Field>
+        <Field Name="Cnt2Per">
+          <DataField>Cnt2Per</DataField>
+        </Field>
+        <Field Name="Cnt2PerFormat">
+          <DataField>Cnt2PerFormat</DataField>
+        </Field>
+        <Field Name="Cnt3Per">
+          <DataField>Cnt3Per</DataField>
+        </Field>
+        <Field Name="Cnt3PerFormat">
+          <DataField>Cnt3PerFormat</DataField>
+        </Field>
+        <Field Name="Cnt4Per">
+          <DataField>Cnt4Per</DataField>
+        </Field>
+        <Field Name="Cnt4PerFormat">
+          <DataField>Cnt4PerFormat</DataField>
+        </Field>
+        <Field Name="NormalQty">
+          <DataField>NormalQty</DataField>
+        </Field>
+        <Field Name="NormalQtyFormat">
+          <DataField>NormalQtyFormat</DataField>
+        </Field>
+        <Field Name="MediumQty">
+          <DataField>MediumQty</DataField>
+        </Field>
+        <Field Name="MediumQtyFormat">
+          <DataField>MediumQtyFormat</DataField>
+        </Field>
+        <Field Name="EasyQty">
+          <DataField>EasyQty</DataField>
+        </Field>
+        <Field Name="EasyQtyFormat">
+          <DataField>EasyQtyFormat</DataField>
+        </Field>
+        <Field Name="DifficultQty">
+          <DataField>DifficultQty</DataField>
+        </Field>
+        <Field Name="DifficultQtyFormat">
+          <DataField>DifficultQtyFormat</DataField>
+        </Field>
+        <Field Name="DifficultValue">
+          <DataField>DifficultValue</DataField>
+        </Field>
+        <Field Name="DifficultValueFormat">
+          <DataField>DifficultValueFormat</DataField>
+        </Field>
+        <Field Name="NormalValue">
+          <DataField>NormalValue</DataField>
+        </Field>
+        <Field Name="NormalValueFormat">
+          <DataField>NormalValueFormat</DataField>
+        </Field>
+        <Field Name="EasyValue">
+          <DataField>EasyValue</DataField>
+        </Field>
+        <Field Name="EasyValueFormat">
+          <DataField>EasyValueFormat</DataField>
+        </Field>
+        <Field Name="MediumValue">
+          <DataField>MediumValue</DataField>
+        </Field>
+        <Field Name="MediumValueFormat">
+          <DataField>MediumValueFormat</DataField>
+        </Field>
+        <Field Name="SalesAmount_Control1000000035">
+          <DataField>SalesAmount_Control1000000035</DataField>
+        </Field>
+        <Field Name="SalesAmount_Control1000000035Format">
+          <DataField>SalesAmount_Control1000000035Format</DataField>
+        </Field>
+        <Field Name="Sales_Line__Quantity_Control1000000036">
+          <DataField>Sales_Line__Quantity_Control1000000036</DataField>
+        </Field>
+        <Field Name="Sales_Line__Quantity_Control1000000036Format">
+          <DataField>Sales_Line__Quantity_Control1000000036Format</DataField>
+        </Field>
+        <Field Name="Sales_Order_Customer_Item_Wise_ProfitCaption">
+          <DataField>Sales_Order_Customer_Item_Wise_ProfitCaption</DataField>
+        </Field>
+        <Field Name="All_amounts_are_in_LCYCaption">
+          <DataField>All_amounts_are_in_LCYCaption</DataField>
+        </Field>
+        <Field Name="CurrReport_PAGENOCaption">
+          <DataField>CurrReport_PAGENOCaption</DataField>
+        </Field>
+        <Field Name="Item_No_Caption">
+          <DataField>Item_No_Caption</DataField>
+        </Field>
+        <Field Name="DescriptionCaption">
+          <DataField>DescriptionCaption</DataField>
+        </Field>
+        <Field Name="Posting_DateCaption">
+          <DataField>Posting_DateCaption</DataField>
+        </Field>
+        <Field Name="Customer_Order_No_Caption">
+          <DataField>Customer_Order_No_Caption</DataField>
+        </Field>
+        <Field Name="Order_No_Caption">
+          <DataField>Order_No_Caption</DataField>
+        </Field>
+        <Field Name="Order_QuantityCaption">
+          <DataField>Order_QuantityCaption</DataField>
+        </Field>
+        <Field Name="Unit_of_MeasureCaption">
+          <DataField>Unit_of_MeasureCaption</DataField>
+        </Field>
+        <Field Name="AmountCaption">
+          <DataField>AmountCaption</DataField>
+        </Field>
+        <Field Name="Cost_AmountCaption">
+          <DataField>Cost_AmountCaption</DataField>
+        </Field>
+        <Field Name="Cost_Per_UnitCaption">
+          <DataField>Cost_Per_UnitCaption</DataField>
+        </Field>
+        <Field Name="Price_Per_UnitCaption">
+          <DataField>Price_Per_UnitCaption</DataField>
+        </Field>
+        <Field Name="ProfitCaption">
+          <DataField>ProfitCaption</DataField>
+        </Field>
+        <Field Name="Profit__Caption">
+          <DataField>Profit__Caption</DataField>
+        </Field>
+        <Field Name="Wholesales_Price_D_Caption">
+          <DataField>Wholesales_Price_D_Caption</DataField>
+        </Field>
+        <Field Name="Sales_Base_Price_E_Caption">
+          <DataField>Sales_Base_Price_E_Caption</DataField>
+        </Field>
+        <Field Name="Customer__Phone_No__Caption">
+          <DataField>Customer__Phone_No__Caption</DataField>
+        </Field>
+        <Field Name="Customer__Balance__LCY__Caption">
+          <DataField>Customer__Balance__LCY__Caption</DataField>
+        </Field>
+        <Field Name="Customer__Credit_Limit__LCY__Caption">
+          <DataField>Customer__Credit_Limit__LCY__Caption</DataField>
+        </Field>
+        <Field Name="NormalCaption">
+          <DataField>NormalCaption</DataField>
+        </Field>
+        <Field Name="MediumCaption">
+          <DataField>MediumCaption</DataField>
+        </Field>
+        <Field Name="EasyCaption">
+          <DataField>EasyCaption</DataField>
+        </Field>
+        <Field Name="DifficultCaption">
+          <DataField>DifficultCaption</DataField>
+        </Field>
+        <Field Name="Total_LinesCaption">
+          <DataField>Total_LinesCaption</DataField>
+        </Field>
+        <Field Name="Difficult__Caption">
+          <DataField>Difficult__Caption</DataField>
+        </Field>
+        <Field Name="Easy__Caption">
+          <DataField>Easy__Caption</DataField>
+        </Field>
+        <Field Name="Medium__Caption">
+          <DataField>Medium__Caption</DataField>
+        </Field>
+        <Field Name="Normal__Caption">
+          <DataField>Normal__Caption</DataField>
+        </Field>
+        <Field Name="Normal_UnitsCaption">
+          <DataField>Normal_UnitsCaption</DataField>
+        </Field>
+        <Field Name="Medium_UnitsCaption">
+          <DataField>Medium_UnitsCaption</DataField>
+        </Field>
+        <Field Name="Easy_UnitsCaption">
+          <DataField>Easy_UnitsCaption</DataField>
+        </Field>
+        <Field Name="Difficult_UnitsCaption">
+          <DataField>Difficult_UnitsCaption</DataField>
+        </Field>
+        <Field Name="Difficult_ValueCaption">
+          <DataField>Difficult_ValueCaption</DataField>
+        </Field>
+        <Field Name="Easy_ValueCaption">
+          <DataField>Easy_ValueCaption</DataField>
+        </Field>
+        <Field Name="Medium_ValueCaption">
+          <DataField>Medium_ValueCaption</DataField>
+        </Field>
+        <Field Name="Normal_ValueCaption">
+          <DataField>Normal_ValueCaption</DataField>
+        </Field>
+        <Field Name="Total_ValueCaption">
+          <DataField>Total_ValueCaption</DataField>
+        </Field>
+        <Field Name="Total_UnitsCaption">
+          <DataField>Total_UnitsCaption</DataField>
+        </Field>
+        <Field Name="Sales_Order_No_______Sales_Header___No__">
+          <DataField>Sales_Order_No_______Sales_Header___No__</DataField>
+        </Field>
+        <Field Name="Sales_Order_No_______Sales_Header___No___Control1040052">
+          <DataField>Sales_Order_No_______Sales_Header___No___Control1040052</DataField>
+        </Field>
+        <Field Name="Sales_Line__Quantity_Control1040038">
+          <DataField>Sales_Line__Quantity_Control1040038</DataField>
+        </Field>
+        <Field Name="Sales_Line__Quantity_Control1040038Format">
+          <DataField>Sales_Line__Quantity_Control1040038Format</DataField>
+        </Field>
+        <Field Name="SalesAmount_Control1040040">
+          <DataField>SalesAmount_Control1040040</DataField>
+        </Field>
+        <Field Name="SalesAmount_Control1040040Format">
+          <DataField>SalesAmount_Control1040040Format</DataField>
+        </Field>
+        <Field Name="CostAmount_Control1040042">
+          <DataField>CostAmount_Control1040042</DataField>
+        </Field>
+        <Field Name="CostAmount_Control1040042Format">
+          <DataField>CostAmount_Control1040042Format</DataField>
+        </Field>
+        <Field Name="Profit_Control1040043">
+          <DataField>Profit_Control1040043</DataField>
+        </Field>
+        <Field Name="Profit_Control1040043Format">
+          <DataField>Profit_Control1040043Format</DataField>
+        </Field>
+        <Field Name="ProfitPct_Control1040044">
+          <DataField>ProfitPct_Control1040044</DataField>
+        </Field>
+        <Field Name="ProfitPct_Control1040044Format">
+          <DataField>ProfitPct_Control1040044Format</DataField>
+        </Field>
+        <Field Name="Sales_Header_Document_Type">
+          <DataField>Sales_Header_Document_Type</DataField>
+        </Field>
+        <Field Name="Sales_Header_No_">
+          <DataField>Sales_Header_No_</DataField>
+        </Field>
+        <Field Name="Sales_Header_Sell_to_Customer_No_">
+          <DataField>Sales_Header_Sell_to_Customer_No_</DataField>
+        </Field>
+        <Field Name="Sales_Line__Sales_Line___No__">
+          <DataField>Sales_Line__Sales_Line___No__</DataField>
+        </Field>
+        <Field Name="Sales_Line__Description__Sales_Line___Description_2_">
+          <DataField>Sales_Line__Description__Sales_Line___Description_2_</DataField>
+        </Field>
+        <Field Name="Sales_Header___Posting_Date_">
+          <DataField>Sales_Header___Posting_Date_</DataField>
+        </Field>
+        <Field Name="Sales_Header___External_Document_No__">
+          <DataField>Sales_Header___External_Document_No__</DataField>
+        </Field>
+        <Field Name="Sales_Line__Sales_Line___Document_No__">
+          <DataField>Sales_Line__Sales_Line___Document_No__</DataField>
+        </Field>
+        <Field Name="Sales_Line__Sales_Line__Quantity">
+          <DataField>Sales_Line__Sales_Line__Quantity</DataField>
+        </Field>
+        <Field Name="Sales_Line__Sales_Line__QuantityFormat">
+          <DataField>Sales_Line__Sales_Line__QuantityFormat</DataField>
+        </Field>
+        <Field Name="Sales_Line__Sales_Line___Unit_of_Measure_Code_">
+          <DataField>Sales_Line__Sales_Line___Unit_of_Measure_Code_</DataField>
+        </Field>
+        <Field Name="SalesAmount_Control1040031">
+          <DataField>SalesAmount_Control1040031</DataField>
+        </Field>
+        <Field Name="SalesAmount_Control1040031Format">
+          <DataField>SalesAmount_Control1040031Format</DataField>
+        </Field>
+        <Field Name="CostAmount_Control1040033">
+          <DataField>CostAmount_Control1040033</DataField>
+        </Field>
+        <Field Name="CostAmount_Control1040033Format">
+          <DataField>CostAmount_Control1040033Format</DataField>
+        </Field>
+        <Field Name="CostPerUnit">
+          <DataField>CostPerUnit</DataField>
+        </Field>
+        <Field Name="CostPerUnitFormat">
+          <DataField>CostPerUnitFormat</DataField>
+        </Field>
+        <Field Name="PricePerUnit">
+          <DataField>PricePerUnit</DataField>
+        </Field>
+        <Field Name="PricePerUnitFormat">
+          <DataField>PricePerUnitFormat</DataField>
+        </Field>
+        <Field Name="Profit_Control1040036">
+          <DataField>Profit_Control1040036</DataField>
+        </Field>
+        <Field Name="Profit_Control1040036Format">
+          <DataField>Profit_Control1040036Format</DataField>
+        </Field>
+        <Field Name="ProfitPct_Control1040037">
+          <DataField>ProfitPct_Control1040037</DataField>
+        </Field>
+        <Field Name="ProfitPct_Control1040037Format">
+          <DataField>ProfitPct_Control1040037Format</DataField>
+        </Field>
+        <Field Name="recSalesprice__Unit_Price_">
+          <DataField>recSalesprice__Unit_Price_</DataField>
+        </Field>
+        <Field Name="recSalesprice__Unit_Price_Format">
+          <DataField>recSalesprice__Unit_Price_Format</DataField>
+        </Field>
+        <Field Name="recSalesprice1__Unit_Price_">
+          <DataField>recSalesprice1__Unit_Price_</DataField>
+        </Field>
+        <Field Name="recSalesprice1__Unit_Price_Format">
+          <DataField>recSalesprice1__Unit_Price_Format</DataField>
+        </Field>
+        <Field Name="Sales_Line_Document_Type">
+          <DataField>Sales_Line_Document_Type</DataField>
+        </Field>
+        <Field Name="Sales_Line_Line_No_">
+          <DataField>Sales_Line_Line_No_</DataField>
+        </Field>
+        <Field Name="Sales_Line_Sell_to_Customer_No_">
+          <DataField>Sales_Line_Sell_to_Customer_No_</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
