@@ -1177,7 +1177,7 @@ report 60034 "Sales - Invoice"
         DimSetEntry1: Record 480;
         DimSetEntry2: Record 480;
         RespCenter: Record 5714;
-        Language: Record 8;
+        Languages: Record 8;
         //TypeOfSupply: Record 10500;
         SalesInvCountPrinted: Codeunit 315;
         FormatAddr: Codeunit 365;

@@ -907,7 +907,7 @@ report 60036 "Order Confirmation"
         DimSetEntry1: Record 480;
         DimSetEntry2: Record 480;
         RespCenter: Record 5714;
-        Language: Record 8;
+        Languages: Record 8;
         // TypeOfSupply: Record 10500;
         SalesCountPrinted: Codeunit 313;
         FormatAddr: Codeunit 365;

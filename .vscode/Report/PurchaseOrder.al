@@ -961,7 +961,7 @@ report 60031 "OrderGB"
         GLSetup: Record 98;
         CompanyInfo: Record 79;
         ShipmentMethod: Record 10;
-        PaymentTerms: Record "3";
+        PaymentTerms: Record 3;
         SalesPurchPerson: Record 13;
         VATAmountLine: Record 290 temporary;
         PurchLine: Record 39 temporary;
