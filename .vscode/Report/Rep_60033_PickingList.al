@@ -1,9 +1,7 @@
 report 60033 "Picking List New"
 {
-
     DefaultLayout = RDLC;
     RDLCLayout = 'Picking List.rdl';
-
     Caption = 'Picking List';
     PaperSourceDefaultPage = Upper;
 
@@ -12,6 +10,8 @@ report 60033 "Picking List New"
         dataitem("Warehouse Activity Header"; "Warehouse Activity Header")
         {
             //CalcFields = "Requested Delivery Date";
+            CalcFields = "Shipping Method", "Requested Delivery Date", "Promised Delivery Date", "Ship-to code";
+
             DataItemTableView = SORTING(Type, "No.")
                                 WHERE(Type = FILTER(Pick | "Invt. Pick"));
 
@@ -27,7 +27,14 @@ report 60033 "Picking List New"
             column(ExternalDocNo; "Warehouse Activity Header"."External Document No.")
             {
             }
-            column(WMSMgt; WMSMgt.GetDestinationName("Warehouse Activity Header"."Destination Type", "Warehouse Activity Header"."Destination No."))
+            column(ShiptoWarecode; "Warehouse Activity Header"."Ship-to code")
+            {
+
+            }
+            // column(WMSMgt; WMSMgt.GetDestinationName("Warehouse Activity Header"."Destination Type", "Warehouse Activity Header"."Destination No."))
+            // {
+            // }
+            column(WMSMgt; "Warehouse Activity Header"."Destination Type")
             {
             }
             column(ShipToCode; shiptocode)
@@ -57,12 +64,14 @@ report 60033 "Picking List New"
             column(Requeated_Delivery_Date; FORMAT("Warehouse Activity Header"."Requested Delivery Date"))
             {
             }
+
             column(Location_Code; "Warehouse Activity Header"."Location Code")
             {
             }
             column(Promised_Delivery_Date; FORMAT("Warehouse Activity Header"."Promised Delivery Date"))
             {
             }
+
             column(Qty2; Qty2)
             {
             }
@@ -250,124 +259,124 @@ report 60033 "Picking List New"
                         CLEAR(TmpWhseActLine);
                     end;
                 }
-                dataitem(WhseActLine; Table5767)
+                dataitem(WhseActLine; "Warehouse Activity Line")
                 {
-                    DataItemLink = Activity Type=FIELD(Type),
-                                   No.=FIELD(No.);
+                    DataItemLink = "Activity Type" = FIELD(Type),
+                                  "No." = FIELD("No.");
                     DataItemLinkReference = "Warehouse Activity Header";
-                    DataItemTableView = SORTING(Bin Code,Location Code,Action Type,Breakbulk No.);
-                    column(SourceNo_WhseActLine;"Source No.")
+                    DataItemTableView = SORTING("Bin Code", "Location Code", "Action Type", "Breakbulk No.");
+                    column(SourceNo_WhseActLine; "Source No.")
                     {
                     }
-                    column(FormatSourcDocument_WhseActLine;FORMAT("Source Document"))
+                    column(FormatSourcDocument_WhseActLine; FORMAT("Source Document"))
                     {
                     }
-                    column(ShelfNo_WhseActLine;"Shelf No.")
+                    column(ShelfNo_WhseActLine; "Shelf No.")
                     {
                     }
-                    column(ItemNo_WhseActLine;"Item No.")
+                    column(ItemNo_WhseActLine; "Item No.")
                     {
                     }
-                    column(Description_WhseActLine;Description)
+                    column(Description_WhseActLine; Description)
                     {
                     }
-                    column(VariantCode_WhseActLine;"Variant Code")
+                    column(VariantCode_WhseActLine; "Variant Code")
                     {
                     }
-                    column(UOMCode_WhseActLine;"Unit of Measure Code")
+                    column(UOMCode_WhseActLine; "Unit of Measure Code")
                     {
                     }
-                    column(DueDate_WhseActLine;FORMAT("Due Date"))
+                    column(DueDate_WhseActLine; FORMAT("Due Date"))
                     {
                     }
-                    column(QtytoHandle_WhseActLine;"Qty. to Handle")
+                    column(QtytoHandle_WhseActLine; "Qty. to Handle")
                     {
                     }
-                    column(QtyBase_WhseActLine;"Qty. (Base)")
+                    column(QtyBase_WhseActLine; "Qty. (Base)")
                     {
                     }
-                    column(DestinatnType_WhseActLine;"Destination Type")
+                    column(DestinatnType_WhseActLine; "Destination Type")
                     {
                     }
-                    column(DestinationNo_WhseActLine;"Destination No.")
+                    column(DestinationNo_WhseActLine; "Destination No.")
                     {
                     }
-                    column(ZoneCode_WhseActLine;"Zone Code")
+                    column(ZoneCode_WhseActLine; "Zone Code")
                     {
                     }
-                    column(BinCode_WhseActLine;"Bin Code")
+                    column(BinCode_WhseActLine; "Bin Code")
                     {
                     }
-                    column(ActionType_WhseActLine;"Action Type")
+                    column(ActionType_WhseActLine; "Action Type")
                     {
                     }
-                    column(LotNo_WhseActLine;"Lot No.")
+                    column(LotNo_WhseActLine; "Lot No.")
                     {
                     }
-                    column(LotNo2_WhseActLine;Lotno2)
+                    column(LotNo2_WhseActLine; Lotno2)
                     {
                     }
-                    column(LotNocap_WhseActLine;Batch)
+                    column(LotNocap_WhseActLine; Batch)
                     {
                     }
-                    column(SerialNo;"Serial No.")
+                    column(SerialNo; "Serial No.")
                     {
                     }
-                    column(LotNo_WhseActLineCaption;FIELDCAPTION("Lot No."))
+                    column(LotNo_WhseActLineCaption; FIELDCAPTION("Lot No."))
                     {
                     }
-                    column(SerialNo_WhseActLineCaption;FIELDCAPTION("Serial No."))
+                    column(SerialNo_WhseActLineCaption; FIELDCAPTION("Serial No."))
                     {
                     }
-                    column(LineNo_WhseActLine;"Line No.")
+                    column(LineNo_WhseActLine; "Line No.")
                     {
                     }
-                    column(BinRanking_WhseActLine;"Bin Ranking")
+                    column(BinRanking_WhseActLine; "Bin Ranking")
                     {
                     }
-                    column(EmptyStringCaption;EmptyStringCaptionLbl)
+                    column(EmptyStringCaption; EmptyStringCaptionLbl)
                     {
                     }
-                    column(LotNo;WhseActLine."Lot No.")
+                    column(LotNo; WhseActLine."Lot No.")
                     {
                     }
-                    column(Expirationdate;WhseActLine."Expiration Date")
+                    column(Expirationdate; WhseActLine."Expiration Date")
                     {
                     }
-                    column("Count";WhseActLine.COUNT)
+                    column("Count"; WhseActLine.COUNT)
                     {
                     }
-                    column(Quantity_whactline;Quantity)
+                    column(Quantity_whactline; Quantity)
                     {
                     }
-                    column(SumQty;Qty)
+                    column(SumQty; Qty)
                     {
                     }
-                    dataitem(WhseActLine2;Table5767)
+                    dataitem(WhseActLine2; 5767)
                     {
-                        DataItemLink = Activity Type=FIELD(Activity Type),
-                                       No.=FIELD(No.),
-                                       Bin Code=FIELD(Bin Code),
-                                       Item No.=FIELD(Item No.),
-                                       Action Type=FIELD(Action Type),
-                                       Variant Code=FIELD(Variant Code),
-                                       Unit of Measure Code=FIELD(Unit of Measure Code),
-                                       Due Date=FIELD(Due Date);
+                        DataItemLink = "Activity Type" = FIELD("Activity Type"),
+                                       "No." = FIELD("No."),
+                                       "Bin Code" = FIELD("Bin Code"),
+                                       "Item No." = FIELD("Item No."),
+                                       "Action Type" = FIELD("Action Type"),
+                                       "Variant Code" = FIELD("Variant Code"),
+                                       "Unit of Measure Code" = FIELD("Unit of Measure Code"),
+                                       "Due Date" = FIELD("Due Date");
                         DataItemLinkReference = WhseActLine;
-                        DataItemTableView = SORTING(Activity Type,No.,Bin Code,Breakbulk No.,Action Type);
-                        column(LotNo_WhseActLine2;"Lot No.")
+                        DataItemTableView = SORTING("Activity Type", "No.", "Bin Code", "Breakbulk No.", "Action Type");
+                        column(LotNo_WhseActLine2; "Lot No.")
                         {
                         }
-                        column(SerialNo_WhseActLine2;"Serial No.")
+                        column(SerialNo_WhseActLine2; "Serial No.")
                         {
                         }
-                        column(QtyBase_WhseActLine2;"Qty. (Base)")
+                        column(QtyBase_WhseActLine2; "Qty. (Base)")
                         {
                         }
-                        column(QtytoHandle_WhseActLine2;"Qty. to Handle")
+                        column(QtytoHandle_WhseActLine2; "Qty. to Handle")
                         {
                         }
-                        column(LineNo_WhseActLine2;"Line No.")
+                        column(LineNo_WhseActLine2; "Line No.")
                         {
                         }
                     }
@@ -375,15 +384,15 @@ report 60033 "Picking List New"
                     trigger OnAfterGetRecord()
                     begin
                         IF SumUpLines THEN BEGIN
-                          TmpWhseActLine.GET("Activity Type","No.","Line No.");
-                          "Qty. (Base)" := TmpWhseActLine."Qty. (Base)";
-                          "Qty. to Handle" := TmpWhseActLine."Qty. to Handle";
+                            TmpWhseActLine.GET("Activity Type", "No.", "Line No.");
+                            "Qty. (Base)" := TmpWhseActLine."Qty. (Base)";
+                            "Qty. to Handle" := TmpWhseActLine."Qty. to Handle";
                         END;
-                            Lotno2 := "Warehouse Activity Line"."Lot No."+'-P';
-                            Batch := 'Batch No.';
+                        Lotno2 := "Warehouse Activity Line"."Lot No." + '-P';
+                        Batch := 'Batch No.';
 
                         //Qty := 0 ;
-                        Qty := Qty + "Warehouse Activity Line".Quantity ;
+                        Qty := Qty + "Warehouse Activity Line".Quantity;
                         //MESSAGE(FORMAT(Qty));
                         //Qty +=WhseActLine.Quantity;
                     end;
@@ -393,50 +402,49 @@ report 60033 "Picking List New"
                         COPY("Warehouse Activity Line");
                         Counter := COUNT;
                         IF Counter = 0 THEN
-                          CurrReport.BREAK;
+                            CurrReport.BREAK;
 
                         IF BreakbulkFilter THEN
-                          SETRANGE("Original Breakbulk",FALSE);
+                            SETRANGE("Original Breakbulk", FALSE);
                     end;
                 }
             }
 
             trigger OnAfterGetRecord()
             begin
-                 CompInfo.GET;
-                 CompInfo.CALCFIELDS(CompInfo.Picture);
+                CompInfo.GET;
+                CompInfo.CALCFIELDS(CompInfo.Picture);
 
                 GetLocation("Location Code");
                 InvtPick := Type = Type::"Invt. Pick";
 
                 IF NOT CurrReport.PREVIEW THEN
-                  WhseCountPrinted.RUN("Warehouse Activity Header");
+                    WhseCountPrinted.RUN("Warehouse Activity Header");
 
 
-                IF Salesorder.GET(Salesorder."Document Type"::Order,"Warehouse Activity Header"."Source No.") THEN
-                BEGIN
-                  shiptocode := Salesorder."Ship-to Code";
-                  Shiptoname := Salesorder."Ship-to Name";
-                  shipmentdate := Salesorder."Shipment Date";
-                  shiptoaddress := Salesorder."Ship-to Address";
-                  Shiptoaddress2 := Salesorder."Ship-to Address 2";
-                  ShiptoPostcode := Salesorder."Ship-to Post Code";
-                  shiptocity  := Salesorder."Ship-to City";
+                IF Salesorder.GET(Salesorder."Document Type"::Order, "Warehouse Activity Header"."Source No.") THEN BEGIN
+                    shiptocode := Salesorder."Ship-to Code";
+                    Shiptoname := Salesorder."Ship-to Name";
+                    shipmentdate := Salesorder."Shipment Date";
+                    shiptoaddress := Salesorder."Ship-to Address";
+                    Shiptoaddress2 := Salesorder."Ship-to Address 2";
+                    ShiptoPostcode := Salesorder."Ship-to Post Code";
+                    shiptocity := Salesorder."Ship-to City";
                 END;
-                 Lineno:=10000;
+                Lineno := 10000;
 
 
                 //Wrote code by avinash on 311014(JiraNo.-CHEM-392)//
-                 CLEAR(Qty2);
-                 recWhseActLine.RESET;
-                 recWhseActLine.SETRANGE(recWhseActLine."Activity Type",recWhseActLine."Activity Type"::"Invt. Pick");
-                 recWhseActLine.SETRANGE(recWhseActLine."No.","Warehouse Activity Header"."No.");
-                 IF recWhseActLine.FIND('-') THEN
-                 REPEAT
-                   Qty2+= recWhseActLine.Quantity;
-                 //MESSAGE(FORMAT(Qty2),"Warehouse Activity Header"."No.");
-                 UNTIL recWhseActLine.NEXT=0;
-                 //Wrote code by avinash on 311014(JiraNo.-CHEM-392)//
+                CLEAR(Qty2);
+                recWhseActLine.RESET;
+                recWhseActLine.SETRANGE(recWhseActLine."Activity Type", recWhseActLine."Activity Type"::"Invt. Pick");
+                recWhseActLine.SETRANGE(recWhseActLine."No.", "Warehouse Activity Header"."No.");
+                IF recWhseActLine.FIND('-') THEN
+                    REPEAT
+                        Qty2 += recWhseActLine.Quantity;
+                    //MESSAGE(FORMAT(Qty2),"Warehouse Activity Header"."No.");
+                    UNTIL recWhseActLine.NEXT = 0;
+                //Wrote code by avinash on 311014(JiraNo.-CHEM-392)//
             end;
         }
     }
@@ -452,17 +460,17 @@ report 60033 "Picking List New"
                 group(Options)
                 {
                     Caption = 'Options';
-                    field(Breakbulk;BreakbulkFilter)
+                    field(Breakbulk; BreakbulkFilter)
                     {
                         Caption = 'Set Breakbulk Filter';
                         Editable = BreakbulkEditable;
                     }
-                    field(SumUpLines;SumUpLines)
+                    field(SumUpLines; SumUpLines)
                     {
                         Caption = 'Sum up Lines';
                         Editable = SumUpLinesEditable;
                     }
-                    field(LotSerialNo;ShowLotSN)
+                    field(LotSerialNo; ShowLotSN)
                     {
                         Caption = 'Show Serial/Lot Number';
                     }
@@ -483,8 +491,8 @@ report 60033 "Picking List New"
         trigger OnOpenPage()
         begin
             IF HideOptions THEN BEGIN
-              BreakbulkEditable := FALSE;
-              SumUpLinesEditable := FALSE;
+                BreakbulkEditable := FALSE;
+                SumUpLinesEditable := FALSE;
             END;
         end;
     }
@@ -535,14 +543,19 @@ report 60033 "Picking List New"
         recWhseActLine: Record 5767;
         Qty2: Decimal;
         CompInfo: Record 79;
+        abc: report "Inventory Picking List";
+        abc1: report "Picking List";
+        ShippingMethod: code[20];
+        RequestedDeliveryDate: date;
+        PromisedDeliveryDate: date;
 
     local procedure GetLocation(LocationCode: Code[10])
     begin
         IF LocationCode = '' THEN
-          Location.INIT
+            Location.INIT
         ELSE
-          IF Location.Code <> LocationCode THEN
-            Location.GET(LocationCode);
+            IF Location.Code <> LocationCode THEN
+                Location.GET(LocationCode);
     end;
 
     procedure SetBreakbulkFilter(BreakbulkFilter2: Boolean)
@@ -554,5 +567,6 @@ report 60033 "Picking List New"
     begin
         HideOptions := SetHideOptions;
     end;
+
 }
 

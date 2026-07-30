@@ -1,13 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>685bcf6d-7254-4665-ba58-ab8b1acf61b9</rd:ReportID>
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.1.30001.02</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.1.30001.02</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2026-07-30T13:54:17.0913058Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
+      <rd:SecurityType>None</rd:SecurityType>
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
         <ConnectString />
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>22203fef-a2c3-4b96-9a54-8c5c06ffe0a4</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -522,6 +535,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Customer__No__.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -551,6 +565,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Customer_Name.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -581,7 +596,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -608,6 +625,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Customer__Balance__LCY__Caption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -641,6 +659,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Customer__Balance__LCY__.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!Customer__Balance__LCY__Format.Value)</Format>
@@ -667,6 +686,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox468">
+                          <rd:DefaultName>Textbox468</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -675,6 +695,7 @@
                                 <TextRun>
                                   <Value />
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -685,7 +706,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox468</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>0.0005cm</PaddingLeft>
@@ -707,6 +727,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Customer__Credit_Limit__LCY__Caption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -740,6 +761,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Customer__Credit_Limit__LCY__.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!Customer__Credit_Limit__LCY__Format.Value)</Format>
@@ -774,7 +796,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -799,7 +823,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -836,6 +862,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Customer__Phone_No__.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -864,6 +891,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Customer__Phone_No__Caption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -892,7 +920,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -918,7 +948,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -944,7 +976,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -970,7 +1004,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -996,7 +1032,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1022,7 +1060,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1048,7 +1088,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1074,7 +1116,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1100,7 +1144,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1126,7 +1172,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1152,7 +1200,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1178,7 +1228,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1204,7 +1256,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1229,7 +1283,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1265,6 +1321,7 @@
                                 <TextRun>
                                   <Value>=Fields!Sales_Line__Sales_Line___No__.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -1291,6 +1348,7 @@
                                 <TextRun>
                                   <Value>=Fields!Sales_Line__Description__Sales_Line___Description_2_.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -1317,6 +1375,7 @@
                                 <TextRun>
                                   <Value>=Fields!Sales_Header___Posting_Date_.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>d</Format>
                                   </Style>
@@ -1347,6 +1406,7 @@
                                 <TextRun>
                                   <Value>=Fields!Sales_Header___External_Document_No__.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -1375,6 +1435,7 @@
                                 <TextRun>
                                   <Value>=Fields!Sales_Line__Sales_Line___Document_No__.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -1404,6 +1465,7 @@
                                 <TextRun>
                                   <Value>=Fields!Sales_Line__Sales_Line__Quantity.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>=Fields!Sales_Line__Sales_Line__QuantityFormat.Value</Format>
                                   </Style>
@@ -1434,6 +1496,7 @@
                                 <TextRun>
                                   <Value>=Fields!Sales_Line__Sales_Line___Unit_of_Measure_Code_.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -1463,6 +1526,7 @@
                                 <TextRun>
                                   <Value>=Fields!SalesAmount_Control1040031.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>=Fields!SalesAmount_Control1040031Format.Value</Format>
                                   </Style>
@@ -1493,6 +1557,7 @@
                                 <TextRun>
                                   <Value>=Fields!CostAmount_Control1040033.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>=Fields!CostAmount_Control1040033Format.Value</Format>
                                   </Style>
@@ -1523,6 +1588,7 @@
                                 <TextRun>
                                   <Value>=Fields!CostPerUnit.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>=Fields!CostPerUnitFormat.Value</Format>
                                   </Style>
@@ -1553,6 +1619,7 @@
                                 <TextRun>
                                   <Value>=Fields!PricePerUnit.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>=Fields!PricePerUnitFormat.Value</Format>
                                   </Style>
@@ -1583,6 +1650,7 @@
                                 <TextRun>
                                   <Value>=Fields!recSalesprice__Unit_Price_.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>=Fields!recSalesprice__Unit_Price_Format.Value</Format>
                                   </Style>
@@ -1613,6 +1681,7 @@
                                 <TextRun>
                                   <Value>=Fields!recSalesprice1__Unit_Price_.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>=Fields!recSalesprice1__Unit_Price_Format.Value</Format>
                                   </Style>
@@ -1643,6 +1712,7 @@
                                 <TextRun>
                                   <Value>=Fields!Profit_Control1040036.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>=Fields!Profit_Control1040036Format.Value</Format>
                                   </Style>
@@ -1673,6 +1743,7 @@
                                 <TextRun>
                                   <Value>=Fields!ProfitPct_Control1040037.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>7pt</FontSize>
                                     <Format>=Fields!ProfitPct_Control1040037Format.Value</Format>
                                   </Style>
@@ -1703,6 +1774,7 @@
                                 <TextRun>
                                   <Value>=Fields!STRSUBSTNO_Text000_PeriodText_.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <Color>#ff0000</Color>
                                   </Style>
                                 </TextRun>
@@ -1733,6 +1805,7 @@
                                 <TextRun>
                                   <Value>=Fields!COMPANYNAME.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <Color>#ff0000</Color>
                                   </Style>
                                 </TextRun>
@@ -1763,6 +1836,7 @@
                                 <TextRun>
                                   <Value>=Fields!Sales_Order_Customer_Item_Wise_ProfitCaption.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <Color>#ff0000</Color>
                                   </Style>
                                 </TextRun>
@@ -1793,6 +1867,7 @@
                                 <TextRun>
                                   <Value>=Fields!All_amounts_are_in_LCYCaption.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <Color>#ff0000</Color>
                                   </Style>
                                 </TextRun>
@@ -1823,6 +1898,7 @@
                                 <TextRun>
                                   <Value>=Fields!CurrReport_PAGENOCaption.Value</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <Color>#ff0000</Color>
                                   </Style>
                                 </TextRun>
@@ -1857,7 +1933,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1883,6 +1961,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Customer_Customer_Name.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -1910,7 +1989,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1935,7 +2016,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1960,7 +2043,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1986,6 +2071,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Sales_Line__Quantity.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!Sales_Line__QuantityFormat.Value)</Format>
@@ -2016,7 +2102,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2042,6 +2130,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!SalesAmount.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!SalesAmountFormat.Value)</Format>
@@ -2073,6 +2162,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!CostAmount.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!CostAmountFormat.Value)</Format>
@@ -2103,7 +2193,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2128,7 +2220,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2153,7 +2247,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2178,7 +2274,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2204,6 +2302,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Profit.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!ProfitFormat.Value)</Format>
@@ -2235,6 +2334,7 @@
                                 <TextRun>
                                   <Value>=IIF(Sum(Fields!SalesAmount.Value) &lt;&gt; 0, ROUND(((100 * Sum(Fields!Profit.Value)) / Sum(Fields!SalesAmount.Value)), 2), 0)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!ProfitPctFormat.Value)</Format>
@@ -2265,7 +2365,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2793,7 +2895,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2819,6 +2923,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Sales_Order_No_______Sales_Header___No__.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -2846,7 +2951,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2871,7 +2978,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2896,7 +3005,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2922,6 +3033,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Sales_Line__Quantity_Control1040038.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!Sales_Line__Quantity_Control1040038Format.Value)</Format>
@@ -2952,7 +3064,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -2978,6 +3092,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!SalesAmount_Control1040040.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!SalesAmount_Control1040040Format.Value)</Format>
@@ -3009,6 +3124,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!CostAmount_Control1040042.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!CostAmount_Control1040042Format.Value)</Format>
@@ -3039,7 +3155,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3064,7 +3182,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3089,7 +3209,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3114,7 +3236,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3140,6 +3264,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Profit_Control1040043.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <Format>=First(Fields!Profit_Control1040043Format.Value)</Format>
@@ -3164,6 +3289,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="SalesAmount1">
+                          <rd:DefaultName>SalesAmount1</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -3172,6 +3298,7 @@
                                 <TextRun>
                                   <Value>=IIF(Sum(Fields!SalesAmount_Control1040040.Value) &lt;&gt; 0, ROUND(((100 * Sum(Fields!Profit_Control1040043.Value)) / Sum(Fields!SalesAmount_Control1040040.Value)), 2), 0)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -3182,7 +3309,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>SalesAmount1</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -3196,6 +3322,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox36">
+                          <rd:DefaultName>Textbox36</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -3203,13 +3330,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox36</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -3223,6 +3351,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox37">
+                          <rd:DefaultName>Textbox37</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -3230,13 +3359,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox37</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -3250,6 +3380,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox39">
+                          <rd:DefaultName>Textbox39</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -3257,13 +3388,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox39</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -3277,6 +3409,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox41">
+                          <rd:DefaultName>Textbox41</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -3284,13 +3417,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox41</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -3304,6 +3438,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox43">
+                          <rd:DefaultName>Textbox43</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -3311,13 +3446,14 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox43</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -3343,6 +3479,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Difficult__Caption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -3374,6 +3511,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Easy__Caption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -3405,6 +3543,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Medium__Caption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -3436,6 +3575,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Normal__Caption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -3467,6 +3607,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Cnt4Per.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!Cnt4PerFormat.Value)</Format>
                                   </Style>
@@ -3500,6 +3641,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Cnt1Per.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!Cnt1PerFormat.Value)</Format>
                                   </Style>
@@ -3533,6 +3675,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Cnt2Per.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!Cnt2PerFormat.Value)</Format>
                                   </Style>
@@ -3566,6 +3709,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Cnt3Per.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!Cnt3PerFormat.Value)</Format>
                                   </Style>
@@ -3598,7 +3742,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3626,7 +3772,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3654,7 +3802,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3682,7 +3832,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3710,7 +3862,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3738,7 +3892,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3766,7 +3922,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3794,7 +3952,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3833,6 +3993,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Difficult_UnitsCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -3864,6 +4025,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Easy_UnitsCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -3895,6 +4057,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Medium_UnitsCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -3926,6 +4089,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Normal_UnitsCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -3956,7 +4120,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -3984,7 +4150,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4013,6 +4181,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Total_UnitsCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -4043,7 +4212,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4071,7 +4242,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4099,7 +4272,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4127,7 +4302,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4155,7 +4332,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4183,7 +4362,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4211,7 +4392,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4239,7 +4422,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4267,7 +4452,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4306,6 +4493,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!DifficultQty.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!DifficultQtyFormat.Value)</Format>
                                   </Style>
@@ -4339,6 +4527,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!EasyQty.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!EasyQtyFormat.Value)</Format>
                                   </Style>
@@ -4372,6 +4561,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!MediumQty.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!MediumQtyFormat.Value)</Format>
                                   </Style>
@@ -4404,7 +4594,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4433,6 +4625,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!NormalQty.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!NormalQtyFormat.Value)</Format>
                                   </Style>
@@ -4465,7 +4658,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4493,7 +4688,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4522,6 +4719,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!Sales_Line__Quantity.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!Sales_Line__Quantity_Control1000000036Format.Value)</Format>
                                   </Style>
@@ -4554,7 +4752,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4582,7 +4782,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4610,7 +4812,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4638,7 +4842,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4666,7 +4872,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4694,7 +4902,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4722,7 +4932,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4750,7 +4962,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4789,6 +5003,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Difficult_ValueCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -4820,6 +5035,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Easy_ValueCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -4851,6 +5067,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Medium_ValueCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -4882,6 +5099,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Normal_ValueCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -4912,7 +5130,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4940,7 +5160,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -4969,6 +5191,7 @@
                                 <TextRun>
                                   <Value>=First(Fields!Total_ValueCaption.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -4999,7 +5222,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5027,7 +5252,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5055,7 +5282,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5083,7 +5312,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5111,7 +5342,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5139,7 +5372,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5167,7 +5402,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5195,7 +5432,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5223,7 +5462,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5262,6 +5503,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!DifficultValue.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!DifficultValueFormat.Value)</Format>
                                   </Style>
@@ -5295,6 +5537,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!EasyValue.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!EasyValueFormat.Value)</Format>
                                   </Style>
@@ -5328,6 +5571,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!MediumValue.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!MediumValueFormat.Value)</Format>
                                   </Style>
@@ -5360,7 +5604,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5389,6 +5635,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!NormalValue.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!NormalValueFormat.Value)</Format>
                                   </Style>
@@ -5421,7 +5668,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5449,7 +5698,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5478,6 +5729,7 @@
                                 <TextRun>
                                   <Value>=Sum(Fields!SalesAmount.Value)</Value>
                                   <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
                                     <FontSize>8pt</FontSize>
                                     <Format>=First(Fields!SalesAmount_Control1000000035Format.Value)</Format>
                                   </Style>
@@ -5510,7 +5762,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5538,7 +5792,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5566,7 +5822,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5594,7 +5852,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5622,7 +5882,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5650,7 +5912,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5678,7 +5942,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5706,7 +5972,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value />
-                                  <Style />
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -5785,6 +6053,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!DifficultCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -5813,6 +6082,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!cnt1.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                 </Style>
                                               </TextRun>
@@ -5842,6 +6112,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!EasyCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -5870,6 +6141,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!cnt2.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                 </Style>
                                               </TextRun>
@@ -5899,6 +6171,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!MediumCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -5927,6 +6200,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!cnt3.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                 </Style>
                                               </TextRun>
@@ -5956,6 +6230,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!NormalCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -5984,6 +6259,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!cnt4.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                 </Style>
                                               </TextRun>
@@ -6013,6 +6289,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Total_LinesCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -6041,6 +6318,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!cnt5.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                 </Style>
                                               </TextRun>
@@ -6068,19 +6346,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox93">
+                                        <rd:DefaultName>Textbox93</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox93</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6094,19 +6374,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox100">
+                                        <rd:DefaultName>Textbox100</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox100</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6120,19 +6402,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox38">
+                                        <rd:DefaultName>Textbox38</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox38</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6146,19 +6430,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox44">
+                                        <rd:DefaultName>Textbox44</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox44</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6172,19 +6458,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox51">
+                                        <rd:DefaultName>Textbox51</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox51</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6198,19 +6486,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox58">
+                                        <rd:DefaultName>Textbox58</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox58</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6224,19 +6514,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox65">
+                                        <rd:DefaultName>Textbox65</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox65</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6250,19 +6542,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox72">
+                                        <rd:DefaultName>Textbox72</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox72</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6276,19 +6570,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox79">
+                                        <rd:DefaultName>Textbox79</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox79</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6302,19 +6598,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox86">
+                                        <rd:DefaultName>Textbox86</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox86</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6340,6 +6638,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Difficult__Caption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -6368,6 +6667,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!Cnt1Per.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!Cnt1PerFormat.Value)</Format>
                                                 </Style>
@@ -6398,6 +6698,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Easy__Caption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -6426,6 +6727,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!Cnt2Per.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!Cnt2PerFormat.Value)</Format>
                                                 </Style>
@@ -6456,6 +6758,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Medium__Caption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -6484,6 +6787,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!Cnt3Per.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!Cnt3PerFormat.Value)</Format>
                                                 </Style>
@@ -6514,6 +6818,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Normal__Caption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -6542,6 +6847,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!Cnt4Per.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!Cnt4PerFormat.Value)</Format>
                                                 </Style>
@@ -6565,19 +6871,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox80">
+                                        <rd:DefaultName>Textbox80</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox80</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6591,19 +6899,21 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox87">
+                                        <rd:DefaultName>Textbox87</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
                                                 <Value />
-                                                <Style />
+                                                <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox87</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6622,6 +6932,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox95">
+                                        <rd:DefaultName>Textbox95</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6634,7 +6945,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox95</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6648,6 +6958,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox102">
+                                        <rd:DefaultName>Textbox102</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6660,7 +6971,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox102</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6674,6 +6984,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox40">
+                                        <rd:DefaultName>Textbox40</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6686,7 +6997,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox40</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6700,6 +7010,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox46">
+                                        <rd:DefaultName>Textbox46</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6712,7 +7023,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox46</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6726,6 +7036,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox53">
+                                        <rd:DefaultName>Textbox53</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6738,7 +7049,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox53</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6752,6 +7062,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox60">
+                                        <rd:DefaultName>Textbox60</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6764,7 +7075,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox60</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6778,6 +7088,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox67">
+                                        <rd:DefaultName>Textbox67</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6790,7 +7101,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox67</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6804,6 +7114,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox74">
+                                        <rd:DefaultName>Textbox74</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6816,7 +7127,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox74</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6830,6 +7140,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox81">
+                                        <rd:DefaultName>Textbox81</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6842,7 +7153,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox81</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6856,6 +7166,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox88">
+                                        <rd:DefaultName>Textbox88</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -6868,7 +7179,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox88</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -6894,6 +7204,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Difficult_UnitsCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -6922,6 +7233,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!DifficultQty.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!DifficultQtyFormat.Value)</Format>
                                                 </Style>
@@ -6952,6 +7264,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Easy_UnitsCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -6980,6 +7293,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!EasyQty.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!EasyQtyFormat.Value)</Format>
                                                 </Style>
@@ -7010,6 +7324,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Medium_UnitsCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -7038,6 +7353,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!MediumQty.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!MediumQtyFormat.Value)</Format>
                                                 </Style>
@@ -7068,6 +7384,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Normal_UnitsCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -7096,6 +7413,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!NormalQty.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!NormalQtyFormat.Value)</Format>
                                                 </Style>
@@ -7126,6 +7444,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Total_UnitsCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -7154,6 +7473,7 @@
                                               <TextRun>
                                                 <Value>=Sum(Fields!Sales_Line__Quantity.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!Sales_Line__Quantity_Control1000000036Format.Value)</Format>
                                                 </Style>
@@ -7182,6 +7502,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox97">
+                                        <rd:DefaultName>Textbox97</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7194,7 +7515,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox97</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7208,6 +7528,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox104">
+                                        <rd:DefaultName>Textbox104</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7220,7 +7541,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox104</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7234,6 +7554,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox42">
+                                        <rd:DefaultName>Textbox42</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7246,7 +7567,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox42</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7260,6 +7580,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox48">
+                                        <rd:DefaultName>Textbox48</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7272,7 +7593,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox48</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7286,6 +7606,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox55">
+                                        <rd:DefaultName>Textbox55</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7298,7 +7619,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox55</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7312,6 +7632,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox62">
+                                        <rd:DefaultName>Textbox62</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7324,7 +7645,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox62</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7338,6 +7658,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox69">
+                                        <rd:DefaultName>Textbox69</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7350,7 +7671,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox69</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7364,6 +7684,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox76">
+                                        <rd:DefaultName>Textbox76</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7376,7 +7697,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox76</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7390,6 +7710,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox83">
+                                        <rd:DefaultName>Textbox83</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7402,7 +7723,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox83</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7416,6 +7736,7 @@
                                   <TablixCell>
                                     <CellContents>
                                       <Textbox Name="Textbox90">
+                                        <rd:DefaultName>Textbox90</rd:DefaultName>
                                         <KeepTogether>true</KeepTogether>
                                         <Paragraphs>
                                           <Paragraph>
@@ -7428,7 +7749,6 @@
                                             <Style />
                                           </Paragraph>
                                         </Paragraphs>
-                                        <rd:DefaultName>Textbox90</rd:DefaultName>
                                         <Style>
                                           <Border />
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -7454,6 +7774,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Difficult_ValueCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -7482,6 +7803,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!DifficultValue.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!DifficultValueFormat.Value)</Format>
                                                 </Style>
@@ -7512,6 +7834,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Easy_ValueCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -7540,6 +7863,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!EasyValue.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!EasyValueFormat.Value)</Format>
                                                 </Style>
@@ -7570,6 +7894,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Medium_ValueCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -7598,6 +7923,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!MediumValue.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!MediumValueFormat.Value)</Format>
                                                 </Style>
@@ -7628,6 +7954,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Normal_ValueCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -7656,6 +7983,7 @@
                                               <TextRun>
                                                 <Value>=Last(Fields!NormalValue.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!NormalValueFormat.Value)</Format>
                                                 </Style>
@@ -7686,6 +8014,7 @@
                                               <TextRun>
                                                 <Value>=First(Fields!Total_ValueCaption.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -7714,6 +8043,7 @@
                                               <TextRun>
                                                 <Value>=Sum(Fields!SalesAmount.Value)</Value>
                                                 <Style>
+                                                  <FontFamily>Segoe UI</FontFamily>
                                                   <FontSize>8pt</FontSize>
                                                   <Format>=First(Fields!SalesAmount_Control1000000035Format.Value)</Format>
                                                 </Style>
@@ -7784,6 +8114,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox21">
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -7797,7 +8128,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox21</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7811,6 +8141,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox22">
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -7824,7 +8155,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox22</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7838,6 +8168,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox23">
+                          <rd:DefaultName>Textbox23</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -7851,7 +8182,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox23</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7865,6 +8195,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox24">
+                          <rd:DefaultName>Textbox24</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -7878,7 +8209,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox24</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7892,6 +8222,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox25">
+                          <rd:DefaultName>Textbox25</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -7905,7 +8236,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox25</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7919,6 +8249,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox26">
+                          <rd:DefaultName>Textbox26</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -7932,7 +8263,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox26</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7946,6 +8276,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox27">
+                          <rd:DefaultName>Textbox27</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -7959,7 +8290,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox27</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -7973,6 +8303,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox28">
+                          <rd:DefaultName>Textbox28</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -7986,7 +8317,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox28</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8000,6 +8330,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox29">
+                          <rd:DefaultName>Textbox29</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8013,7 +8344,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox29</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8027,6 +8357,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox30">
+                          <rd:DefaultName>Textbox30</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8040,7 +8371,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox30</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8059,6 +8389,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox45">
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8072,7 +8403,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8086,6 +8416,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox47">
+                          <rd:DefaultName>Textbox47</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8102,7 +8433,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox47</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>0.075cm</PaddingLeft>
@@ -8116,6 +8446,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox49">
+                          <rd:DefaultName>Textbox49</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8129,7 +8460,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox49</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8143,6 +8473,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox50">
+                          <rd:DefaultName>Textbox50</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8156,7 +8487,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox50</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8170,6 +8500,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox52">
+                          <rd:DefaultName>Textbox52</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8183,7 +8514,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox52</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8197,6 +8527,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox54">
+                          <rd:DefaultName>Textbox54</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8215,7 +8546,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox54</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8229,6 +8559,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox56">
+                          <rd:DefaultName>Textbox56</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8242,7 +8573,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox56</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8256,6 +8586,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox57">
+                          <rd:DefaultName>Textbox57</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8274,7 +8605,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox57</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8288,6 +8618,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox59">
+                          <rd:DefaultName>Textbox59</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8306,7 +8637,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox59</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>0.0005cm</PaddingLeft>
@@ -8320,6 +8650,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox61">
+                          <rd:DefaultName>Textbox61</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8333,7 +8664,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox61</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8347,6 +8677,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox63">
+                          <rd:DefaultName>Textbox63</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8360,7 +8691,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox63</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8374,6 +8704,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox64">
+                          <rd:DefaultName>Textbox64</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8387,7 +8718,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox64</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8401,6 +8731,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox66">
+                          <rd:DefaultName>Textbox66</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8414,7 +8745,6 @@
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox66</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -8428,6 +8758,7 @@
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="Textbox68">
+                          <rd:DefaultName>Textbox68</rd:DefaultName>
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -8446,7 +8777,6 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox68</rd:DefaultName>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>0.0345cm</PaddingLeft>
@@ -8672,6 +9002,7 @@
                     <TextRun>
                       <Value>=ReportItems!Sales_Order_Customer_Item_Wise_ProfitCaption.Value</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -8694,6 +9025,7 @@
                     <TextRun>
                       <Value>=ReportItems!COMPANYNAME.Value</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -8717,6 +9049,7 @@
                     <TextRun>
                       <Value>=ReportItems!CurrReport_PAGENOCaption.Value</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -8741,6 +9074,7 @@
                     <TextRun>
                       <Value>=ReportItems!All_amounts_are_in_LCYCaption.Value</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -8764,6 +9098,7 @@
                     <TextRun>
                       <Value>=User!UserID</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -8790,6 +9125,7 @@
                     <TextRun>
                       <Value>=Globals!PageNumber</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -8816,6 +9152,7 @@
                     <TextRun>
                       <Value>=ReportItems!STRSUBSTNO_Text000_PeriodText_.Value</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -8839,6 +9176,7 @@
                     <TextRun>
                       <Value>=Globals!ExecutionTime</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <Format>g</Format>
                       </Style>
@@ -8865,6 +9203,7 @@
                     <TextRun>
                       <Value>=First(Fields!Customer_TABLECAPTION__________CustFilter.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -8888,6 +9227,7 @@
                     <TextRun>
                       <Value>=First(Fields!Sales_Header__TABLECAPTION__________SalesheaderFilter.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -8911,6 +9251,7 @@
                     <TextRun>
                       <Value>=First(Fields!Cost_Per_UnitCaption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -8938,6 +9279,7 @@
                     <TextRun>
                       <Value>=First(Fields!Price_Per_UnitCaption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -8965,6 +9307,7 @@
                     <TextRun>
                       <Value>=First(Fields!AmountCaption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -8992,6 +9335,7 @@
                     <TextRun>
                       <Value>=First(Fields!Cost_AmountCaption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9019,6 +9363,7 @@
                     <TextRun>
                       <Value>=First(Fields!ProfitCaption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9046,6 +9391,7 @@
                     <TextRun>
                       <Value>=First(Fields!Sales_Base_Price_E_Caption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -9072,6 +9418,7 @@
                     <TextRun>
                       <Value>=First(Fields!Profit__Caption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9099,6 +9446,7 @@
                     <TextRun>
                       <Value>=First(Fields!Wholesales_Price_D_Caption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                       </Style>
                     </TextRun>
@@ -9125,6 +9473,7 @@
                     <TextRun>
                       <Value>=First(Fields!Item_No_Caption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9149,6 +9498,7 @@
                     <TextRun>
                       <Value>=First(Fields!DescriptionCaption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9174,6 +9524,7 @@
                     <TextRun>
                       <Value>=First(Fields!Posting_DateCaption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9201,6 +9552,7 @@
                     <TextRun>
                       <Value>=First(Fields!Order_QuantityCaption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9228,6 +9580,7 @@
                     <TextRun>
                       <Value>=First(Fields!Unit_of_MeasureCaption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9255,6 +9608,7 @@
                     <TextRun>
                       <Value>=First(Fields!Customer_Order_No_Caption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9282,6 +9636,7 @@
                     <TextRun>
                       <Value>=First(Fields!Order_No_Caption.Value, "DataSet_Result")</Value>
                       <Style>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>7pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -9350,8 +9705,6 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>685bcf6d-7254-4665-ba58-ab8b1acf61b9</rd:ReportID>
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
