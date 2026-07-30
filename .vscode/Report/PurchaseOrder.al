@@ -846,7 +846,7 @@ report 60031 "OrderGB"
                 ShipToAddr[2] := "Purchase Header"."Ship-to Name 2";
                 ShipToAddr[3] := "Purchase Header"."Ship-to Address";
                 ShipToAddr[4] := "Purchase Header"."Ship-to Address 2";
-                ShipToAddr[5] := "Purchase Header"."Ship-to City" + '  ' + FORMAT("Purchase Header"."Ship-to Post Code");
+                ShipToAddr[5] := "Purchase Header"."Ship-to City" + '' + FORMAT("Purchase Header"."Ship-to Post Code");
                 ShipToAddr[6] := FORMAT("Purchase Header"."Ship-to County");
                 ShipToAddr[7] := recCountry.Name;
                 COMPRESSARRAY(ShipToAddr);

@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.0.20283.0</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.0.20283.0</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2026-07-30T14:52:39.5585314Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
@@ -52,7 +63,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=
+                                                    <Value>=
 Cstr(Fields!BuyFromAddr1.Value) + Chr(177) + 
 Cstr(Fields!BuyFromAddr2.Value) + Chr(177) + 
 Cstr(Fields!BuyFromAddr3.Value) + Chr(177) + 
@@ -138,7 +149,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=IIF(Code.IsNewPage(),TRUE,FALSE)</Value>
+                                                    <Value>=IIF(Code.IsNewPage(),TRUE,FALSE)</Value>
                                                     <Style>
                                                       <Color>Red</Color>
                                                     </Style>
@@ -203,7 +214,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!HeaderDimensionsCaption.Value</Value>
+                                                    <Value>=Fields!HeaderDimensionsCaption.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -236,7 +247,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!DimText.Value</Value>
+                                                    <Value>=Fields!DimText.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -382,7 +393,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -414,7 +425,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -446,7 +457,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -478,7 +489,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -510,7 +521,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Item Code</Value>
+                                                    <Value>Item Code</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -542,7 +553,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Product Description</Value>
+                                                    <Value>Product Description</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -577,7 +588,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Foreign Name</Value>
+                                                    <Value>Foreign Name</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -612,7 +623,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">ECMA No.</Value>
+                                                    <Value>ECMA No.</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -645,7 +656,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Foreign Pack Size</Value>
+                                                    <Value>Foreign Pack Size</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -680,7 +691,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Quantity_PurchLineCaption.Value</Value>
+                                                    <Value>=Fields!Quantity_PurchLineCaption.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -712,7 +723,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">UOM</Value>
+                                                    <Value>UOM</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -744,7 +755,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Unit Price</Value>
+                                                    <Value>Unit Price</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -776,7 +787,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">VAT Amount</Value>
+                                                    <Value>VAT Amount</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -806,7 +817,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!AmountCaption.Value</Value>
+                                                    <Value>=Fields!AmountCaption.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -837,7 +848,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -868,7 +879,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -899,7 +910,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -930,7 +941,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -961,7 +972,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -997,7 +1008,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1028,7 +1039,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1059,7 +1070,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1090,7 +1101,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1120,7 +1131,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1163,7 +1174,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1194,7 +1205,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1225,7 +1236,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1256,7 +1267,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1287,7 +1298,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1323,7 +1334,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1360,7 +1371,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1397,7 +1408,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1434,7 +1445,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1471,7 +1482,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1519,7 +1530,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1553,7 +1564,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1587,7 +1598,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1621,7 +1632,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1655,7 +1666,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -1694,11 +1705,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1724,11 +1735,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1754,11 +1765,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1784,11 +1795,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1813,11 +1824,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1843,11 +1854,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Description_PurchLine.Value</Value>
+                                                    <Value>=Fields!Description_PurchLine.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1881,11 +1892,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1916,11 +1927,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1947,11 +1958,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -1978,11 +1989,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2009,11 +2020,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2040,11 +2051,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2076,11 +2087,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=RunningValue(Fields!TotalInclVATText.Value,Last,"Table1")</Value>
+                                                    <Value>=RunningValue(Fields!TotalInclVATText.Value,Last,"Table1")</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2112,11 +2123,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=RunningValue(Fields!VATAmountLineVATAmtText.Value,Last,"Table1")</Value>
+                                                    <Value>=RunningValue(Fields!VATAmountLineVATAmtText.Value,Last,"Table1")</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2148,11 +2159,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=RunningValue(Fields!ShipToAddr1.Value,Last,"Table1")</Value>
+                                                    <Value>=RunningValue(Fields!ShipToAddr1.Value,Last,"Table1")</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2184,11 +2195,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=RunningValue(Fields!TotalText.Value,Last,"Table1")</Value>
+                                                    <Value>=RunningValue(Fields!TotalText.Value,Last,"Table1")</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2220,11 +2231,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!No_PurchLine.Value</Value>
+                                                    <Value>=Fields!No_PurchLine.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2251,11 +2262,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Description_PurchLine.Value</Value>
+                                                    <Value>=Fields!Description_PurchLine.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2285,11 +2296,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!ForeignName_PurchLine.Value</Value>
+                                                    <Value>=Fields!ForeignName_PurchLine.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2321,11 +2332,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!ECMANo_PurchLine.Value</Value>
+                                                    <Value>=Fields!ECMANo_PurchLine.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2355,11 +2366,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!ForeignPackSize.Value</Value>
+                                                    <Value>=Fields!ForeignPackSize.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2391,11 +2402,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Quantity_PurchLine.Value</Value>
+                                                    <Value>=Fields!Quantity_PurchLine.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Format>=Fields!Quantity_PurchLineFormat.Value</Format>
                                                     </Style>
                                                   </TextRun>
@@ -2429,11 +2440,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!UnitofMeasure_PurchLine.Value</Value>
+                                                    <Value>=Fields!UnitofMeasure_PurchLine.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2462,11 +2473,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Code.BlankZero(Fields!DirectUnitCost_PurchLine.Value)</Value>
+                                                    <Value>=Code.BlankZero(Fields!DirectUnitCost_PurchLine.Value)</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Format>=Fields!DirectUnitCost_PurchLineFormat.Value</Format>
                                                     </Style>
                                                   </TextRun>
@@ -2496,12 +2507,12 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!VATAmount_PurchLine.Value
+                                                    <Value>=Fields!VATAmount_PurchLine.Value
 'Fields!VATAmount.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2529,11 +2540,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!PurchLineLineAmount.Value</Value>
+                                                    <Value>=Fields!PurchLineLineAmount.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Format>=Fields!LineAmount_PurchLineFormat.Value</Format>
                                                     </Style>
                                                   </TextRun>
@@ -2566,11 +2577,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=RunningValue(Fields!LineAmount_PurchLine.Value,sum,"Table1")</Value>
+                                                    <Value>=RunningValue(Fields!LineAmount_PurchLine.Value,sum,"Table1")</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2602,11 +2613,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=RunningValue(Fields!InvDiscAmount_PurchLine.Value,sum,"Table1")</Value>
+                                                    <Value>=RunningValue(Fields!InvDiscAmount_PurchLine.Value,sum,"Table1")</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2638,11 +2649,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=RunningValue(Fields!TotalLineAmount.Value,Last,"Table1")-RunningValue(Fields!TotalInvoiceDiscAmount.Value,Last,"Table1")</Value>
+                                                    <Value>=RunningValue(Fields!TotalLineAmount.Value,Last,"Table1")-RunningValue(Fields!TotalInvoiceDiscAmount.Value,Last,"Table1")</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2674,11 +2685,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=RunningValue(Fields!VATAmount.Value,Last,"Table1")</Value>
+                                                    <Value>=RunningValue(Fields!VATAmount.Value,Last,"Table1")</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2710,11 +2721,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=(RunningValue(Fields!TotalLineAmount.Value,Last,"Table1")-RunningValue(Fields!TotalInvoiceDiscAmount.Value,Last,"Table1"))+RunningValue(Fields!VATAmount.Value,Last,"Table1")</Value>
+                                                    <Value>=(RunningValue(Fields!TotalLineAmount.Value,Last,"Table1")-RunningValue(Fields!TotalInvoiceDiscAmount.Value,Last,"Table1"))+RunningValue(Fields!VATAmount.Value,Last,"Table1")</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2751,11 +2762,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2781,11 +2792,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2811,11 +2822,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2841,11 +2852,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2870,11 +2881,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!LineDimensionsCaption.Value</Value>
+                                                    <Value>=Fields!LineDimensionsCaption.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2902,11 +2913,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!DimText1.Value</Value>
+                                                    <Value>=Fields!DimText1.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -2942,11 +2953,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -2978,11 +2989,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -3011,11 +3022,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -3044,11 +3055,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -3077,11 +3088,11 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
-                                                      <FontFamily>Helvetica Neue</FontFamily>
-                                                      <FontSize>7pt</FontSize>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
                                                       <Color>Red</Color>
                                                     </Style>
                                                   </TextRun>
@@ -3115,7 +3126,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3145,7 +3156,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3175,7 +3186,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3205,7 +3216,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3234,7 +3245,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3270,7 +3281,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3307,7 +3318,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3338,7 +3349,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3369,7 +3380,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3400,7 +3411,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3431,7 +3442,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
@@ -3620,7 +3631,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">POR No.</Value>
+                      <Value>POR No.</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -3646,10 +3657,10 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(8,1)</Value>
+                      <Value>=Code.GetData(8,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -3676,10 +3687,10 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(64,1)'Code.GetData(7,1)</Value>
+                      <Value>=Code.GetData(64,1)'Code.GetData(7,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -3703,10 +3714,10 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(63,1)'Code.GetData(6,1)</Value>
+                      <Value>=Code.GetData(63,1)'Code.GetData(6,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -3730,10 +3741,10 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(62,1)'Code.GetData(5,1)</Value>
+                      <Value>=Code.GetData(62,1)'Code.GetData(5,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -3757,10 +3768,10 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(61,1)'Code.GetData(4,1)</Value>
+                      <Value>=Code.GetData(61,1)'Code.GetData(4,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -3784,10 +3795,10 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(60,1)'Code.GetData(3,1)</Value>
+                      <Value>=Code.GetData(60,1)'Code.GetData(3,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -3811,10 +3822,10 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(59,1)'Code.GetData(2,1)</Value>
+                      <Value>=Code.GetData(59,1)'Code.GetData(2,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -3841,10 +3852,10 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(58,1)'Code.GetData(1,1)</Value>
+                      <Value>=Code.GetData(58,1)'Code.GetData(1,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -3867,7 +3878,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">="Purchase Order"
+                      <Value>="Purchase Order"
 'Code.GetData(37,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
@@ -3898,7 +3909,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto" />
+                      <Value />
                       <Style>
                         <Color>#ff0000</Color>
                       </Style>
@@ -3949,7 +3960,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=iif(First(Fields!CompanyName.Value, "DataSet_Result")="Chemilines Limited","International Distributors of Pharmaceuticals and perfumery",
+                      <Value>=iif(First(Fields!CompanyName.Value, "DataSet_Result")="Chemilines Limited","International Distributors of Pharmaceuticals and perfumery",
 iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus International Limited","",
 "International Distributors of Pharmaceuticals and perfumery"))   'In blank place "MANUFACTURER OF DRESSING AND MEDICAL DEVICES"</Value>
                       <Style>
@@ -3983,7 +3994,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=First(Fields!CompanyAddr2.Value, "DataSet_Result") + ", " + First(Fields!CompanyAddr3.Value, "DataSet_Result") + ", " + First(Fields!CompanyAddr4.Value, "DataSet_Result") + ", "+ First(Fields!CompanyAddr5.Value, "DataSet_Result") + " " + First(Fields!CompanyAddr6.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!CompanyAddr2.Value, "DataSet_Result") + ", " + First(Fields!CompanyAddr3.Value, "DataSet_Result") + ", " + First(Fields!CompanyAddr4.Value, "DataSet_Result") + ", "+ First(Fields!CompanyAddr5.Value, "DataSet_Result") + " " + First(Fields!CompanyAddr6.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4015,9 +4026,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(45,1)</Value>
+                      <Value>=Code.GetData(45,1)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4044,9 +4055,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Fax No.</Value>
+                      <Value>Fax No.</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4077,10 +4088,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">="E-mail:"
+                      <Value>="E-mail:"
 'Code.GetData(48,1)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4107,9 +4118,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Website :</Value>
+                      <Value>Website :</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4136,9 +4147,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(15,1)</Value>
+                      <Value>=Code.GetData(15,1)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4165,9 +4176,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">supplychain@medicareplus.co.uk</Value>
+                      <Value>supplychain@medicareplus.co.uk</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4194,9 +4205,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=First(Fields!CompanyInfoFaxNo.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!CompanyInfoFaxNo.Value, "DataSet_Result")</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4227,9 +4238,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(31,1)</Value>
+                      <Value>=Code.GetData(31,1)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4256,7 +4267,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Order To:</Value>
+                      <Value>Order To:</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -4284,7 +4295,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Payment term</Value>
+                      <Value>Payment term</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -4312,7 +4323,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Date</Value>
+                      <Value>Date</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -4340,7 +4351,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Quotation No.</Value>
+                      <Value>Quotation No.</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -4368,7 +4379,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">A/C No.</Value>
+                      <Value>A/C No.</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -4396,7 +4407,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Your Reference</Value>
+                      <Value>Your Reference</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -4424,9 +4435,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Contact:</Value>
+                      <Value>Contact:</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -4454,9 +4465,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Tel:</Value>
+                      <Value>Tel:</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -4484,9 +4495,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Fax:</Value>
+                      <Value>Fax:</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
@@ -4514,10 +4525,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=First(Fields!BuyfromContact_PurchaseHeader.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!BuyfromContact_PurchaseHeader.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4545,10 +4556,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=First(Fields!VendorTel.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!VendorTel.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4576,10 +4587,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=First(Fields!VendorFax.Value, "DataSet_Result")</Value>
+                      <Value>=First(Fields!VendorFax.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4607,10 +4618,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(29,1)</Value>
+                      <Value>=Code.GetData(29,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4636,11 +4647,11 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(21,1)
+                      <Value>=Code.GetData(21,1)
 'First(Fields!PostingDate_PurchaseHeader.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                         <Format>dd/MM/yy</Format>
                       </Style>
@@ -4672,11 +4683,11 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(56,1)
+                      <Value>=Code.GetData(56,1)
 'First(Fields!Expected_Rcpt_Date.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                         <Format>dd/MM/yy</Format>
                       </Style>
@@ -4703,11 +4714,11 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(55,1)
+                      <Value>=Code.GetData(55,1)
 'First(Fields!BuyfromVendorNo_PurchaseHeader.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4733,11 +4744,11 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(28,1)
+                      <Value>=Code.GetData(28,1)
 'First(Fields!VendorInvoiceNo_PurchaseHeader.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4763,11 +4774,11 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetGroupPageNumber(ReportItems!NewPage.Value,Globals!PageNumber)
+                      <Value>=Code.GetGroupPageNumber(ReportItems!NewPage.Value,Globals!PageNumber)
 'First(Fields!VendorInvoiceNo_PurchaseHeader.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4793,7 +4804,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Page</Value>
+                      <Value>Page</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -4821,10 +4832,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(57,1)</Value>
+                      <Value>=Code.GetData(57,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4873,7 +4884,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">TA Reference</Value>
+                      <Value>TA Reference</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
@@ -4901,10 +4912,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Fields!Technicalagreement_PurchaseHeader.Value</Value>
+                      <Value>=Fields!Technicalagreement_PurchaseHeader.Value</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
-                        <FontFamily>Helvetica Neue</FontFamily>
+                        <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
                       </Style>
                     </TextRun>
@@ -4937,7 +4948,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Originator </Value>
+                      <Value>Originator </Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -4969,7 +4980,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Head of Dept.</Value>
+                      <Value>Head of Dept.</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -5002,7 +5013,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Snr.Management</Value>
+                      <Value>Snr.Management</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -5035,7 +5046,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Special Instruction</Value>
+                      <Value>Special Instruction</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>11pt</FontSize>
@@ -5068,10 +5079,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Last(ReportItems!Textbox19.Value)</Value>
+                      <Value>=Last(ReportItems!Textbox19.Value)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <Format>="##,##0.00"</Format>
                       </Style>
@@ -5102,10 +5113,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Last(ReportItems!Textbox22.Value)</Value>
+                      <Value>=Last(ReportItems!Textbox22.Value)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <Format>="##,##0.00"</Format>
                       </Style>
@@ -5136,10 +5147,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Last(ReportItems!Textbox46.Value)</Value>
+                      <Value>=Last(ReportItems!Textbox46.Value)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <Format>="##,##0.00"</Format>
                       </Style>
@@ -5170,10 +5181,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Last(ReportItems!Textbox57.Value)</Value>
+                      <Value>=Last(ReportItems!Textbox57.Value)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <Format>="##,##0.00"</Format>
                       </Style>
@@ -5204,10 +5215,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Last(ReportItems!Textbox59.Value)</Value>
+                      <Value>=Last(ReportItems!Textbox59.Value)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                         <Format>="##,##0.00"</Format>
                       </Style>
@@ -5238,10 +5249,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Subtotal</Value>
+                      <Value>Subtotal</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -5271,10 +5282,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Discount</Value>
+                      <Value>Discount</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -5304,10 +5315,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Last(ReportItems!Textbox82.Value)</Value>
+                      <Value>=Last(ReportItems!Textbox82.Value)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -5337,10 +5348,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Last(ReportItems!Textbox61.Value)</Value>
+                      <Value>=Last(ReportItems!Textbox61.Value)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -5370,10 +5381,10 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Last(ReportItems!Textbox68.Value)</Value>
+                      <Value>=Last(ReportItems!Textbox68.Value)</Value>
                       <Style>
-                        <FontFamily>Helvetica Neue</FontFamily>
-                        <FontSize>7pt</FontSize>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -5403,7 +5414,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">1. All Purchase orders shall remain valid unless cancelled or amended mutually by both parties.
+                      <Value>1. All Purchase orders shall remain valid unless cancelled or amended mutually by both parties.
 2. All deliveries must be accompanied by a delivery note with the Purchase order number referenced.
 3. All goods shall confirm to the approved Technical Agreement and specifications (FPS and PLS).
 4. Deliveries must be pre-booked with our warehouse at least 48hrs in advance of arrival.
