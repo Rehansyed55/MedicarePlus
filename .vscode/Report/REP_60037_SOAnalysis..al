@@ -4,7 +4,7 @@ report 60037 "Sales Order Line Wise"
     RDLCLayout = 'SalesOrderLineWise.rdl';
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = all;
-    Caption = 'Sales Order Analysis';
+    Caption = 'Sales Profit Analysis';
 
     dataset
     {
