@@ -31,6 +31,9 @@ report 60031 "OrderGB"
             column(YourReference_PurchaseHeader; "Purchase Header"."Your Reference")
             {
             }
+            column(Technicalagreement_PurchaseHeader; "Purchase Header"."Technical Agreement No.")
+            {
+            }
             column(VendorInvoiceNo_PurchaseHeader; "Purchase Header"."Vendor Invoice No.")
             {
             }
