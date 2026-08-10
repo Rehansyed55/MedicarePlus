@@ -31,22 +31,22 @@ report 60038 "Posted Picking List"
             column(WMSMgt; "Posted Invt. Pick Header"."Destination Type")
             {
             }
-            column(ShipToCode; shiptocode)
+            column(ShipToCode; "Posted Invt. Pick Header"."Ship-to code")
             {
             }
-            column(ShipToNAme; Shiptoname)
+            column(ShipToNAme; "Posted Invt. Pick Header"."Ship-to Name")
             {
             }
-            column(shiptoaddress; shiptoaddress)
+            column(shiptoaddress; "Posted Invt. Pick Header"."Ship-to Address")
             {
             }
-            column(Shiptoaddress2; Shiptoaddress2)
+            column(Shiptoaddress2; "Posted Invt. Pick Header"."Ship-to Address 2")
             {
             }
-            column(shiptocity; shiptocity)
+            column(shiptocity; "Posted Invt. Pick Header"."Ship-to City")
             {
             }
-            column(ShiptoPostcode; ShiptoPostcode)
+            column(ShiptoPostcode; "Posted Invt. Pick Header"."Ship-to Post Code")
             {
             }
             column(AssignUserid; "Posted Invt. Pick Header"."Assigned User ID")

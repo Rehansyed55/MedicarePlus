@@ -16,6 +16,12 @@
       "name": "MedicarePlus_Customization",
       "publisher": "Default Publisher",
       "version": "1.0.0.0"
+    },
+     {
+      "id": "5602a8b3-2c2f-40c6-865b-4250c316f125",
+      "name": "Aptean Equipment DMS Base",
+      "publisher": "TRASER Software GmbH",
+      "version": "2603.260500.20260630.2"
     }
   ],
   "screenshots": [],

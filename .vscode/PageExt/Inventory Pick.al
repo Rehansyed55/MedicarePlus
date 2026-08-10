@@ -19,7 +19,7 @@ pageextension 60032 InventoryPick extends "Inventory Pick"
             field("Requested Delivery Date"; Rec."Requested Delivery Date")
             {
                 ApplicationArea = All;
-                Editable = false;
+                // Editable = false; 
             }
 
             field("Promised Delivery Date"; Rec."Promised Delivery Date")
@@ -29,6 +29,72 @@ pageextension 60032 InventoryPick extends "Inventory Pick"
             field("Ship-to code"; Rec."Ship-to code")
             {
                 ApplicationArea = All;
+            }
+        }
+        modify("TSRD Address Group")
+        {
+            Visible = false;
+        }
+        modify("TSRD Shipping")
+        {
+            Visible = false;
+        }
+        addlast(Content)
+        {
+            group(Shipping)
+            {
+                Caption = 'Shipping';
+
+                group("Ship To Address")
+                {
+                    field("Ship-to Name"; Rec."Ship-to Name")
+                    {
+                        ApplicationArea = All;
+                        Editable = false;
+                    }
+                    field("Ship-to Address"; Rec."Ship-to Address")
+                    {
+                        ApplicationArea = All;
+                        Editable = false;
+                    }
+                    field("Ship-to Address 2"; Rec."Ship-to Address 2")
+                    {
+                        ApplicationArea = All;
+                        Editable = false;
+                    }
+                    field("Ship-to City"; Rec."Ship-to City")
+                    {
+                        ApplicationArea = All;
+                        Editable = false;
+                    }
+                    field("Ship-to Post Code"; Rec."Ship-to Post Code")
+                    {
+                        ApplicationArea = All;
+                        Editable = false;
+                    }
+                    field("Ship-to Country/Region Code"; Rec."Ship-to Country/Region Code")
+                    {
+                        ApplicationArea = All;
+                        Editable = false;
+                    }
+
+                }
+                group("Shippings Method")
+                {
+                    Caption = 'Shipping Method';
+                    field("Shipping Agent Code"; rec."Shipping Agent Code")
+                    {
+                        ApplicationArea = All;
+                        Editable = false;
+
+                    }
+                    field("Shipping Agent Service Code"; rec."Shipping Agent Service Code")
+                    {
+                        ApplicationArea = All;
+                        Editable = false;
+
+                    }
+                }
             }
         }
     }
