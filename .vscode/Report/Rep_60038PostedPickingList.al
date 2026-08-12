@@ -9,7 +9,6 @@ report 60038 "Posted Picking List"
     {
         dataitem("Posted Invt. Pick Header"; "Posted Invt. Pick Header")
         {
-            //  CalcFields = "Shipping Method", "Requested Delivery Date", "Promised Delivery Date", "Ship-to code";
             DataItemTableView = SORTING("No.");
             RequestFilterFields = "No.", "No. Printed";
             column(No_WhseActivHeader; "No.")

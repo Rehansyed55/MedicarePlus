@@ -9,9 +9,6 @@ report 60033 "Picking List New"
     {
         dataitem("Warehouse Activity Header"; "Warehouse Activity Header")
         {
-            //CalcFields = "Requested Delivery Date";
-            CalcFields = "Shipping Method", "Requested Delivery Date", "Promised Delivery Date", "Ship-to code";
-
             DataItemTableView = SORTING(Type, "No.")
                                 WHERE(Type = FILTER(Pick | "Invt. Pick"));
 

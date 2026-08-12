@@ -14,20 +14,23 @@ pageextension 60032 InventoryPick extends "Inventory Pick"
             field("Shipping Method"; Rec."Shipping Method")
             {
                 ApplicationArea = All;
+                Editable = false;
             }
 
             field("Requested Delivery Date"; Rec."Requested Delivery Date")
             {
                 ApplicationArea = All;
-                // Editable = false; 
+                Editable = false;
             }
 
             field("Promised Delivery Date"; Rec."Promised Delivery Date")
             {
+                Editable = false;
                 ApplicationArea = All;
             }
             field("Ship-to code"; Rec."Ship-to code")
             {
+                Editable = false;
                 ApplicationArea = All;
             }
         }
