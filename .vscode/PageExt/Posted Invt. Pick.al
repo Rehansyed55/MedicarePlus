@@ -82,10 +82,10 @@ pageextension 60033 "Posted Invt. Pick" extends "Posted Invt. Pick"
     {
         addlast(Reporting)
         {
-            action(PickingList)
+            action("Packing List")
             {
                 ApplicationArea = All;
-                Caption = 'PickingList';
+                Caption = 'Packing List';
                 Image = Print;
                 Promoted = true;
                 PromotedCategory = Report;
@@ -96,7 +96,7 @@ pageextension 60033 "Posted Invt. Pick" extends "Posted Invt. Pick"
                 begin
                     PIV.Copy(Rec);
                     PIV.SetRecFilter();
-                    Report.RunModal(Report::"Posted Picking List", true, true, PIV);
+                    Report.RunModal(Report::"Packing List new", true, true, PIV);
                 end;
             }
         }

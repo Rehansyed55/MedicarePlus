@@ -8637,6 +8637,9 @@ End Function</Code>
         <Field Name="YourReference_PurchaseHeader">
           <DataField>YourReference_PurchaseHeader</DataField>
         </Field>
+        <Field Name="Technicalagreement_PurchaseHeader">
+          <DataField>Technicalagreement_PurchaseHeader</DataField>
+        </Field>
         <Field Name="VendorInvoiceNo_PurchaseHeader">
           <DataField>VendorInvoiceNo_PurchaseHeader</DataField>
         </Field>

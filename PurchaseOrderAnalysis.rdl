@@ -24,328 +24,6 @@
       <rd:DataSourceID>63c74e25-8abb-45f8-802b-c3dd0625566e</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="COMPANYNAME">
-          <DataField>COMPANYNAME</DataField>
-        </Field>
-        <Field Name="STRSUBSTNO_Text000_PeriodText_">
-          <DataField>STRSUBSTNO_Text000_PeriodText_</DataField>
-        </Field>
-        <Field Name="FORMAT_TODAY_0_4_">
-          <DataField>FORMAT_TODAY_0_4_</DataField>
-        </Field>
-        <Field Name="USERID">
-          <DataField>USERID</DataField>
-        </Field>
-        <Field Name="CurrReport_PAGENO">
-          <DataField>CurrReport_PAGENO</DataField>
-        </Field>
-        <Field Name="Vendor_TABLECAPTION__________VendorFilter">
-          <DataField>Vendor_TABLECAPTION__________VendorFilter</DataField>
-        </Field>
-        <Field Name="Purchase_Header__TABLECAPTION__________PurchaseHeaderFilter">
-          <DataField>Purchase_Header__TABLECAPTION__________PurchaseHeaderFilter</DataField>
-        </Field>
-        <Field Name="Vendor_Vendor_Name">
-          <DataField>Vendor_Vendor_Name</DataField>
-        </Field>
-        <Field Name="Vendor_Vendor__No__">
-          <DataField>Vendor_Vendor__No__</DataField>
-        </Field>
-        <Field Name="Vendor__Balance__LCY__">
-          <DataField>Vendor__Balance__LCY__</DataField>
-        </Field>
-        <Field Name="Vendor__Balance__LCY__Format">
-          <DataField>Vendor__Balance__LCY__Format</DataField>
-        </Field>
-        <Field Name="PurchasePrice">
-          <DataField>PurchasePrice</DataField>
-        </Field>
-        <Field Name="PurchasePriceFormat">
-          <DataField>PurchasePriceFormat</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Quantity">
-          <DataField>Purchase_Line__Quantity</DataField>
-        </Field>
-        <Field Name="Purchase_Line__QuantityFormat">
-          <DataField>Purchase_Line__QuantityFormat</DataField>
-        </Field>
-        <Field Name="PurchasePrice1">
-          <DataField>PurchasePrice1</DataField>
-        </Field>
-        <Field Name="PurchasePrice1Format">
-          <DataField>PurchasePrice1Format</DataField>
-        </Field>
-        <Field Name="Profit">
-          <DataField>Profit</DataField>
-        </Field>
-        <Field Name="ProfitFormat">
-          <DataField>ProfitFormat</DataField>
-        </Field>
-        <Field Name="ProfitPercent">
-          <DataField>ProfitPercent</DataField>
-        </Field>
-        <Field Name="ProfitPercentFormat">
-          <DataField>ProfitPercentFormat</DataField>
-        </Field>
-        <Field Name="LowestSalesPriceProfitPer">
-          <DataField>LowestSalesPriceProfitPer</DataField>
-        </Field>
-        <Field Name="LowestSalesPriceProfitPerFormat">
-          <DataField>LowestSalesPriceProfitPerFormat</DataField>
-        </Field>
-        <Field Name="All_amounts_are_in_LCYCaption">
-          <DataField>All_amounts_are_in_LCYCaption</DataField>
-        </Field>
-        <Field Name="Purchase_Order_Vendor_Item_Wise_ProfitCaption">
-          <DataField>Purchase_Order_Vendor_Item_Wise_ProfitCaption</DataField>
-        </Field>
-        <Field Name="CurrReport_PAGENOCaption">
-          <DataField>CurrReport_PAGENOCaption</DataField>
-        </Field>
-        <Field Name="Item_No_Caption">
-          <DataField>Item_No_Caption</DataField>
-        </Field>
-        <Field Name="DescriptionCaption">
-          <DataField>DescriptionCaption</DataField>
-        </Field>
-        <Field Name="Order_No_Caption">
-          <DataField>Order_No_Caption</DataField>
-        </Field>
-        <Field Name="Order_QuantityCaption">
-          <DataField>Order_QuantityCaption</DataField>
-        </Field>
-        <Field Name="Total_Purchase_AmountCaption">
-          <DataField>Total_Purchase_AmountCaption</DataField>
-        </Field>
-        <Field Name="Cost_Per_UnitCaption">
-          <DataField>Cost_Per_UnitCaption</DataField>
-        </Field>
-        <Field Name="Av__Sales_Price__STG_Caption">
-          <DataField>Av__Sales_Price__STG_Caption</DataField>
-        </Field>
-        <Field Name="Line_Amount__STG_Caption">
-          <DataField>Line_Amount__STG_Caption</DataField>
-        </Field>
-        <Field Name="Average_Sales_Price_Profit__STG__Caption">
-          <DataField>Average_Sales_Price_Profit__STG__Caption</DataField>
-        </Field>
-        <Field Name="Unit_Cost__STG_Caption">
-          <DataField>Unit_Cost__STG_Caption</DataField>
-        </Field>
-        <Field Name="Wholesale_PriceCaption">
-          <DataField>Wholesale_PriceCaption</DataField>
-        </Field>
-        <Field Name="Base_PriceCaption">
-          <DataField>Base_PriceCaption</DataField>
-        </Field>
-        <Field Name="C_D__PriceCaption">
-          <DataField>C_D__PriceCaption</DataField>
-        </Field>
-        <Field Name="Lowest_Sales_PriceCaption">
-          <DataField>Lowest_Sales_PriceCaption</DataField>
-        </Field>
-        <Field Name="Average__Sales_Price_Profit___Caption">
-          <DataField>Average__Sales_Price_Profit___Caption</DataField>
-        </Field>
-        <Field Name="Lowest__Sales_Price_Profit___Caption">
-          <DataField>Lowest__Sales_Price_Profit___Caption</DataField>
-        </Field>
-        <Field Name="Vendor__Balance__LCY__Caption">
-          <DataField>Vendor__Balance__LCY__Caption</DataField>
-        </Field>
-        <Field Name="Order_No_Caption_Control1000000010">
-          <DataField>Order_No_Caption_Control1000000010</DataField>
-        </Field>
-        <Field Name="Purchase_Order_No_______Purchase_Header___No__">
-          <DataField>Purchase_Order_No_______Purchase_Header___No__</DataField>
-        </Field>
-        <Field Name="Purchase_Header__Order_Date_">
-          <DataField>Purchase_Header__Order_Date_</DataField>
-        </Field>
-        <Field Name="Purchase_Header__Purchase_Header___Currency_Code_">
-          <DataField>Purchase_Header__Purchase_Header___Currency_Code_</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Quantity_Control1000000038">
-          <DataField>Purchase_Line__Quantity_Control1000000038</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Quantity_Control1000000038Format">
-          <DataField>Purchase_Line__Quantity_Control1000000038Format</DataField>
-        </Field>
-        <Field Name="PurchasePrice_Control1000000027">
-          <DataField>PurchasePrice_Control1000000027</DataField>
-        </Field>
-        <Field Name="PurchasePrice_Control1000000027Format">
-          <DataField>PurchasePrice_Control1000000027Format</DataField>
-        </Field>
-        <Field Name="PurchasePrice1_Control1000000035">
-          <DataField>PurchasePrice1_Control1000000035</DataField>
-        </Field>
-        <Field Name="PurchasePrice1_Control1000000035Format">
-          <DataField>PurchasePrice1_Control1000000035Format</DataField>
-        </Field>
-        <Field Name="Profit_Control1000000047">
-          <DataField>Profit_Control1000000047</DataField>
-        </Field>
-        <Field Name="Profit_Control1000000047Format">
-          <DataField>Profit_Control1000000047Format</DataField>
-        </Field>
-        <Field Name="ProfitPercent_Control1000000052">
-          <DataField>ProfitPercent_Control1000000052</DataField>
-        </Field>
-        <Field Name="ProfitPercent_Control1000000052Format">
-          <DataField>ProfitPercent_Control1000000052Format</DataField>
-        </Field>
-        <Field Name="LowestSalesPriceProfitPer_Control1000000067">
-          <DataField>LowestSalesPriceProfitPer_Control1000000067</DataField>
-        </Field>
-        <Field Name="LowestSalesPriceProfitPer_Control1000000067Format">
-          <DataField>LowestSalesPriceProfitPer_Control1000000067Format</DataField>
-        </Field>
-        <Field Name="Purchase_Header__Order_Date_Caption">
-          <DataField>Purchase_Header__Order_Date_Caption</DataField>
-        </Field>
-        <Field Name="Currency_of_OrderCaption">
-          <DataField>Currency_of_OrderCaption</DataField>
-        </Field>
-        <Field Name="Order_No_Caption_Control1000000006">
-          <DataField>Order_No_Caption_Control1000000006</DataField>
-        </Field>
-        <Field Name="Purchase_Header_Document_Type">
-          <DataField>Purchase_Header_Document_Type</DataField>
-        </Field>
-        <Field Name="Purchase_Header_No_">
-          <DataField>Purchase_Header_No_</DataField>
-        </Field>
-        <Field Name="Purchase_Header_Buy_from_Vendor_No_">
-          <DataField>Purchase_Header_Buy_from_Vendor_No_</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Purchase_Line___No__">
-          <DataField>Purchase_Line__Purchase_Line___No__</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Description__Purchase_Line___Description_2_">
-          <DataField>Purchase_Line__Description__Purchase_Line___Description_2_</DataField>
-        </Field>
-        <Field Name="Purchase_Header___Posting_Date_">
-          <DataField>Purchase_Header___Posting_Date_</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Purchase_Line___Document_No__">
-          <DataField>Purchase_Line__Purchase_Line___Document_No__</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Purchase_Line__Quantity">
-          <DataField>Purchase_Line__Purchase_Line__Quantity</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Purchase_Line__QuantityFormat">
-          <DataField>Purchase_Line__Purchase_Line__QuantityFormat</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Purchase_Line___Unit_of_Measure_Code_">
-          <DataField>Purchase_Line__Purchase_Line___Unit_of_Measure_Code_</DataField>
-        </Field>
-        <Field Name="PurchasePrice_Control1000000031">
-          <DataField>PurchasePrice_Control1000000031</DataField>
-        </Field>
-        <Field Name="PurchasePrice_Control1000000031Format">
-          <DataField>PurchasePrice_Control1000000031Format</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Purchase_Line___Direct_Unit_Cost_">
-          <DataField>Purchase_Line__Purchase_Line___Direct_Unit_Cost_</DataField>
-        </Field>
-        <Field Name="Purchase_Line__Purchase_Line___Direct_Unit_Cost_Format">
-          <DataField>Purchase_Line__Purchase_Line___Direct_Unit_Cost_Format</DataField>
-        </Field>
-        <Field Name="ProfitPercent_Control1000000037">
-          <DataField>ProfitPercent_Control1000000037</DataField>
-        </Field>
-        <Field Name="ProfitPercent_Control1000000037Format">
-          <DataField>ProfitPercent_Control1000000037Format</DataField>
-        </Field>
-        <Field Name="Profit_Control1000000044">
-          <DataField>Profit_Control1000000044</DataField>
-        </Field>
-        <Field Name="Profit_Control1000000044Format">
-          <DataField>Profit_Control1000000044Format</DataField>
-        </Field>
-        <Field Name="AvgSalesPrice">
-          <DataField>AvgSalesPrice</DataField>
-        </Field>
-        <Field Name="AvgSalesPriceFormat">
-          <DataField>AvgSalesPriceFormat</DataField>
-        </Field>
-        <Field Name="CostPerUnitSTG">
-          <DataField>CostPerUnitSTG</DataField>
-        </Field>
-        <Field Name="CostPerUnitSTGFormat">
-          <DataField>CostPerUnitSTGFormat</DataField>
-        </Field>
-        <Field Name="PriceD">
-          <DataField>PriceD</DataField>
-        </Field>
-        <Field Name="PriceDFormat">
-          <DataField>PriceDFormat</DataField>
-        </Field>
-        <Field Name="PriceE">
-          <DataField>PriceE</DataField>
-        </Field>
-        <Field Name="PriceEFormat">
-          <DataField>PriceEFormat</DataField>
-        </Field>
-        <Field Name="PriceA">
-          <DataField>PriceA</DataField>
-        </Field>
-        <Field Name="PriceAFormat">
-          <DataField>PriceAFormat</DataField>
-        </Field>
-        <Field Name="LowestSalesPrice_">
-          <DataField>LowestSalesPrice_</DataField>
-        </Field>
-        <Field Name="LowestSalesPrice_Format">
-          <DataField>LowestSalesPrice_Format</DataField>
-        </Field>
-        <Field Name="LowestSalesPriceProfitPer_Control1000000065">
-          <DataField>LowestSalesPriceProfitPer_Control1000000065</DataField>
-        </Field>
-        <Field Name="LowestSalesPriceProfitPer_Control1000000065Format">
-          <DataField>LowestSalesPriceProfitPer_Control1000000065Format</DataField>
-        </Field>
-        <Field Name="PurchasePrice1_Control1000000036">
-          <DataField>PurchasePrice1_Control1000000036</DataField>
-        </Field>
-        <Field Name="PurchasePrice1_Control1000000036Format">
-          <DataField>PurchasePrice1_Control1000000036Format</DataField>
-        </Field>
-        <Field Name="Purchase_Line_Document_Type">
-          <DataField>Purchase_Line_Document_Type</DataField>
-        </Field>
-        <Field Name="Purchase_Line_Line_No_">
-          <DataField>Purchase_Line_Line_No_</DataField>
-        </Field>
-        <Field Name="Purchase_Line_Buy_from_Vendor_No_">
-          <DataField>Purchase_Line_Buy_from_Vendor_No_</DataField>
-        </Field>
-        <Field Name="ItemLineCount">
-          <DataField>ItemLineCount</DataField>
-        </Field>
-        <Field Name="CellR">
-          <DataField>CellR</DataField>
-        </Field>
-        <Field Name="CellRFormat">
-          <DataField>CellRFormat</DataField>
-        </Field>
-        <Field Name="CellS">
-          <DataField>CellS</DataField>
-        </Field>
-        <Field Name="CellSFormat">
-          <DataField>CellSFormat</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -6229,12 +5907,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -6272,4 +5944,326 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="COMPANYNAME">
+          <DataField>COMPANYNAME</DataField>
+        </Field>
+        <Field Name="STRSUBSTNO_Text000_PeriodText_">
+          <DataField>STRSUBSTNO_Text000_PeriodText_</DataField>
+        </Field>
+        <Field Name="FORMAT_TODAY_0_4_">
+          <DataField>FORMAT_TODAY_0_4_</DataField>
+        </Field>
+        <Field Name="USERID">
+          <DataField>USERID</DataField>
+        </Field>
+        <Field Name="CurrReport_PAGENO">
+          <DataField>CurrReport_PAGENO</DataField>
+        </Field>
+        <Field Name="Vendor_TABLECAPTION__________VendorFilter">
+          <DataField>Vendor_TABLECAPTION__________VendorFilter</DataField>
+        </Field>
+        <Field Name="Purchase_Header__TABLECAPTION__________PurchaseHeaderFilter">
+          <DataField>Purchase_Header__TABLECAPTION__________PurchaseHeaderFilter</DataField>
+        </Field>
+        <Field Name="Vendor_Vendor_Name">
+          <DataField>Vendor_Vendor_Name</DataField>
+        </Field>
+        <Field Name="Vendor_Vendor__No__">
+          <DataField>Vendor_Vendor__No__</DataField>
+        </Field>
+        <Field Name="Vendor__Balance__LCY__">
+          <DataField>Vendor__Balance__LCY__</DataField>
+        </Field>
+        <Field Name="Vendor__Balance__LCY__Format">
+          <DataField>Vendor__Balance__LCY__Format</DataField>
+        </Field>
+        <Field Name="PurchasePrice">
+          <DataField>PurchasePrice</DataField>
+        </Field>
+        <Field Name="PurchasePriceFormat">
+          <DataField>PurchasePriceFormat</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Quantity">
+          <DataField>Purchase_Line__Quantity</DataField>
+        </Field>
+        <Field Name="Purchase_Line__QuantityFormat">
+          <DataField>Purchase_Line__QuantityFormat</DataField>
+        </Field>
+        <Field Name="PurchasePrice1">
+          <DataField>PurchasePrice1</DataField>
+        </Field>
+        <Field Name="PurchasePrice1Format">
+          <DataField>PurchasePrice1Format</DataField>
+        </Field>
+        <Field Name="Profit">
+          <DataField>Profit</DataField>
+        </Field>
+        <Field Name="ProfitFormat">
+          <DataField>ProfitFormat</DataField>
+        </Field>
+        <Field Name="ProfitPercent">
+          <DataField>ProfitPercent</DataField>
+        </Field>
+        <Field Name="ProfitPercentFormat">
+          <DataField>ProfitPercentFormat</DataField>
+        </Field>
+        <Field Name="LowestSalesPriceProfitPer">
+          <DataField>LowestSalesPriceProfitPer</DataField>
+        </Field>
+        <Field Name="LowestSalesPriceProfitPerFormat">
+          <DataField>LowestSalesPriceProfitPerFormat</DataField>
+        </Field>
+        <Field Name="All_amounts_are_in_LCYCaption">
+          <DataField>All_amounts_are_in_LCYCaption</DataField>
+        </Field>
+        <Field Name="Purchase_Order_Vendor_Item_Wise_ProfitCaption">
+          <DataField>Purchase_Order_Vendor_Item_Wise_ProfitCaption</DataField>
+        </Field>
+        <Field Name="CurrReport_PAGENOCaption">
+          <DataField>CurrReport_PAGENOCaption</DataField>
+        </Field>
+        <Field Name="Item_No_Caption">
+          <DataField>Item_No_Caption</DataField>
+        </Field>
+        <Field Name="DescriptionCaption">
+          <DataField>DescriptionCaption</DataField>
+        </Field>
+        <Field Name="Order_No_Caption">
+          <DataField>Order_No_Caption</DataField>
+        </Field>
+        <Field Name="Order_QuantityCaption">
+          <DataField>Order_QuantityCaption</DataField>
+        </Field>
+        <Field Name="Total_Purchase_AmountCaption">
+          <DataField>Total_Purchase_AmountCaption</DataField>
+        </Field>
+        <Field Name="Cost_Per_UnitCaption">
+          <DataField>Cost_Per_UnitCaption</DataField>
+        </Field>
+        <Field Name="Av__Sales_Price__STG_Caption">
+          <DataField>Av__Sales_Price__STG_Caption</DataField>
+        </Field>
+        <Field Name="Line_Amount__STG_Caption">
+          <DataField>Line_Amount__STG_Caption</DataField>
+        </Field>
+        <Field Name="Average_Sales_Price_Profit__STG__Caption">
+          <DataField>Average_Sales_Price_Profit__STG__Caption</DataField>
+        </Field>
+        <Field Name="Unit_Cost__STG_Caption">
+          <DataField>Unit_Cost__STG_Caption</DataField>
+        </Field>
+        <Field Name="Wholesale_PriceCaption">
+          <DataField>Wholesale_PriceCaption</DataField>
+        </Field>
+        <Field Name="Base_PriceCaption">
+          <DataField>Base_PriceCaption</DataField>
+        </Field>
+        <Field Name="C_D__PriceCaption">
+          <DataField>C_D__PriceCaption</DataField>
+        </Field>
+        <Field Name="Lowest_Sales_PriceCaption">
+          <DataField>Lowest_Sales_PriceCaption</DataField>
+        </Field>
+        <Field Name="Average__Sales_Price_Profit___Caption">
+          <DataField>Average__Sales_Price_Profit___Caption</DataField>
+        </Field>
+        <Field Name="Lowest__Sales_Price_Profit___Caption">
+          <DataField>Lowest__Sales_Price_Profit___Caption</DataField>
+        </Field>
+        <Field Name="Vendor__Balance__LCY__Caption">
+          <DataField>Vendor__Balance__LCY__Caption</DataField>
+        </Field>
+        <Field Name="Order_No_Caption_Control1000000010">
+          <DataField>Order_No_Caption_Control1000000010</DataField>
+        </Field>
+        <Field Name="Purchase_Order_No_______Purchase_Header___No__">
+          <DataField>Purchase_Order_No_______Purchase_Header___No__</DataField>
+        </Field>
+        <Field Name="Purchase_Header__Order_Date_">
+          <DataField>Purchase_Header__Order_Date_</DataField>
+        </Field>
+        <Field Name="Purchase_Header__Purchase_Header___Currency_Code_">
+          <DataField>Purchase_Header__Purchase_Header___Currency_Code_</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Quantity_Control1000000038">
+          <DataField>Purchase_Line__Quantity_Control1000000038</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Quantity_Control1000000038Format">
+          <DataField>Purchase_Line__Quantity_Control1000000038Format</DataField>
+        </Field>
+        <Field Name="PurchasePrice_Control1000000027">
+          <DataField>PurchasePrice_Control1000000027</DataField>
+        </Field>
+        <Field Name="PurchasePrice_Control1000000027Format">
+          <DataField>PurchasePrice_Control1000000027Format</DataField>
+        </Field>
+        <Field Name="PurchasePrice1_Control1000000035">
+          <DataField>PurchasePrice1_Control1000000035</DataField>
+        </Field>
+        <Field Name="PurchasePrice1_Control1000000035Format">
+          <DataField>PurchasePrice1_Control1000000035Format</DataField>
+        </Field>
+        <Field Name="Profit_Control1000000047">
+          <DataField>Profit_Control1000000047</DataField>
+        </Field>
+        <Field Name="Profit_Control1000000047Format">
+          <DataField>Profit_Control1000000047Format</DataField>
+        </Field>
+        <Field Name="ProfitPercent_Control1000000052">
+          <DataField>ProfitPercent_Control1000000052</DataField>
+        </Field>
+        <Field Name="ProfitPercent_Control1000000052Format">
+          <DataField>ProfitPercent_Control1000000052Format</DataField>
+        </Field>
+        <Field Name="LowestSalesPriceProfitPer_Control1000000067">
+          <DataField>LowestSalesPriceProfitPer_Control1000000067</DataField>
+        </Field>
+        <Field Name="LowestSalesPriceProfitPer_Control1000000067Format">
+          <DataField>LowestSalesPriceProfitPer_Control1000000067Format</DataField>
+        </Field>
+        <Field Name="Purchase_Header__Order_Date_Caption">
+          <DataField>Purchase_Header__Order_Date_Caption</DataField>
+        </Field>
+        <Field Name="Currency_of_OrderCaption">
+          <DataField>Currency_of_OrderCaption</DataField>
+        </Field>
+        <Field Name="Order_No_Caption_Control1000000006">
+          <DataField>Order_No_Caption_Control1000000006</DataField>
+        </Field>
+        <Field Name="Purchase_Header_Document_Type">
+          <DataField>Purchase_Header_Document_Type</DataField>
+        </Field>
+        <Field Name="Purchase_Header_No_">
+          <DataField>Purchase_Header_No_</DataField>
+        </Field>
+        <Field Name="Purchase_Header_Buy_from_Vendor_No_">
+          <DataField>Purchase_Header_Buy_from_Vendor_No_</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Purchase_Line___No__">
+          <DataField>Purchase_Line__Purchase_Line___No__</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Description__Purchase_Line___Description_2_">
+          <DataField>Purchase_Line__Description__Purchase_Line___Description_2_</DataField>
+        </Field>
+        <Field Name="Purchase_Header___Posting_Date_">
+          <DataField>Purchase_Header___Posting_Date_</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Purchase_Line___Document_No__">
+          <DataField>Purchase_Line__Purchase_Line___Document_No__</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Purchase_Line__Quantity">
+          <DataField>Purchase_Line__Purchase_Line__Quantity</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Purchase_Line__QuantityFormat">
+          <DataField>Purchase_Line__Purchase_Line__QuantityFormat</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Purchase_Line___Unit_of_Measure_Code_">
+          <DataField>Purchase_Line__Purchase_Line___Unit_of_Measure_Code_</DataField>
+        </Field>
+        <Field Name="PurchasePrice_Control1000000031">
+          <DataField>PurchasePrice_Control1000000031</DataField>
+        </Field>
+        <Field Name="PurchasePrice_Control1000000031Format">
+          <DataField>PurchasePrice_Control1000000031Format</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Purchase_Line___Direct_Unit_Cost_">
+          <DataField>Purchase_Line__Purchase_Line___Direct_Unit_Cost_</DataField>
+        </Field>
+        <Field Name="Purchase_Line__Purchase_Line___Direct_Unit_Cost_Format">
+          <DataField>Purchase_Line__Purchase_Line___Direct_Unit_Cost_Format</DataField>
+        </Field>
+        <Field Name="ProfitPercent_Control1000000037">
+          <DataField>ProfitPercent_Control1000000037</DataField>
+        </Field>
+        <Field Name="ProfitPercent_Control1000000037Format">
+          <DataField>ProfitPercent_Control1000000037Format</DataField>
+        </Field>
+        <Field Name="Profit_Control1000000044">
+          <DataField>Profit_Control1000000044</DataField>
+        </Field>
+        <Field Name="Profit_Control1000000044Format">
+          <DataField>Profit_Control1000000044Format</DataField>
+        </Field>
+        <Field Name="AvgSalesPrice">
+          <DataField>AvgSalesPrice</DataField>
+        </Field>
+        <Field Name="AvgSalesPriceFormat">
+          <DataField>AvgSalesPriceFormat</DataField>
+        </Field>
+        <Field Name="CostPerUnitSTG">
+          <DataField>CostPerUnitSTG</DataField>
+        </Field>
+        <Field Name="CostPerUnitSTGFormat">
+          <DataField>CostPerUnitSTGFormat</DataField>
+        </Field>
+        <Field Name="PriceD">
+          <DataField>PriceD</DataField>
+        </Field>
+        <Field Name="PriceDFormat">
+          <DataField>PriceDFormat</DataField>
+        </Field>
+        <Field Name="PriceE">
+          <DataField>PriceE</DataField>
+        </Field>
+        <Field Name="PriceEFormat">
+          <DataField>PriceEFormat</DataField>
+        </Field>
+        <Field Name="PriceA">
+          <DataField>PriceA</DataField>
+        </Field>
+        <Field Name="PriceAFormat">
+          <DataField>PriceAFormat</DataField>
+        </Field>
+        <Field Name="LowestSalesPrice_">
+          <DataField>LowestSalesPrice_</DataField>
+        </Field>
+        <Field Name="LowestSalesPrice_Format">
+          <DataField>LowestSalesPrice_Format</DataField>
+        </Field>
+        <Field Name="LowestSalesPriceProfitPer_Control1000000065">
+          <DataField>LowestSalesPriceProfitPer_Control1000000065</DataField>
+        </Field>
+        <Field Name="LowestSalesPriceProfitPer_Control1000000065Format">
+          <DataField>LowestSalesPriceProfitPer_Control1000000065Format</DataField>
+        </Field>
+        <Field Name="PurchasePrice1_Control1000000036">
+          <DataField>PurchasePrice1_Control1000000036</DataField>
+        </Field>
+        <Field Name="PurchasePrice1_Control1000000036Format">
+          <DataField>PurchasePrice1_Control1000000036Format</DataField>
+        </Field>
+        <Field Name="Purchase_Line_Document_Type">
+          <DataField>Purchase_Line_Document_Type</DataField>
+        </Field>
+        <Field Name="Purchase_Line_Line_No_">
+          <DataField>Purchase_Line_Line_No_</DataField>
+        </Field>
+        <Field Name="Purchase_Line_Buy_from_Vendor_No_">
+          <DataField>Purchase_Line_Buy_from_Vendor_No_</DataField>
+        </Field>
+        <Field Name="ItemLineCount">
+          <DataField>ItemLineCount</DataField>
+        </Field>
+        <Field Name="CellR">
+          <DataField>CellR</DataField>
+        </Field>
+        <Field Name="CellRFormat">
+          <DataField>CellRFormat</DataField>
+        </Field>
+        <Field Name="CellS">
+          <DataField>CellS</DataField>
+        </Field>
+        <Field Name="CellSFormat">
+          <DataField>CellSFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

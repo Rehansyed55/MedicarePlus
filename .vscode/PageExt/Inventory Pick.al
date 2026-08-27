@@ -132,7 +132,7 @@ pageextension 60032 InventoryPick extends "Inventory Pick"
         PostedInvtPickHeader.Reset();
         PostedInvtPickHeader.SetRange("Invt Pick No.", InvPick);
         if PostedInvtPickHeader.FindFirst() then
-            Report.RunModal(Report::"Posted Picking List", false, false, PostedInvtPickHeader);
+            Report.RunModal(Report::"Packing List new", false, false, PostedInvtPickHeader);
     end;
 
 
