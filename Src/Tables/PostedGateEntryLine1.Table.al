@@ -49,9 +49,9 @@ table 50004 "Posted Gate Entry Line 1"
         {
             Caption = 'Supplier Delivery Note';
         }
-        field(10; Date; Date)
+        field(10; "Supplier Delivery Date"; Date)
         {
-            Caption = 'Date';
+            Caption = 'Supplier Delivery Date';
         }
     }
 

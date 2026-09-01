@@ -73,5 +73,67 @@ tableextension 50032 "Warehouse Activity Header Ext" extends "Warehouse Activity
             Description = 'Upgrade frm Nav5';
             FieldClass = FlowField;
         }
+
+        field(50103; "Ship-to code"; code[10])
+        {
+            Caption = 'Ship to Code';
+        }
+        field(50104; "Print Packing List"; Boolean)
+        {
+            Caption = 'Print Packing List';
+            DataClassification = CustomerContent;
+        }
+        field(50105; "Ship-to Name"; Text[100])
+        {
+            Caption = 'Ship-to Name';
+        }
+        field(50106; "Ship-to Address"; Text[100])
+        {
+            Caption = 'Address';
+        }
+        field(50107; "Ship-to Address 2"; Text[100])
+        {
+            Caption = 'Address 2';
+        }
+        field(50108; "Ship-to City"; Text[50])
+        {
+            Caption = 'City';
+        }
+        field(50109; "Ship-to Post Code"; Code[20])
+        {
+            Caption = 'Post Code';
+        }
+        field(50110; "Ship-to Country/Region Code"; Code[20])
+        {
+            Caption = 'Country/Region Code';
+        }
+        field(50111; "Shipping Agent Code"; Code[10])
+        {
+            Caption = 'Shipping Agent Code';
+        }
+        field(50112; "Shipping Agent Service Code"; Code[10])
+        {
+            Caption = 'Shipping Agent Service Code';
+        }
+        field(50113; "Picked By User"; Code[50])
+        {
+            Caption = 'Picked By User';
+            DataClassification = ToBeClassified;
+        }
+        field(50114; "Checked By"; Boolean)
+        {
+            Caption = 'Checked By';
+            DataClassification = ToBeClassified;
+        }
+        field(50115; "Process Status"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Picked By';
+
+        }
+        field(50116; "Checked By User"; Code[50])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 }

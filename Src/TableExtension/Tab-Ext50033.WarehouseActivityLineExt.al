@@ -51,6 +51,21 @@ tableextension 50033 "Warehouse Activity Line Ext" extends "Warehouse Activity L
         field(50003; "Process Status"; Boolean)
         {
             Description = 'Upgrade frm Nav5';
+            trigger OnValidate()
+            var
+                WarehouseActivityHeader: Record "Warehouse Activity Header";
+            begin
+                if "Process Status" then
+                    "Picked By User" := UserId
+                else
+                    "Picked By User" := '';
+
+                if WarehouseActivityHeader.Get("Activity Type", "No.") then begin
+                    WarehouseActivityHeader."Process Status" := "Process Status";
+                    WarehouseActivityHeader."Picked By User" := "Picked By User";
+                    WarehouseActivityHeader.Modify();
+                end;
+            end;
         }
         field(50005; "Put away Ceated From"; Option)
         {
@@ -159,6 +174,8 @@ tableextension 50033 "Warehouse Activity Line Ext" extends "Warehouse Activity L
             Description = 'Upgrade frm Nav5';
 
             trigger OnValidate()
+            var
+                WarehouseActivityHeader: Record "Warehouse Activity Header";
             begin
                 "Activity header".RESET;
                 "Activity header".SETRANGE("Activity header".Type, "Activity Type");
@@ -180,6 +197,27 @@ tableextension 50033 "Warehouse Activity Line Ext" extends "Warehouse Activity L
                 END;
                 IF "Checked By" = '' THEN
                     VALIDATE("Checked By", USERID);
+
+                // User must pick the item before checking it
+                if "Checked" and not "Process Status" then
+                    Error('You cannot check this item before picking it. Please select Process Status first.');
+
+                // The user who picked the item cannot check it
+                if "Checked" and ("Picked By User" = UserId) then
+                    Error('You cannot check items that you have picked. Please use a different user ID.');
+
+                // Set Checked By user
+                if "Checked" then
+                    "Checked By" := UserId
+                else
+                    "Checked By" := '';
+
+                if WarehouseActivityHeader.Get("Activity Type", "No.") then begin
+                    WarehouseActivityHeader."Checked By" := rec.Checked;
+                    WarehouseActivityHeader."Checked By User" := Rec."Checked By";
+
+                    WarehouseActivityHeader.Modify();
+                end;
             end;
         }
         field(50009; "Checked By"; Code[50])
@@ -220,6 +258,10 @@ tableextension 50033 "Warehouse Activity Line Ext" extends "Warehouse Activity L
             Description = 'CHEM-128';
             Editable = false;
             FieldClass = FlowField;
+        }
+        field(50106; "Picked By User"; Code[50])
+        {
+            DataClassification = ToBeClassified;
         }
     }
     procedure SetHideValidationDialog(NewHideValidationDialog: Boolean)

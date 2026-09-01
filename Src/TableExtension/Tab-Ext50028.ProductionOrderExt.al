@@ -107,7 +107,7 @@ tableextension 50028 "Production Order Ext" extends "Production Order"
                 //alok finish
             end;
         }
-        field(50008; "Expriy Date"; Date)
+        field(50008; "Expiry Date"; Date)
         {
             Description = 'Upgrade frm Nav5';
         }
@@ -385,6 +385,24 @@ tableextension 50028 "Production Order Ext" extends "Production Order"
         {
             Description = 'CAS-00659-V7Q6S0';
         }
+
+        field(50052; "BPR Checked"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+
+        field(50053; "Technical Agreement No."; Code[50])
+        {
+            Caption = 'Technical Agreement No.';
+            TableRelation = "Dimension Value".Code
+                WHERE("Dimension Code" = CONST('TA REFERENCE'),
+                      Blocked = CONST(false));
+        }
+        field(50054; "Supplier Code"; Code[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+
     }
 
     trigger OnInsert()

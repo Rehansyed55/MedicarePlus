@@ -114,7 +114,7 @@ table 50000 "Gate Entry Header 1"
             Caption = 'User ID';
             TableRelation = User;
         }
-        field(21; Zone; Code[50])
+        field(21; "Bin Code"; Code[50])
         {
             Caption = 'Bin Code';
             TableRelation = Bin.Code WHERE("Location Code" = FIELD("Location Code"));
@@ -196,7 +196,7 @@ table 50000 "Gate Entry Header 1"
         //Add by hiren
         IF DefaultSetup.GET() THEN BEGIN
             VALIDATE("Location Code", DefaultSetup."Gate Inward Location");
-            VALIDATE(Zone, DefaultSetup."Gate Inward Bin");
+            VALIDATE("Bin Code", DefaultSetup."Gate Inward Bin");
         END;
 
         "Posting No." := "No.";//anikEt
@@ -207,39 +207,37 @@ table 50000 "Gate Entry Header 1"
         InventSetup: Record 313;
         GateEntryLocSetup: Record 50002;
         GateEntryCommentLine: Record 50007;
-        // NoSeriesMgt: Codeunit 396;
-
         NoSeries: codeunit "No. Series";
         DefaultSetup: Record 50012;
         Vendor: Record 23;
         GlobalNoSeries: Record "No. Series";
 
-    // procedure AssistEdit(OldGateEntryHeader: Record 50000): Boolean
-    // begin
-    //     InventSetup.GET;
-    //     CASE "Entry Type" OF
-    //         "Entry Type"::Inward:
-    //             BEGIN
-    //                 InventSetup.TESTFIELD("Inward Gate Entry Nos.");
-    //                 IF NoSeriesMgt.SelectSeries(InventSetup."Inward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
-    //                     InventSetup.GET;
-    //                     InventSetup.TESTFIELD("Inward Gate Entry Nos.");
-    //                     NoSeriesMgt.SetSeries("No.");
-    //                     EXIT(TRUE);
-    //                 END;
-    //             END;
-    //         "Entry Type"::Outward:
-    //             BEGIN
-    //                 InventSetup.TESTFIELD("Outward Gate Entry Nos.");
-    //                 IF NoSeriesMgt.SelectSeries(InventSetup."Outward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
-    //                     InventSetup.GET;
-    //                     InventSetup.TESTFIELD("Outward Gate Entry Nos.");
-    //                     NoSeriesMgt.SetSeries("No.");
-    //                     EXIT(TRUE);
-    //                 END;
-    //             END;
-    //     END;
-    // end;
+    procedure AssistEdit(OldGateEntryHeader: Record 50000): Boolean
+    begin
+        InventSetup.GET;
+        CASE "Entry Type" OF
+            "Entry Type"::Inward:
+                BEGIN
+                    InventSetup.TESTFIELD("Inward Gate Entry Nos.");
+                    IF NoSeries.LookupRelatedNoSeries(InventSetup."Inward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
+                        InventSetup.GET;
+                        InventSetup.TESTFIELD("Inward Gate Entry Nos.");
+                        "No." := NoSeries.GetNextNo("No. Series", WorkDate());
+                        EXIT(TRUE);
+                    END;
+                END;
+            "Entry Type"::Outward:
+                BEGIN
+                    InventSetup.TESTFIELD("Outward Gate Entry Nos.");
+                    IF NoSeries.LookupRelatedNoSeries(InventSetup."Outward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
+                        InventSetup.GET;
+                        InventSetup.TESTFIELD("Outward Gate Entry Nos.");
+                        "No." := NoSeries.GetNextNo("No. Series", WorkDate());
+                        EXIT(TRUE);
+                    END;
+                END;
+        END;
+    end;
 
     local procedure SetDefaultSeries(var NewNoSeriesCode: Code[20]; NoSeriesCode: Code[20])
     var

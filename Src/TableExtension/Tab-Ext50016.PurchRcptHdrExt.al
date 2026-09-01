@@ -17,5 +17,9 @@ tableextension 50016 "Purch. Rcpt. Hdr Ext" extends "Purch. Rcpt. Header"
             DataClassification = ToBeClassified;
             Description = '//Upgradation Nav13';
         }
+        field(50100; "Technical Agreement No."; Code[50])
+        {
+            Caption = 'Technical Agreement No.';
+        }
     }
 }

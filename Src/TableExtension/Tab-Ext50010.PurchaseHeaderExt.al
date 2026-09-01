@@ -62,6 +62,13 @@ tableextension 50010 "Purchase Header Ext" extends "Purchase Header"
         {
             DataClassification = ToBeClassified;
         }
+        field(50100; "Technical Agreement No."; Code[50])
+        {
+            Caption = 'Technical Agreement No.';
+            TableRelation = "Dimension Value".Code
+                WHERE("Dimension Code" = CONST('TA REFERENCE'),
+                      Blocked = CONST(false));
+        }
 
     }
     keys

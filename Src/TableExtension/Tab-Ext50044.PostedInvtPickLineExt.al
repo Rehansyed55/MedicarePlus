@@ -57,5 +57,14 @@ tableextension 50044 "Posted Invt. Pick Line Ext" extends "Posted Invt. Pick Lin
             DataClassification = ToBeClassified;
             Description = '//Upgradation Nav13';
         }
+
+        field(50100; "Process Status"; Boolean)
+        {
+            DataClassification = ToBeClassified;
+        }
+         field(50106; "Picked By User"; Code[50])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 }

@@ -96,6 +96,12 @@ table 50003 "Posted Gate Entry Header 1"
         field(24; "Supplier Name"; Text[50])
         {
         }
+        field(50118; "Bin Code"; Code[20])
+        {
+            TableRelation = Bin.Code where(
+        "Location Code" = field("Location Code")
+    );
+        }
     }
 
     keys

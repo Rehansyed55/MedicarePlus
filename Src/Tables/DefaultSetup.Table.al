@@ -253,7 +253,7 @@ table 50012 "Default Setup"
                                 Prodorder.VALIDATE(Prodorder."Location Code", ItemledgerEntry."Location Code");
                                 Prodorder.VALIDATE(Prodorder."Lot No.", ItemledgerEntry."Lot No.");
                                 Prodorder.VALIDATE(Prodorder."Purchase order", WhseReceiptLine_Rec."Source No.");
-                                Prodorder.VALIDATE(Prodorder."Expriy Date", ItemledgerEntry."Expiration Date");
+                                Prodorder.VALIDATE(Prodorder."Expiry Date", ItemledgerEntry."Expiration Date");
                                 Prodorder.VALIDATE(Prodorder."Location Code", ItemledgerEntry."Location Code");
                                 Prodorder.VALIDATE(Prodorder."Posted Warehouse Receipt No.", PostedWMSReceiptNo);
                                 Prodorder.VALIDATE(Prodorder."Posted Receipt No.", PurchRcptHeader."No.");
@@ -784,7 +784,7 @@ table 50012 "Default Setup"
         ProdctionOrder."BPR Version No.") THEN BEGIN
             CreateStockOnHold(ProdctionOrder."Source No.", ProdctionOrder."ECMA No.", ProdctionOrder."Purchase order",
             ProdctionOrder."Posted Warehouse Receipt No.", 0, ProdctionOrder."Location Code", ProdctionOrder."Lot No.", 0, 0,
-            ProdctionOrder."Bin Code", '', 1, ProdctionOrder."Posted Receipt No.", ProdctionOrder."Expriy Date", ProdctionOrder."Starting Date",
+            ProdctionOrder."Bin Code", '', 1, ProdctionOrder."Posted Receipt No.", ProdctionOrder."Expiry Date", ProdctionOrder."Starting Date",
             ProdctionOrder."PLPI No.");
         END;
     end;
@@ -1108,7 +1108,7 @@ table 50012 "Default Setup"
         warehouseactivityline.VALIDATE(warehouseactivityline."Action Type", warehouseactivityline."Action Type"::Take);
         warehouseactivityline.VALIDATE(warehouseactivityline."Bin Code", ProdOrderLine1."Bin Code");
         warehouseactivityline.VALIDATE(warehouseactivityline."Lot No.", "Prod. Order"."Lot No.");
-        warehouseactivityline.VALIDATE(warehouseactivityline."Expiration Date", "Prod. Order"."Expriy Date");
+        warehouseactivityline.VALIDATE(warehouseactivityline."Expiration Date", "Prod. Order"."Expiry Date");
         warehouseactivityline."Put away Ceated From" := warehouseactivityline."Put away Ceated From"::"From FIrm Plan";
         warehouseactivityline."Line No." := lineno;
         warehouseactivityline."Source Line No." := warehouseactivityline."Source Line No." + 10000;
@@ -1141,7 +1141,7 @@ table 50012 "Default Setup"
           warehouseactivityline.VALIDATE(warehouseactivityline."Bin Code",'R-SAMPLE');
         END; */
         warehouseactivityline.VALIDATE(warehouseactivityline."Lot No.", "Prod. Order"."Lot No.");
-        warehouseactivityline.VALIDATE(warehouseactivityline."Expiration Date", "Prod. Order"."Expriy Date");
+        warehouseactivityline.VALIDATE(warehouseactivityline."Expiration Date", "Prod. Order"."Expiry Date");
         warehouseactivityline."Line No." := lineno;
         warehouseactivityline."Source Line No." := warehouseactivityline."Source Line No." + 10000;
         warehouseactivityline."Put away Ceated From" := warehouseactivityline."Put away Ceated From"::"From FIrm Plan";

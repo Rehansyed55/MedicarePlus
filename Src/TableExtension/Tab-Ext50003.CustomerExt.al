@@ -59,6 +59,11 @@ tableextension 50003 "Customer Ext" extends Customer
             DataClassification = ToBeClassified;
             OptionMembers = " ",Pharmasist,Wholesaler;
         }
+        field(50100; Status; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = Open,Released;
+        }
     }
 
     trigger OnInsert()

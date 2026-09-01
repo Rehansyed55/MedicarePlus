@@ -36,5 +36,10 @@ tableextension 50004 "Vendor Ext" extends Vendor
         {
             DataClassification = ToBeClassified;
         }
+         field(50100; Status; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = Open,Released;
+        }
     }
 }
