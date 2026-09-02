@@ -428,8 +428,9 @@ report 60032 "Purchase Order Analysis(PDN)"
                     begin
 
                         //"Purchase Line".SETFILTER("Purchase Line"."No.",'%1','1-STEMTIT0020050');
-                        CurrReport.CREATETOTALS("Purchase Line".Quantity, PurchasePrice, AvgSalesPrice, PurchasePrice1, Profit, CostPerUnitSTG,
-                        LowestSalesPriceProfit);
+                        // Deprecated since 1.0 - values are per-record and already reset/recomputed manually below; not a live RDLC group total
+                        //CurrReport.CREATETOTALS("Purchase Line".Quantity, PurchasePrice, AvgSalesPrice, PurchasePrice1, Profit, CostPerUnitSTG,
+                        //LowestSalesPriceProfit);
 
                         AvgSalesPrice := 0;
                         SalesPrice := 0;
@@ -451,8 +452,9 @@ report 60032 "Purchase Order Analysis(PDN)"
 
                 trigger OnPreDataItem()
                 begin
-                    CurrReport.CREATETOTALS("Purchase Line".Quantity, PurchasePrice, AvgSalesPrice, PurchasePrice1, Profit, CostPerUnitSTG,
-                    LowestSalesPriceProfit);
+                    // Deprecated since 1.0 - RDLC does not consume a group total for these per-record fields
+                    //CurrReport.CREATETOTALS("Purchase Line".Quantity, PurchasePrice, AvgSalesPrice, PurchasePrice1, Profit, CostPerUnitSTG,
+                    //LowestSalesPriceProfit);
                 end;
             }
 
@@ -469,8 +471,9 @@ report 60032 "Purchase Order Analysis(PDN)"
 
             trigger OnPreDataItem()
             begin
-                CurrReport.CREATETOTALS("Purchase Line".Quantity, PurchasePrice, AvgSalesPrice, PurchasePrice1, Profit, CostPerUnitSTG,
-                LowestSalesPriceProfit);
+                // Deprecated since 1.0 - RDLC does not consume a group total for these per-record fields
+                //CurrReport.CREATETOTALS("Purchase Line".Quantity, PurchasePrice, AvgSalesPrice, PurchasePrice1, Profit, CostPerUnitSTG,
+                //LowestSalesPriceProfit);
             end;
         }
     }

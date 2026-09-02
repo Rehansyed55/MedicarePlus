@@ -204,10 +204,11 @@ report 60041 "Customer/Item Sales NEW"
 
                 trigger OnPreDataItem()
                 begin
-                    CurrReport.CREATETOTALS(
-                      ValueEntryBuffer."Sales Amount (Actual)",
-                      ValueEntryBuffer."Discount Amount",
-                      Profit);
+                    // Deprecated since 1.0 - report is ProcessingOnly with no active RDLC layout to consume this; Excel export builds its own rows
+                    //CurrReport.CREATETOTALS(
+                    //  ValueEntryBuffer."Sales Amount (Actual)",
+                    //  ValueEntryBuffer."Discount Amount",
+                    //  Profit);
 
                     ValueEntryBuffer.RESET;
                     SETRANGE(Number, 1, ValueEntryBuffer.COUNT);
@@ -218,10 +219,11 @@ report 60041 "Customer/Item Sales NEW"
             begin
                 CurrReport.NEWPAGEPERRECORD := PrintOnlyOnePerPage;
 
-                CurrReport.CREATETOTALS(
-                  ValueEntryBuffer."Sales Amount (Actual)",
-                  ValueEntryBuffer."Discount Amount",
-                  Profit);
+                // Deprecated since 1.0 - report is ProcessingOnly with no active RDLC layout to consume this; Excel export builds its own rows
+                //CurrReport.CREATETOTALS(
+                //  ValueEntryBuffer."Sales Amount (Actual)",
+                //  ValueEntryBuffer."Discount Amount",
+                //  Profit);
             end;
         }
     }

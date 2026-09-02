@@ -535,7 +535,8 @@ report 60036 "Order Confirmation"
                                 CurrReport.BREAK;
                             SalesLine.SETRANGE("Line No.", 0, SalesLine."Line No.");
                             SETRANGE(Number, 1, SalesLine.COUNT);
-                            CurrReport.CREATETOTALS(SalesLine."Line Amount", SalesLine."Inv. Discount Amount");
+                            // Deprecated since 1.0 - superseded by manual running totals below (GB0004 block)
+                            //CurrReport.CREATETOTALS(SalesLine."Line Amount", SalesLine."Inv. Discount Amount");
                             //GB0004.BEGIN
                             TotalInvoiceDiscAmount := 0;
                             TotalLineAmount := 0;
@@ -614,9 +615,10 @@ report 60036 "Order Confirmation"
                             trigger OnPreDataItem()
                             begin
                                 SETRANGE(Number, 1, VATAmountLine.COUNT);
-                                CurrReport.CREATETOTALS(
-                                  VATAmountLine."Line Amount", VATAmountLine."Inv. Disc. Base Amount",
-                                  VATAmountLine."Invoice Discount Amount", VATAmountLine."VAT Base", VATAmountLine."VAT Amount");
+                                // Deprecated since 1.0 - VATAmountLine is a self-contained buffer read via GetLine; already exposed via GetTotalVATAmount/etc.
+                                //CurrReport.CREATETOTALS(
+                                //  VATAmountLine."Line Amount", VATAmountLine."Inv. Disc. Base Amount",
+                                //  VATAmountLine."Invoice Discount Amount", VATAmountLine."VAT Base", VATAmountLine."VAT Amount");
                             end;
                         }
 
@@ -677,7 +679,8 @@ report 60036 "Order Confirmation"
 
                     IF Number > 1 THEN
                         CopyText := Text003;
-                    CurrReport.PAGENO := 1;
+                    // Deprecated since 1.0 - dead code; RDLC layout resets per-copy page numbers itself via Globals!PageNumber/GetGroupPageNumber
+                    //CurrReport.PAGENO := 1;
                 end;
 
                 trigger OnPostDataItem()

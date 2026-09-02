@@ -25,9 +25,10 @@ report 60037 "Sales Order Line Wise"
             column(USERID; USERID)
             {
             }
-            column(CurrReport_PAGENO; CurrReport.PAGENO)
-            {
-            }
+            // Deprecated since 1.0 - confirmed unreferenced in SalesOrderLineWise.rdl (layout uses Globals!PageNumber natively)
+            //column(CurrReport_PAGENO; CurrReport.PAGENO)
+            //{
+            //}
             column(Customer_TABLECAPTION__________CustFilter; Customer.TABLECAPTION + ': ' + CustFilter)
             {
             }
@@ -488,19 +489,22 @@ report 60037 "Sales Order Line Wise"
 
                     trigger OnPreDataItem()
                     begin
-                        CurrReport.CREATETOTALS("Sales Line".Quantity, SalesAmount, CostAmount, SalesDiscAmount, CostPerUnit, PricePerUnit, Profit, ProfitPct)
+                        // Deprecated since 1.0 - these are per-record values recomputed each OnAfterGetRecord, not RDLC group totals
+                        //CurrReport.CREATETOTALS("Sales Line".Quantity, SalesAmount, CostAmount, SalesDiscAmount, CostPerUnit, PricePerUnit, Profit, ProfitPct)
                     end;
                 }
 
                 trigger OnPreDataItem()
                 begin
-                    CurrReport.CREATETOTALS("Sales Line".Quantity, SalesAmount, CostAmount, SalesDiscAmount, CostPerUnit, PricePerUnit, Profit, ProfitPct)
+                    // Deprecated since 1.0 - these are per-record values recomputed each OnAfterGetRecord, not RDLC group totals
+                    //CurrReport.CREATETOTALS("Sales Line".Quantity, SalesAmount, CostAmount, SalesDiscAmount, CostPerUnit, PricePerUnit, Profit, ProfitPct)
                 end;
             }
 
             trigger OnPreDataItem()
             begin
-                CurrReport.CREATETOTALS("Sales Line".Quantity, SalesAmount, CostAmount, SalesDiscAmount, CostPerUnit, PricePerUnit, Profit, ProfitPct)
+                // Deprecated since 1.0 - these are per-record values recomputed each OnAfterGetRecord, not RDLC group totals
+                //CurrReport.CREATETOTALS("Sales Line".Quantity, SalesAmount, CostAmount, SalesDiscAmount, CostPerUnit, PricePerUnit, Profit, ProfitPct)
             end;
         }
     }

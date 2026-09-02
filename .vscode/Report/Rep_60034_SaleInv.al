@@ -109,6 +109,9 @@ report 60034 "Sales - Invoice"
             column(NoOfCopies; NoOfCopies)
             {
             }
+            // NOTE: CurrReport.PageNo is deprecated since 1.0, but this column is still referenced
+            // by a hidden diagnostic textbox in SalesInvoice.rdl (Fields!PageNo.Value) - removing/
+            // commenting it out would break RDLC rendering. Left as-is intentionally.
             column(PageNo; CurrReport.PAGENO)
             {
             }
@@ -765,7 +768,8 @@ report 60034 "Sales - Invoice"
                             IF NOT MoreLines THEN
                                 CurrReport.BREAK;
                             SETRANGE("Line No.", 0, "Line No.");
-                            CurrReport.CREATETOTALS("Line Amount", Amount, "Amount Including VAT", "Inv. Discount Amount", "Reverse Charge"); // PS18964
+                            // Deprecated since 1.0 - superseded by manual running totals below (GB0005 block)
+                            //CurrReport.CREATETOTALS("Line Amount", Amount, "Amount Including VAT", "Inv. Discount Amount", "Reverse Charge"); // PS18964
                             //GB0005.BEGIN
                             TotalAmount := 0;
                             TotalLineAmount := 0;
@@ -850,9 +854,10 @@ report 60034 "Sales - Invoice"
                             trigger OnPreDataItem()
                             begin
                                 SETRANGE(Number, 1, VATAmountLine.COUNT);
-                                CurrReport.CREATETOTALS(
-                                  VATAmountLine."Line Amount", VATAmountLine."Inv. Disc. Base Amount",
-                                  VATAmountLine."Invoice Discount Amount", VATAmountLine."VAT Base", VATAmountLine."VAT Amount");
+                                // Deprecated since 1.0 - VATAmountLine is a self-contained buffer read via GetLine; no CreateTotals dependency
+                                //CurrReport.CREATETOTALS(
+                                //  VATAmountLine."Line Amount", VATAmountLine."Inv. Disc. Base Amount",
+                                //  VATAmountLine."Invoice Discount Amount", VATAmountLine."VAT Base", VATAmountLine."VAT Amount");
                             end;
                         }
 
@@ -898,7 +903,8 @@ report 60034 "Sales - Invoice"
                 begin
                     IF Number > 1 THEN
                         CopyText := Text009;
-                    CurrReport.PAGENO := 1;
+                    // Deprecated since 1.0 - dead code; RDLC layout resets per-copy page numbers itself via Globals!PageNumber/GetGroupPageNumber
+                    //CurrReport.PAGENO := 1;
                     NoOfCopies := 1;
                 end;
 
