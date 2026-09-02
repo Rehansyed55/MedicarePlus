@@ -529,6 +529,7 @@ report 60031 "OrderGB"
                         end;
 
                         trigger OnPreDataItem()
+                       
                         begin
                             MoreLines := PurchLine.FIND('+');
                             WHILE MoreLines AND (PurchLine.Description = '') AND (PurchLine."Description 2" = '') AND
@@ -540,11 +541,13 @@ report 60031 "OrderGB"
                                 CurrReport.BREAK;
                             PurchLine.SETRANGE("Line No.", 0, PurchLine."Line No.");
                             SETRANGE(Number, 1, PurchLine.COUNT);
-                            CurrReport.CREATETOTALS(PurchLine."Line Amount", PurchLine."Inv. Discount Amount");
+                            //CurrReport.CREATETOTALS(PurchLine."Line Amount", PurchLine."Inv. Discount Amount");
                             //GB0004.BEGIN
                             TotalInvoiceDiscAmount := 0;
                             TotalLineAmount := 0;
                             //GB0004.END
+
+                            
                         end;
                     }
                     dataitem(DataItem5444; Integer)
@@ -625,9 +628,9 @@ report 60031 "OrderGB"
                             trigger OnPreDataItem()
                             begin
                                 SETRANGE(Number, 1, VATAmountLine.COUNT);
-                                CurrReport.CREATETOTALS(
-                                  VATAmountLine."Line Amount", VATAmountLine."Inv. Disc. Base Amount",
-                                  VATAmountLine."Invoice Discount Amount", VATAmountLine."VAT Base", VATAmountLine."VAT Amount");
+                                // CurrReport.CREATETOTALS(
+                                //   VATAmountLine."Line Amount", VATAmountLine."Inv. Disc. Base Amount",
+                                //   VATAmountLine."Invoice Discount Amount", VATAmountLine."VAT Base", VATAmountLine."VAT Amount");
                             end;
                         }
 
@@ -758,7 +761,6 @@ report 60031 "OrderGB"
                         OutputNo += 1;
                         // GB0004.end
                     END;
-                    CurrReport.PAGENO := 1;
                 end;
 
                 trigger OnPostDataItem()

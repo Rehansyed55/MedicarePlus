@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Column1Amt_AgingBandBuff">
+          <DataField>Column1Amt_AgingBandBuff</DataField>
+        </Field>
+        <Field Name="Column1Amt_AgingBandBuffFormat">
+          <DataField>Column1Amt_AgingBandBuffFormat</DataField>
+        </Field>
+        <Field Name="Column2Amt_AgingBandBuff">
+          <DataField>Column2Amt_AgingBandBuff</DataField>
+        </Field>
+        <Field Name="Column2Amt_AgingBandBuffFormat">
+          <DataField>Column2Amt_AgingBandBuffFormat</DataField>
+        </Field>
+        <Field Name="Column3Amt_AgingBandBuff">
+          <DataField>Column3Amt_AgingBandBuff</DataField>
+        </Field>
+        <Field Name="Column3Amt_AgingBandBuffFormat">
+          <DataField>Column3Amt_AgingBandBuffFormat</DataField>
+        </Field>
+        <Field Name="Column4Amt_AgingBandBuff">
+          <DataField>Column4Amt_AgingBandBuff</DataField>
+        </Field>
+        <Field Name="Column4Amt_AgingBandBuffFormat">
+          <DataField>Column4Amt_AgingBandBuffFormat</DataField>
+        </Field>
+        <Field Name="Column5Amt_AgingBandBuff">
+          <DataField>Column5Amt_AgingBandBuff</DataField>
+        </Field>
+        <Field Name="Column5Amt_AgingBandBuffFormat">
+          <DataField>Column5Amt_AgingBandBuffFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

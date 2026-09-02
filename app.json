@@ -12,10 +12,10 @@
   "logo": "",
   "dependencies": [
     {
-      "id": "1fff813d-f8b0-4829-a1ac-2c47192184ea",
-      "name": "MedicarePlus_Customization",
-      "publisher": "Default Publisher",
-      "version": "1.0.0.0"
+      "id": "cb13c495-e057-46e2-8ba1-5c6759959f00",
+      "name": "Robosol Extension",
+      "publisher": "Robosol",
+      "version": "1.0.0.2"
     },
      {
       "id": "5602a8b3-2c2f-40c6-865b-4250c316f125",
