@@ -894,7 +894,7 @@ report 60035 "Sales Credit Memo GB"
 
         trigger OnOpenPage()
         begin
-            LogInteraction := SegManagement.FindInteractionTemplateCode(6) <> '';
+            LogInteraction := SegManagement.FindInteractionTemplateCode("Interaction Log Entry Document Type"::"Sales Cr. Memo") <> '';
             LogInteractionEnable := LogInteraction;
         end;
     }
@@ -1198,18 +1198,17 @@ report 60035 "Sales Credit Memo GB"
             EXIT;
         END;
 
-        WITH SalesShipmentBuffer DO BEGIN
-            INIT;
-            "Document No." := SalesCrMemoLine."Document No.";
-            "Line No." := SalesCrMemoLine."Line No.";
-            "Entry No." := NextEntryNo;
-            Type := SalesCrMemoLine.Type;
-            "No." := SalesCrMemoLine."No.";
-            Quantity := -QtyOnShipment;
-            "Posting Date" := PostingDate;
-            INSERT;
-            NextEntryNo := NextEntryNo + 1
-        END;
+        // Deprecated since 1.0 - WITH statement removed (deprecated for cloud development)
+        SalesShipmentBuffer.INIT;
+        SalesShipmentBuffer."Document No." := SalesCrMemoLine."Document No.";
+        SalesShipmentBuffer."Line No." := SalesCrMemoLine."Line No.";
+        SalesShipmentBuffer."Entry No." := NextEntryNo;
+        SalesShipmentBuffer.Type := SalesCrMemoLine.Type;
+        SalesShipmentBuffer."No." := SalesCrMemoLine."No.";
+        SalesShipmentBuffer.Quantity := -QtyOnShipment;
+        SalesShipmentBuffer."Posting Date" := PostingDate;
+        SalesShipmentBuffer.INSERT;
+        NextEntryNo := NextEntryNo + 1
     end;
 }
 

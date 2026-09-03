@@ -17,9 +17,10 @@ report 60042 "Customer By Area"
             column(FORMAT_TODAY_0_4_; FORMAT(TODAY, 0, 4))
             {
             }
-            column(CurrReport_PAGENO; CurrReport.PAGENO)
-            {
-            }
+            // Deprecated since 1.0 - report has no active layout (ProcessingOnly = true, no .rdlc present); unreferenced
+            //column(CurrReport_PAGENO; CurrReport.PAGENO)
+            //{
+            //}
             column(COMPANYNAME; COMPANYNAME)
             {
             }

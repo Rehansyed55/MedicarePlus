@@ -19,9 +19,10 @@ report 60041 "Customer/Item Sales NEW"
             column(STRSUBSTNO_Text000_PeriodText_; STRSUBSTNO(Text000, PeriodText))
             {
             }
-            column(CurrReport_PAGENO; CurrReport.PAGENO)
-            {
-            }
+            // Deprecated since 1.0 - report has no active layout (ProcessingOnly = true, RDLCLayout commented out); unreferenced
+            //column(CurrReport_PAGENO; CurrReport.PAGENO)
+            //{
+            //}
             column(COMPANYNAME; COMPANYNAME)
             {
             }
@@ -217,7 +218,8 @@ report 60041 "Customer/Item Sales NEW"
 
             trigger OnPreDataItem()
             begin
-                CurrReport.NEWPAGEPERRECORD := PrintOnlyOnePerPage;
+                // Deprecated since 1.0 - report is ProcessingOnly with no active RDLC layout; NewPagePerRecord has no effect at runtime here
+                //CurrReport.NEWPAGEPERRECORD := PrintOnlyOnePerPage;
 
                 // Deprecated since 1.0 - report is ProcessingOnly with no active RDLC layout to consume this; Excel export builds its own rows
                 //CurrReport.CREATETOTALS(
@@ -321,12 +323,11 @@ report 60041 "Customer/Item Sales NEW"
 
     local procedure CalcProfitPct()
     begin
-        WITH ValueEntryBuffer DO BEGIN
-            IF "Sales Amount (Actual)" <> 0 THEN
-                ProfitPct := ROUND(100 * Profit / "Sales Amount (Actual)", 0.1)
-            ELSE
-                ProfitPct := 0;
-        END;
+        // Deprecated since 1.0 - WITH statement removed (deprecated for cloud development)
+        IF ValueEntryBuffer."Sales Amount (Actual)" <> 0 THEN
+            ProfitPct := ROUND(100 * Profit / ValueEntryBuffer."Sales Amount (Actual)", 0.1)
+        ELSE
+            ProfitPct := 0;
     end;
 
     procedure MakeExcelInfo()

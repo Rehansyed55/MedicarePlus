@@ -624,12 +624,11 @@ report 60037 "Sales Order Line Wise"
 
     local procedure CalcProfitPct()
     begin
-        WITH ValueEntryBuffer DO BEGIN
-            IF "Sales Amount (Actual)" <> 0 THEN
-                ProfitPct := ROUND(100 * Profit / "Sales Amount (Actual)", 0.1)
-            ELSE
-                ProfitPct := 0;
-        END;
+        // Deprecated since 1.0 - WITH statement removed (deprecated for cloud development)
+        IF ValueEntryBuffer."Sales Amount (Actual)" <> 0 THEN
+            ProfitPct := ROUND(100 * Profit / ValueEntryBuffer."Sales Amount (Actual)", 0.1)
+        ELSE
+            ProfitPct := 0;
     end;
 
     procedure MakeExcelInfo()

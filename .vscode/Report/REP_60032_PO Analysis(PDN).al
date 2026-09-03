@@ -24,9 +24,10 @@ report 60032 "Purchase Order Analysis(PDN)"
             column(USERID; USERID)
             {
             }
-            column(CurrReport_PAGENO; CurrReport.PAGENO)
-            {
-            }
+            // Deprecated since 1.0 - confirmed unreferenced in PurchaseOrderAnalysis.rdl (only the caption field is used, layout uses Globals!PageNumber natively)
+            //column(CurrReport_PAGENO; CurrReport.PAGENO)
+            //{
+            //}
             column(Vendor_TABLECAPTION__________VendorFilter; Vendor.TABLECAPTION + ': ' + VendorFilter)
             {
             }
