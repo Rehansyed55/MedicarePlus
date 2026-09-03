@@ -2,6 +2,12 @@ pageextension 50122 "Whse. Receipt Ext" extends "Warehouse Receipt"
 {
     layout
     {
+        // NAV field order check (NAV "Warehouse Receipt" General group): No. -> Location Code -> Zone Code ->
+        // Bin Code -> Document Status -> Posting Date -> Vendor Shipment No. -> Assigned User ID ->
+        // Assignment Date -> Assignment Time -> Sorting Method.
+        // This already matches the standard BC "Warehouse Receipt" page field order, so no moveafter/movebefore
+        // statements are needed here. The custom Gate Entry No. / Select All fields below are a pre-existing
+        // extension insertion and are left in place per task constraints.
         addafter("Location Code")
         {
             field("Gate Entry No."; Rec."Gate Entry No.")

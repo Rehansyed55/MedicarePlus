@@ -2,6 +2,14 @@ pageextension 50123 "Whse. Receipt Subform EXT" extends "Whse. Receipt Subform"
 {
     layout
     {
+        // NAV field order check (NAV "Whse. Receipt Subform" repeater): Source Document -> Source No. -> Item No. ->
+        // Variant Code -> Description -> Location Code -> Zone Code -> Bin Code -> Cross-Dock Zone Code ->
+        // Cross-Dock Bin Code -> Shelf No. -> Quantity -> Qty. (Base) -> Qty. to Receive -> Qty. to Cross-Dock ->
+        // Qty. Received -> Qty. to Receive (Base) -> Qty. to Cross-Dock (Base) -> Qty. Received (Base) ->
+        // Qty. Outstanding -> Qty. Outstanding (Base) -> Due Date -> Unit of Measure Code -> Qty. per Unit of Measure.
+        // This already matches the standard BC "Whse. Receipt Subform" column order, so no moveafter/movebefore
+        // statements are needed for standard fields. The custom Create Production Order / Checked / Checked By /
+        // Foreign Name fields below are a pre-existing extension insertion and are left in place per task constraints.
         addafter(Quantity)
         {
             field("Create Production Order"; Rec."Create Production Order")

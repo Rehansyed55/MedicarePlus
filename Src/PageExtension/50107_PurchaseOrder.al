@@ -3,6 +3,10 @@ pageextension 50107 "Purchase Order Ext" extends "Purchase Order"
     layout
     {
         // Add changes to page layout here
+        // Reorder "Your Reference" to match the old NAV form layout, where it appeared
+        // right after the Buy-from address block and before the Contact field.
+        movebefore("Your Reference"; "Buy-from Contact")
+
         addafter(Status)
         {
             field("Technical Agreement No."; Rec."Technical Agreement No.")

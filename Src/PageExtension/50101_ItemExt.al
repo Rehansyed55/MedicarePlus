@@ -3,6 +3,11 @@ pageextension 50101 itemCard_Ext extends "Item Card"
     layout
     {
         // Add changes to page layout here
+
+        // Reorder to match legacy NAV Item Card field sequence (NAV placed
+        // Manufacturer Code after Common Item No.; BC places it earlier).
+        moveafter("Manufacturer Code"; "Common Item No.")
+
         addlast(Item)
         {
             field(Status; Rec.Status)
