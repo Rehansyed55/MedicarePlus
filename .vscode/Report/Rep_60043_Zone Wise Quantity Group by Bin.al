@@ -1,12 +1,11 @@
 report 60043 "Zonewise quantity-Group by Bin"
 {
     DefaultLayout = RDLC;
-    RDLCLayout = './Zonewise quantity-Group by Bin.rdlc';
+    RDLCLayout = './Zonewise quantity-Group by Bin.rdl';
 
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     Caption = 'Zonewise quantity-Group by Bin';
-    ProcessingOnly = true;
     dataset
     {
         dataitem("Bin Content"; "Bin Content")
