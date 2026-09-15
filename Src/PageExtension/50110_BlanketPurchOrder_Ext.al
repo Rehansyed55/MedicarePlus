@@ -63,7 +63,43 @@ pageextension 50110 "Blanket Purchase Order" extends "Blanket Purchase Order"
 
     actions
     {
-        // Add changes to page actions here
+        addafter(Reopen)
+        {
+            action("Close Order")
+            {
+                ApplicationArea = Suite;
+                Caption = 'Cl&ose Order';
+                Image = Close;
+                ToolTip = 'This will close the Blanket Purchase Order and will be removed from the Quantity on Blanket Order';
+                Promoted = true;
+                PromotedCategory = Category7;
+
+                trigger OnAction()
+                var
+                    ReleasePurchDoc: Codeunit "Release Purchase Document";
+                    PurchaseLine: Record "Purchase Line";
+                begin
+                    IF rec.Status <> rec.Status::Released THEN
+                        ERROR(TEXT50000);
+
+                    rec.Status := rec.Status::Closed;
+                    CurrPage.UPDATE(TRUE);
+
+
+                    PurchaseLine.RESET;
+                    PurchaseLine.SETRANGE("Document Type", Rec."Document Type");
+                    PurchaseLine.SETRANGE("Document No.", Rec."No.");
+                    //PurchaseLine.SETRANGE(Type,PurchaseLine.Type::Item);
+                    IF PurchaseLine.FINDSET THEN BEGIN
+                        REPEAT
+                            PurchaseLine.Status := Rec.Status;
+                            PurchaseLine.MODIFY;
+                        UNTIL PurchaseLine.NEXT = 0;
+                    END;
+
+                end;
+            }
+        }
     }
     Procedure GetUserNameFromSecurityId(UserSecurityID: Guid): Code[50]
     var
@@ -76,4 +112,5 @@ pageextension 50110 "Blanket Purchase Order" extends "Blanket Purchase Order"
 
     var
         myInt: Integer;
+        TEXT50000: Label 'Status of the Order must be Released';
 }

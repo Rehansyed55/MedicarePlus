@@ -225,7 +225,7 @@ tableextension 50006 "Item ext" extends Item
         {
             DataClassification = ToBeClassified;
         }
-         field(50100; Status; Option)
+        field(50100; Status; Option)
         {
             DataClassification = ToBeClassified;
             OptionMembers = Open,Released;

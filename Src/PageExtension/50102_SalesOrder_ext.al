@@ -42,27 +42,27 @@ pageextension 50102 "Sales Order Ext" extends "Sales Order"
     {
         addlast(Processing)
         {
-            // action(PicksNotConfirmed)
-            // {
-            //     ApplicationArea = all;
-            //     Caption = 'Picks Not Confirmed';
-            //     Image = PickLines;
-            //     Promoted = true;
-            //     PromotedCategory = Process;
+            action(PicksNotConfirmed)
+            {
+                ApplicationArea = all;
+                Caption = 'Picks Not Confirmed';
+                Image = PickLines;
+                Promoted = true;
+                PromotedCategory = Process;
 
-            //     trigger OnAction()
-            //     var
-            //         WhseActivityHeader: Record "Warehouse Activity Header";
-            //         PicksNotConfirmedPage: Page "Picks Not Confirmed";
-            //     begin
-            //         WhseActivityHeader.SetRange(Type, WhseActivityHeader.Type::"Invt. Pick");
-            //         WhseActivityHeader.SetRange("Pick Confirmed", false);
-            //         WhseActivityHeader.SetRange("Source Document", WhseActivityHeader."Source Document"::"Sales Order");
-            //         WhseActivityHeader.SetRange("Source No.", Rec."No.");
-            //         PicksNotConfirmedPage.SetTableView(WhseActivityHeader);
-            //         PicksNotConfirmedPage.Run();
-            //     end;
-            // }
+                trigger OnAction()
+                var
+                    WhseActivityHeader: Record "Warehouse Activity Header";
+                    PicksNotConfirmedPage: Page "Picks Not Confirmed";
+                begin
+                    WhseActivityHeader.SetRange(Type, WhseActivityHeader.Type::"Invt. Pick");
+                    WhseActivityHeader.SetRange("Pick Confirmed", false);
+                    WhseActivityHeader.SetRange("Source Document", WhseActivityHeader."Source Document"::"Sales Order");
+                    WhseActivityHeader.SetRange("Source No.", Rec."No.");
+                    PicksNotConfirmedPage.SetTableView(WhseActivityHeader);
+                    PicksNotConfirmedPage.Run();
+                end;
+            }
         }
     }
     Procedure GetUserNameFromSecurityId(UserSecurityID: Guid): Code[50]

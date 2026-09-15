@@ -1,7 +1,7 @@
 table 50022 "NHS-IMS-Supplier Data"
 {
-    // DrillDownPageID = 50092;
-    // LookupPageID = 50092;
+    DrillDownPageID = 50121;
+    LookupPageID = 50121;
 
     fields
     {
