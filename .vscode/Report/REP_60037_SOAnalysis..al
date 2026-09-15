@@ -3,7 +3,7 @@ report 60037 "Sales Order Line Wise"
     DefaultLayout = RDLC;
     RDLCLayout = 'SalesOrderLineWise.rdl';
     UsageCategory = ReportsAndAnalysis;
-    ApplicationArea = all;
+    ApplicationArea = All;
     Caption = 'Sales Profit Analysis';
 
     dataset

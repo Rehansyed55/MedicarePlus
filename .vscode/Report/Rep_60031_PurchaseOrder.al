@@ -52,6 +52,11 @@ report 60031 "OrderGB"
             column(ShowInternalInfo; ShowInternalInfo)
             {
             }
+            column(Technical_Agreement_No_; "Technical Agreement No.")
+            {
+
+            }
+
             dataitem(CopyLoop; Integer)
             {
                 DataItemTableView = SORTING(Number);
@@ -529,7 +534,7 @@ report 60031 "OrderGB"
                         end;
 
                         trigger OnPreDataItem()
-                       
+
                         begin
                             MoreLines := PurchLine.FIND('+');
                             WHILE MoreLines AND (PurchLine.Description = '') AND (PurchLine."Description 2" = '') AND
@@ -547,7 +552,7 @@ report 60031 "OrderGB"
                             TotalLineAmount := 0;
                             //GB0004.END
 
-                            
+
                         end;
                     }
                     dataitem(DataItem5444; Integer)

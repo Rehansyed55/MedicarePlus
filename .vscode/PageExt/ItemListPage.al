@@ -2,9 +2,15 @@ pageextension 60034 ItemListExt extends "Item List"
 {
     layout
     {
-        // Add changes to page layout here
+        addafter(Type)
+        {
+            field("Sales Back Order"; Rec."Qty. on Sales Order")
+            {
+                ApplicationArea = All;
+                Caption = 'Sales Back Order';
+            }
+        }
     }
-
     actions
     {
         addafter("Inventory by Location")

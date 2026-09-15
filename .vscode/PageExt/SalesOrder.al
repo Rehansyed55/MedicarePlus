@@ -15,7 +15,8 @@ pageextension 60030 salesorder extends "Sales Order"
                 Caption = 'Sales Profit Analysis';
                 Image = Print;
                 Promoted = true;
-                PromotedCategory = Report;
+                promotedIsBig = true;
+                PromotedCategory = Category11;
 
                 trigger OnAction()
                 var
