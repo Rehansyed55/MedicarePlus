@@ -990,10 +990,12 @@ page 60031 NetEDI_Order_Line_New
         [InDataSet]
         ItemPanelVisible: Boolean;
         ItemTrackingDataCollection: Codeunit "Item Tracking Data Collection";
+        NHSItemTrackingDataColl: Codeunit "NHS Item Tracking Data Coll.";
         recTrackingSpecification: Record "Tracking Specification" temporary;
         ReserveSalesLine: Codeunit "Sales Line-Reserve";
         CurrentSignFactor: Integer;
         recReservationEntry: Record "Reservation Entry";
+        ForReservEntry: Record "Reservation Entry";
         CreateReservEntry: Codeunit "Create Reserv. Entry";
         UndefinedQtyArray: array[3] of Decimal;
         ForBinCode: Code[20];
@@ -1275,9 +1277,15 @@ page 60031 NetEDI_Order_Line_New
         IF MaxQuantity * CurrentSignFactor > 0 THEN
             MaxQuantity := 0;
         recTrackingSpecification."Bin Code" := ForBinCode;
-        //ItemTrackingDataCollection.SelectMultipleLotSerialNo(recTrackingSpecification,MaxQuantity,CurrentSignFactor);
-        // TODO: SelectMultipleLotSerialNo1 was removed in this BC version. Its replacement, Codeunit "Item Tracking Data Collection".SelectMultipleTrackingNo(var TempTrackingSpecification: Record "Tracking Specification"; MaxQuantity: Decimal; CurrentSignFactor: Integer), only has 3 parameters - it dropped the FlagLookUp (var Boolean) and SelectedQty (var Decimal) output parameters used below. No replacement field/mechanism carrying that same information was found on Tracking Specification or the codeunit. FlagLookUp/SelectedQty are therefore no longer being set by this call, so the FlagLookUp/SelectedQty-gated block further down (around "IF (FlagLookUp) AND (SelectedQty>0) THEN" - the CreateReservEntry.CreateReservEntryFor/CreateEntry reservation-creation logic) needs a real redesign, not a mechanical fix. Left unresolved pending that decision.
-        ItemTrackingDataCollection.SelectMultipleLotSerialNo1(recTrackingSpecification, QTY, CurrentSignFactor, FlagLookUp, SelectedQty);
+        // SelectMultipleLotSerialNo1 (old NAV codeunit 6501 customization) is not portable to BC,
+        // since Codeunit "Item Tracking Data Collection" can no longer be extended/modified directly.
+        // NHSItemTrackingDataColl subscribes to the standard codeunit's own
+        // OnSelectMultipleTrackingNoOnBeforeAddSelectedTrackingToDataSet event to recover the
+        // FlagLookUp/SelectedQty information the old output parameters used to carry.
+        NHSItemTrackingDataColl.ResetState();
+        ItemTrackingDataCollection.SelectMultipleTrackingNo(recTrackingSpecification, QTY, CurrentSignFactor);
+        FlagLookUp := NHSItemTrackingDataColl.GetFlagLookUp();
+        SelectedQty := NHSItemTrackingDataColl.GetSelectedQty();
         recTrackingSpecification."Bin Code" := '';
         IF recTrackingSpecification.FINDSET THEN
             REPEAT
@@ -1304,10 +1312,15 @@ page 60031 NetEDI_Order_Line_New
                 recTrackingSpecification.MODIFY;
                 //MESSAGE('%1\%2',recTrackingSpecification."Lot No.",recTrackingSpecification."Quantity (Base)");
                 //added by anikEt on 05Feb2014
-                // TODO: part of the same SelectMultipleLotSerialNo1 redesign flagged above. Both calls below no longer match the current BC API and need real redesign, not a mechanical fix:
-                // - CreateReservEntryFor: last 2 args (SerialNo: Code, LotNo: Code) were replaced by a single ForReservEntry: Record "Reservation Entry" parameter - the serial/lot info now needs to be carried via a populated Reservation Entry record instead of loose values.
-                // - CreateEntry: gained an 8th parameter, Status: Enum "Reservation Status" - the old trailing "0,2" (7 args) needs an explicit enum value for the 8th param; the correct status here has not been confirmed.
+                // CreateReservEntryFor/CreateEntry signatures changed in modern BC:
+                // - CreateReservEntryFor now carries Serial/Lot No. via a populated ForReservEntry
+                //   record instead of loose Code values, and gained a non-base Quantity parameter.
+                // - CreateEntry gained a Status: Enum "Reservation Status" parameter.
                 IF (FlagLookUp) AND (SelectedQty > 0) THEN BEGIN
+                    CLEAR(ForReservEntry);
+                    ForReservEntry."Serial No." := recTrackingSpecification."Serial No.";
+                    ForReservEntry."Lot No." := recTrackingSpecification."Lot No.";
+
                     CreateReservEntry.CreateReservEntryFor(
                             recTrackingSpecification."Source Type",
                             recTrackingSpecification."Source Subtype",
@@ -1318,8 +1331,7 @@ page 60031 NetEDI_Order_Line_New
                             recTrackingSpecification."Qty. per Unit of Measure",
                             0,
                             recTrackingSpecification."Quantity (Base)",
-                            recTrackingSpecification."Serial No.",
-                            recTrackingSpecification."Lot No.");
+                            ForReservEntry);
 
 
                     CreateReservEntry.CreateEntry(recTrackingSpecification."Item No.",
@@ -1327,7 +1339,7 @@ page 60031 NetEDI_Order_Line_New
                       recTrackingSpecification."Location Code",
                       recTrackingSpecification.Description,
                       0D,
-                      0D, 0, 2);
+                      0D, 0, Enum::"Reservation Status"::Reservation);
                 END;
             //
             UNTIL recTrackingSpecification.NEXT = 0;
