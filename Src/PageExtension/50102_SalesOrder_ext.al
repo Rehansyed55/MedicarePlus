@@ -44,11 +44,11 @@ pageextension 50102 "Sales Order Ext" extends "Sales Order"
         {
             action(PicksNotConfirmed)
             {
-                ApplicationArea = all;
                 Caption = 'Picks Not Confirmed';
                 Image = PickLines;
                 Promoted = true;
                 PromotedCategory = Process;
+                visible = false;
 
                 trigger OnAction()
                 var

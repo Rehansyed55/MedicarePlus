@@ -202,16 +202,16 @@ table 50001 "Gate Entry Line 1"
     procedure ShowPackingDetails()
     var
         RecPackDetails: Record 50013;
-    // FromPackDetails: Page 50026;
+        FromPackDetails: Page "Doc Wise Packing Details";
     begin
-        // TESTFIELD("Gate Entry No.");
-        // TESTFIELD("Line No.");
-        // RecPackDetails.SETRANGE(RecPackDetails."Document Type", RecPackDetails."Document Type"::GateEntryIn);
-        // RecPackDetails.SETRANGE("Document No.", "Gate Entry No.");
-        // RecPackDetails.SETRANGE("Line No./Item No.", FORMAT("Line No."));
-        // RecPackDetails.SETRANGE("Source no.", "Doc. Source No.");
-        // FromPackDetails.SETTABLEVIEW(RecPackDetails);
-        // FromPackDetails.RUNMODAL;
+        TESTFIELD("Gate Entry No.");
+        TESTFIELD("Line No.");
+        RecPackDetails.SETRANGE(RecPackDetails."Document Type", RecPackDetails."Document Type"::GateEntryIn);
+        RecPackDetails.SETRANGE("Document No.", "Gate Entry No.");
+        RecPackDetails.SETRANGE("Line No./Item No.", FORMAT("Line No."));
+        RecPackDetails.SETRANGE("Source no.", "Doc. Source No.");
+        FromPackDetails.SETTABLEVIEW(RecPackDetails);
+        FromPackDetails.RUNMODAL;
     end;
 }
 

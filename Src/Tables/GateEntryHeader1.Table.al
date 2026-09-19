@@ -43,21 +43,54 @@ table 50000 "Gate Entry Header 1"
             Caption = 'Location Code';
             TableRelation = Location;
 
+            // trigger OnValidate()
+            // begin
+            //     CASE "Entry Type" OF
+            //         "Entry Type"::Inward:
+            //             IF GateEntryLocSetup.GET("Entry Type", "Location Code") THEN
+            //                 IF ("No. Series" <> '') AND (InventSetup."Inward Gate Entry Nos." = GateEntryLocSetup."Posting No. Series") THEN
+            //                     "Posting No. Series" := "No. Series"
+            //                 ELSE
+            //                     SetDefaultSeries("Posting No. Series", GateEntryLocSetup."Posting No. Series");
+            //         "Entry Type"::Outward:
+            //             IF GateEntryLocSetup.GET("Entry Type", "Location Code") THEN
+            //                 IF ("No. Series" <> '') AND (InventSetup."Inward Gate Entry Nos." = GateEntryLocSetup."Posting No. Series") THEN
+            //                     "Posting No. Series" := "No. Series"
+            //                 ELSE
+            //                     SetDefaultSeries("Posting No. Series", GateEntryLocSetup."Posting No. Series");
+            //     END;
+            // end;
+
             trigger OnValidate()
+            var
+                GateEntryLocSetup: Record "Gate Entry Location Setup 1";
+                NoSeriesCode: Codeunit "No. Series";
             begin
+                InventSetup.GET();
                 CASE "Entry Type" OF
                     "Entry Type"::Inward:
                         IF GateEntryLocSetup.GET("Entry Type", "Location Code") THEN
-                            IF ("No. Series" <> '') AND (InventSetup."Inward Gate Entry Nos." = GateEntryLocSetup."Posting No. Series") THEN
+                            IF ("No. Series" <> '') AND
+                               (InventSetup."Inward Gate Entry Nos." = GateEntryLocSetup."Posting No. Series") THEN
                                 "Posting No. Series" := "No. Series"
-                            ELSE
-                                SetDefaultSeries("Posting No. Series", GateEntryLocSetup."Posting No. Series");
+                            ELSE BEGIN
+                                IF GateEntryLocSetup."Posting No. Series" <> '' THEN
+                                    "Posting No. Series" := GateEntryLocSetup."Posting No. Series"
+                                ELSE
+                                    "Posting No. Series" := '';
+                            END;
+
                     "Entry Type"::Outward:
                         IF GateEntryLocSetup.GET("Entry Type", "Location Code") THEN
-                            IF ("No. Series" <> '') AND (InventSetup."Inward Gate Entry Nos." = GateEntryLocSetup."Posting No. Series") THEN
+                            IF ("No. Series" <> '') AND
+                               (InventSetup."Outward Gate Entry Nos." = GateEntryLocSetup."Posting No. Series") THEN
                                 "Posting No. Series" := "No. Series"
-                            ELSE
-                                SetDefaultSeries("Posting No. Series", GateEntryLocSetup."Posting No. Series");
+                            ELSE BEGIN
+                                IF GateEntryLocSetup."Posting No. Series" <> '' THEN
+                                    "Posting No. Series" := GateEntryLocSetup."Posting No. Series"
+                                ELSE
+                                    "Posting No. Series" := '';
+                            END;
                 END;
             end;
         }
@@ -179,25 +212,29 @@ table 50000 "Gate Entry Header 1"
             "Entry Type"::Inward:
                 IF "No." = '' THEN BEGIN
                     InventSetup.TESTFIELD(InventSetup."Inward Gate Entry Nos.");
-
-                    if NoSeries.AreRelated("No. Series", xRec."No. Series") then
-                        "No. Series" := xRec."No. Series";
-                    "No." := NoSeries.GetNextNo("No. Series", WorkDate());
+                    // NoSeriesMgt.InitSeries(InventSetup."Inward Gate Entry Nos.", xRec."No. Series", "Posting Date", "No.", "No. Series");
+                    IF NoSeriesMgt.AreRelated(InventSetup."Inward Gate Entry Nos.", xRec."No. Series") THEN
+                        "No. Series" := xRec."No. Series"
+                    ELSE
+                        "No. Series" := InventSetup."Inward Gate Entry Nos.";
+                    "No." := NoSeriesMgt.GetNextNo("No. Series", "Posting Date", true);
                 END;
             "Entry Type"::Outward:
                 IF "No." = '' THEN BEGIN
                     InventSetup.TESTFIELD(InventSetup."Outward Gate Entry Nos.");
-                    if NoSeries.AreRelated("No. Series", xRec."No. Series") then
-                        "No. Series" := xRec."No. Series";
-                    "No." := NoSeries.GetNextNo("No. Series", WorkDate());
+                    IF NoSeriesMgt.AreRelated(InventSetup."Outward Gate Entry Nos.", xRec."No. Series") THEN
+                        "No. Series" := xRec."No. Series"
+                    ELSE
+                        "No. Series" := InventSetup."Outward Gate Entry Nos.";
+                    "No." := NoSeriesMgt.GetNextNo("No. Series", "Posting Date", true);
                 END;
         END;
 
         //Add by hiren
-        IF DefaultSetup.GET() THEN BEGIN
-            VALIDATE("Location Code", DefaultSetup."Gate Inward Location");
-            VALIDATE("Bin Code", DefaultSetup."Gate Inward Bin");
-        END;
+        // IF DefaultSetup.GET() THEN BEGIN
+        //     VALIDATE("Location Code", DefaultSetup."Gate Inward Location");
+        //     VALIDATE("Bin Code", DefaultSetup."Gate Inward Bin");
+        // END;
 
         "Posting No." := "No.";//anikEt
     end;
@@ -211,28 +248,49 @@ table 50000 "Gate Entry Header 1"
         DefaultSetup: Record 50012;
         Vendor: Record 23;
         GlobalNoSeries: Record "No. Series";
+        NoSeriesMgt: Codeunit 310;
 
     procedure AssistEdit(OldGateEntryHeader: Record 50000): Boolean
     begin
-        InventSetup.GET;
+        // InventSetup.GET;
+        // CASE "Entry Type" OF
+        //     "Entry Type"::Inward:
+        //         BEGIN
+        //             InventSetup.TESTFIELD("Inward Gate Entry Nos.");
+        //             IF NoSeries.LookupRelatedNoSeries(InventSetup."Inward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
+        //                 InventSetup.GET;
+        //                 InventSetup.TESTFIELD("Inward Gate Entry Nos.");
+        //                 "No." := NoSeries.GetNextNo("No. Series", WorkDate());
+        //                 EXIT(TRUE);
+        //             END;
+        //         END;
+        //     "Entry Type"::Outward:
+        //         BEGIN
+        //             InventSetup.TESTFIELD("Outward Gate Entry Nos.");
+        //             IF NoSeries.LookupRelatedNoSeries(InventSetup."Outward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
+        //                 InventSetup.GET;
+        //                 InventSetup.TESTFIELD("Outward Gate Entry Nos.");
+        //                 "No." := NoSeries.GetNextNo("No. Series", WorkDate());
+        //                 EXIT(TRUE);
+        //             END;
+        //         END;
+        // END;
+
+        InventSetup.GET();
         CASE "Entry Type" OF
             "Entry Type"::Inward:
                 BEGIN
                     InventSetup.TESTFIELD("Inward Gate Entry Nos.");
-                    IF NoSeries.LookupRelatedNoSeries(InventSetup."Inward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
-                        InventSetup.GET;
-                        InventSetup.TESTFIELD("Inward Gate Entry Nos.");
-                        "No." := NoSeries.GetNextNo("No. Series", WorkDate());
+                    IF NoSeriesMgt.LookupRelatedNoSeries(InventSetup."Inward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
+                        "No." := NoSeriesMgt.GetNextNo("No. Series", "Posting Date", true);
                         EXIT(TRUE);
                     END;
                 END;
             "Entry Type"::Outward:
                 BEGIN
                     InventSetup.TESTFIELD("Outward Gate Entry Nos.");
-                    IF NoSeries.LookupRelatedNoSeries(InventSetup."Outward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
-                        InventSetup.GET;
-                        InventSetup.TESTFIELD("Outward Gate Entry Nos.");
-                        "No." := NoSeries.GetNextNo("No. Series", WorkDate());
+                    IF NoSeriesMgt.LookupRelatedNoSeries(InventSetup."Outward Gate Entry Nos.", OldGateEntryHeader."No. Series", "No. Series") THEN BEGIN
+                        "No." := NoSeriesMgt.GetNextNo("No. Series", "Posting Date", true);
                         EXIT(TRUE);
                     END;
                 END;
