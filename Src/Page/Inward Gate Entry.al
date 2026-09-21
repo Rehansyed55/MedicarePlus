@@ -27,6 +27,10 @@ page 50106 "Inward Gate Entry"
                 {
                     ApplicationArea = all;
                 }
+                field("Bin Code"; rec."Bin Code")
+                {
+                    ApplicationArea = all;
+                }
                 field("Entry Type"; Rec."Entry Type")
                 {
                     ApplicationArea = all;
@@ -45,10 +49,7 @@ page 50106 "Inward Gate Entry"
                 {
                     ApplicationArea = all;
                 }
-                field("Bin Code"; rec."Bin Code")
-                {
-                    ApplicationArea = all;
-                }
+
                 field("Carrier/Courier"; rec."Carrier/Courier")
                 {
                     ApplicationArea = all;

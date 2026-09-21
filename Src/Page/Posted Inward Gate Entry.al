@@ -28,6 +28,10 @@ page 50113 "Posted Inward Gate Entry"
                 {
                     ApplicationArea = all;
                 }
+                field("Bin Code"; rec."Bin Code")
+                {
+                    ApplicationArea = all;
+                }
                 field("Station From/To"; rec."Station From/To")
                 {
                     Caption = 'Station From';
@@ -41,10 +45,7 @@ page 50113 "Posted Inward Gate Entry"
                 {
                     ApplicationArea = all;
                 }
-                field("Bin Code"; rec."Bin Code")
-                {
-                    ApplicationArea = all;
-                }
+
                 field("Carrier/Courier"; rec."Carrier/Courier")
                 {
                     ApplicationArea = all;
