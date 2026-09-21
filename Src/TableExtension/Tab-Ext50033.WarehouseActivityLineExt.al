@@ -25,7 +25,6 @@ tableextension 50033 "Warehouse Activity Line Ext" extends "Warehouse Activity L
                     END;
 
 
-
                     //alok start code when barcode is location or bin
                     IF "Activity Type" = "Activity Type"::"Invt. Pick" THEN BEGIN
                         IF "Bin Code" <> Barcode THEN BEGIN

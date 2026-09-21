@@ -67,6 +67,11 @@ codeunit 50104 "Gate Entry-Post"
         PostedGateEntryHeader."No." := GateEntryHeader."Posting No.";
         PostedGateEntryHeader."No. Series" := GateEntryHeader."Posting No. Series";
         PostedGateEntryHeader."Gate Entry No." := GateEntryHeader."No.";
+        // "Bin Code" (Gate Entry Header 1 field 21) and "Zone" (Posted Gate Entry Header 1 field 21)
+        // share the same field number, so TRANSFERFIELDS copies Bin Code's value into Zone by mistake.
+        // Gate Entry Header 1 has no Zone field, so Zone has no real source value here.
+        PostedGateEntryHeader.Zone := '';
+        PostedGateEntryHeader."Bin Code" := GateEntryHeader."Bin Code";
 
         IF GUIALLOWED THEN
             Window.UPDATE(1, STRSUBSTNO(Text16503, GateEntryHeader."No.", PostedGateEntryHeader."No."));
