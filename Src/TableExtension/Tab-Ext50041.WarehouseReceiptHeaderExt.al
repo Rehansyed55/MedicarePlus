@@ -19,9 +19,8 @@ tableextension 50041 "Warehouse Receipt Header Ext" extends "Warehouse Receipt H
             Caption = 'Gate Entry No.';
             DataClassification = ToBeClassified;
             TableRelation = "Posted Gate Entry Header 1"."No." where(
-    "Entry Type" = const(Inward),
-    "Location Code" = field("Location Code"),
-    "Bin Code" = field("Bin Code"));
+            "Entry Type" = const(Inward),
+            "Location Code" = field("Location Code"));
             trigger OnValidate()
             begin
                 if "Gate Entry No." <> xRec."Gate Entry No." then

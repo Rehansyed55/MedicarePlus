@@ -124,7 +124,22 @@ codeunit 50102 Events2
 
         PurchOrderLine."Qty. per Unit of Measure" := UOMMgt.GetQtyPerUnitOfMeasure(Item, PurchOrderLine."Unit of Measure Code");
     end;
+    //Rehan++
+    [EventSubscriber(ObjectType::Table, Database::"Purchase Line", 'OnValidateUnitOfMeasureCodeOnBeforeValidateQuantity', '', false, false)]
+    local procedure OnValidateUoMFixSubcontractQtyPerUOM(var PurchaseLine: Record "Purchase Line"; xPurchaseLine: Record "Purchase Line"; Item: Record Item)
+    var
+        ItemRec: Record Item;
+        UOMMgt: Codeunit "Unit of Measure Management";
+    begin
+        if (PurchaseLine.Type <> PurchaseLine.Type::Item) or (PurchaseLine."Prod. Order No." = '') then
+            exit;
+        if (PurchaseLine."Qty. per Unit of Measure" <> 0) or (PurchaseLine."Unit of Measure Code" = '') then
+            exit;
+        if ItemRec.Get(PurchaseLine."No.") then
+            PurchaseLine."Qty. per Unit of Measure" := UOMMgt.GetQtyPerUnitOfMeasure(ItemRec, PurchaseLine."Unit of Measure Code");
+    end;
 
+    //Rehan--
     [EventSubscriber(ObjectType::Table, Database::"Tracking Specification", 'OnAfterValidateEvent', 'Expiration Date', false, false)]
     local procedure OnAfterValidateExpirationDate(var Rec: Record "Tracking Specification"; var xRec: Record "Tracking Specification"; CurrFieldNo: Integer)
     var

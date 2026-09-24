@@ -127,6 +127,17 @@ page 50106 "Inward Gate Entry"
                         CurrPage.UPDATE(FALSE);
                     end;
                 }
+                action("Post and &Print")
+                {
+                    Caption = 'Post and &Print';
+                    Image = PostPrint;
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    PromotedIsBig = true;
+                    RunObject = Codeunit 50103;
+                    ShortCutKey = 'Shift+F9';
+                    applicationArea = All;
+                }
 
 
             }
