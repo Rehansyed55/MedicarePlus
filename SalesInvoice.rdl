@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-09-24T12:22:08.9570748Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-09-24T22:12:28.4296244Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -32,12 +32,12 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>28.43959cm</Width>
+                  <Width>28.65339cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>6.48146cm</Height>
+                  <Height>2.61953cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -110,10 +110,10 @@
                                     <Width>0.87937cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.1478cm</Width>
+                                    <Width>2.38449cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>0.10228cm</Width>
+                                    <Width>0.07938cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>0.07938cm</Width>
@@ -6228,7 +6228,7 @@
                               </Filters>
                               <Left>0.0746cm</Left>
                               <Height>2.61953cm</Height>
-                              <Width>28.36503cm</Width>
+                              <Width>28.57879cm</Width>
                               <Visibility>
                                 <Hidden>=IIF(Fields!No_SalesInvcLineCaption.Value&lt;&gt;"",False,True)</Hidden>
                               </Visibility>
@@ -6394,986 +6394,6 @@ Cstr(Fields!HomePage.Value) + Chr(177) + Cstr(Fields!cnt.Value) + Chr(177) + Cst
                                 <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
-                            <Textbox Name="TextBox116">
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Medicareplus Int. Ltd retain a beneficial interest in goods until payment has been received in full. The insurance risk</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Normal</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.38134in</Top>
-                              <Left>0.20224in</Left>
-                              <Height>0.17712in</Height>
-                              <Width>7.99405in</Width>
-                              <ZIndex>3</ZIndex>
-                              <Style>
-                                <Border />
-                                <VerticalAlign>Top</VerticalAlign>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="TextBox123">
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>will pass to the purchaser upon delivery. Other Terms and Conditions as per our Price List and Overleaf.</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.57235in</Top>
-                              <Left>0.20224in</Left>
-                              <Height>0.17014in</Height>
-                              <Width>7.99544in</Width>
-                              <ZIndex>4</ZIndex>
-                              <Style>
-                                <Border />
-                                <VerticalAlign>Top</VerticalAlign>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox205">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!Amount.Value,sum, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.79073in</Top>
-                              <Left>2.40391cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>0.72862in</Width>
-                              <ZIndex>5</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox207">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>NET</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>4.54847cm</Top>
-                              <Left>0.49266cm</Left>
-                              <Height>0.40754cm</Height>
-                              <Width>1.85069cm</Width>
-                              <ZIndex>6</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox144">
-                              <rd:DefaultName>Textbox143</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>VAT</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>4.5934cm</Top>
-                              <Left>5.98894cm</Left>
-                              <Height>0.40754cm</Height>
-                              <Width>1.94612cm</Width>
-                              <ZIndex>7</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox208">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>= RunningValue(Fields!VATamt.Value, Sum, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.80956in</Top>
-                              <Left>8.00561cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>0.72862in</Width>
-                              <ZIndex>8</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox210">
-                              <rd:DefaultName>Textbox197</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Date/Time</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>4.62515cm</Top>
-                              <Left>11.39277cm</Left>
-                              <Height>0.40754cm</Height>
-                              <Width>2.31447cm</Width>
-                              <ZIndex>9</ZIndex>
-                              <Style>
-                                <Border />
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox178">
-                              <rd:DefaultName>Textbox175</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>PACKED BY</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>5.07249cm</Top>
-                              <Left>0.4746cm</Left>
-                              <Height>0.40185cm</Height>
-                              <Width>3.8943cm</Width>
-                              <ZIndex>10</ZIndex>
-                              <Style>
-                                <Border />
-                                <VerticalAlign>Top</VerticalAlign>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox255">
-                              <rd:DefaultName>Textbox254</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>CHECKED BY</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>5.08201cm</Top>
-                              <Left>5.92544cm</Left>
-                              <Height>0.40185cm</Height>
-                              <Width>2.87216cm</Width>
-                              <ZIndex>11</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox229">
-                              <rd:DefaultName>Textbox204</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Date/Time</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>5.59507cm</Top>
-                              <Left>0.46735cm</Left>
-                              <Height>0.35463cm</Height>
-                              <Width>2.4895cm</Width>
-                              <ZIndex>12</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox241">
-                              <rd:DefaultName>Textbox235</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Globals!ExecutionTime.Date</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <Format>dd/MM/yy</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>5.56685cm</Top>
-                              <Left>3.06268cm</Left>
-                              <Height>0.38285cm</Height>
-                              <Width>2.2589cm</Width>
-                              <ZIndex>13</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox242">
-                              <rd:DefaultName>Textbox238</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=Cstr(Globals!ExecutionTime.Hour)+":"+Cstr(Globals!ExecutionTime.Minute)+":"+Cstr(Globals!ExecutionTime.Second)</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <Format>hh:mm:ss</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>5.53523cm</Top>
-                              <Left>5.95898cm</Left>
-                              <Height>0.41447cm</Height>
-                              <Width>4.73654cm</Width>
-                              <ZIndex>14</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox140">
-                              <rd:DefaultName>Textbox129</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>No Of Pallets/Parcels</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>5.53523cm</Top>
-                              <Left>10.73922cm</Left>
-                              <Height>0.41447cm</Height>
-                              <Width>3.88115cm</Width>
-                              <ZIndex>15</ZIndex>
-                              <Style>
-                                <Border />
-                                <VerticalAlign>Top</VerticalAlign>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox295">
-                              <rd:DefaultName>Textbox221</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value />
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>5.53523cm</Top>
-                              <Left>14.62036cm</Left>
-                              <Height>0.41447cm</Height>
-                              <Width>1.7985cm</Width>
-                              <ZIndex>16</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>Solid</Style>
-                                </Border>
-                                <VerticalAlign>Top</VerticalAlign>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox296">
-                              <rd:DefaultName>Textbox223</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value />
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>5.53523cm</Top>
-                              <Left>16.41882cm</Left>
-                              <Height>0.41447cm</Height>
-                              <Width>1.79957cm</Width>
-                              <ZIndex>17</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>Solid</Style>
-                                </Border>
-                                <VerticalAlign>Top</VerticalAlign>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox223">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!TotalLineAmount.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                        <Color>Red</Color>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.44693in</Top>
-                              <Left>25.84461cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>0.72862in</Width>
-                              <ZIndex>18</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox230">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(-Fields!TotalInvcDiscAmount.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.63709in</Top>
-                              <Left>25.87637cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>0.72862in</Width>
-                              <ZIndex>19</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox283">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!TotalAmount.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.8281in</Top>
-                              <Left>25.8675cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>0.72862in</Width>
-                              <ZIndex>20</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox313">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!TotalAmount.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>2.00799in</Top>
-                              <Left>25.88338cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>0.72862in</Width>
-                              <ZIndex>21</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox314">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!TotalAmountInclVAT.Value,Last, "list1_Details_Group") - RunningValue(Fields!TotalAmount.Value,Last,"list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>2.16844in</Top>
-                              <Left>25.88338cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>0.72862in</Width>
-                              <ZIndex>22</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox369">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!TotalAmountInclVAT.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>2.34417in</Top>
-                              <Left>25.88338cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>0.72862in</Width>
-                              <ZIndex>23</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox374">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!SubtotalCaption.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.44693in</Top>
-                              <Left>21.70721cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>1.58978in</Width>
-                              <ZIndex>24</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox401">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>="Inv.Discount Amount"</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.63987in</Top>
-                              <Left>21.70721cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>1.59902in</Width>
-                              <ZIndex>25</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox425">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!TotalText.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>1.82948in</Top>
-                              <Left>21.70721cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>1.60041in</Width>
-                              <ZIndex>26</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox426">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!TotalExclVATText.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>2.02049in</Top>
-                              <Left>21.70721cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>1.60965in</Width>
-                              <ZIndex>27</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox427">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!VATAmtLineVATAmtText.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>2.2128in</Top>
-                              <Left>21.70721cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>1.61291in</Width>
-                              <ZIndex>28</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox428">
-                              <rd:DefaultName>Textbox200</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=RunningValue(Fields!TotalInclVATText.Value,Last, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <Format>0.00;(0.00)</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>2.39131in</Top>
-                              <Left>21.70721cm</Left>
-                              <Height>0.16045in</Height>
-                              <Width>1.60965in</Width>
-                              <ZIndex>29</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox61">
-                              <rd:DefaultName>Textbox61</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>="Total No. of Lines"</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>3.41873cm</Top>
-                              <Left>4.4444cm</Left>
-                              <Height>0.02646cm</Height>
-                              <Width>3.28341cm</Width>
-                              <ZIndex>30</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>5pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox435">
-                              <rd:DefaultName>Textbox238</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>="Qty to Handle"</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                        <Format>hh:mm:ss</Format>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Left</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>3.41873cm</Top>
-                              <Left>11.14773cm</Left>
-                              <Height>0.02646cm</Height>
-                              <Width>2.28416cm</Width>
-                              <ZIndex>31</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Color>LightGrey</Color>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox563">
-                              <rd:DefaultName>Textbox235</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=First(Fields!QtyToHandle.Value, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                        <FontSize>9pt</FontSize>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Right</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>3.41873cm</Top>
-                              <Left>13.573cm</Left>
-                              <Height>0.02646cm</Height>
-                              <Width>1.24377cm</Width>
-                              <ZIndex>32</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>5pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
-                            <Textbox Name="Textbox180">
-                              <rd:DefaultName>Textbox180</rd:DefaultName>
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>=First(Fields!cnt.Value, "list1_Details_Group")</Value>
-                                      <Style>
-                                        <FontFamily>Segoe UI</FontFamily>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style />
-                                </Paragraph>
-                              </Paragraphs>
-                              <Top>3.35769cm</Top>
-                              <Left>7.72781cm</Left>
-                              <Height>0.32887cm</Height>
-                              <Width>0.8325cm</Width>
-                              <ZIndex>33</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
                           </ReportItems>
                           <KeepTogether>true</KeepTogether>
                           <Style />
@@ -7411,15 +6431,15 @@ Cstr(Fields!HomePage.Value) + Chr(177) + Cstr(Fields!cnt.Value) + Chr(177) + Cst
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Left>0.02646cm</Left>
-            <Height>6.48146cm</Height>
-            <Width>28.43959cm</Width>
+            <Height>2.61953cm</Height>
+            <Width>28.65339cm</Width>
             <Style />
           </Tablix>
         </ReportItems>
-        <Height>2.55176in</Height>
+        <Height>1.03131in</Height>
         <Style />
       </Body>
-      <Width>11.20711in</Width>
+      <Width>11.29128in</Width>
       <Page>
         <PageHeader>
           <Height>3.45337in</Height>
@@ -8628,6 +7648,1183 @@ First(Fields!CompanyPostCode.Value, "DataSet_Result") + System.Environment.NewLi
           </ReportItems>
           <Style />
         </PageHeader>
+        <PageFooter>
+          <Height>1.72943in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="TextBox116">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Medicareplus Int. Ltd retain a beneficial interest in goods until payment has been received in full. The insurance risk</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Normal</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.05837in</Top>
+              <Left>0.07584in</Left>
+              <Height>0.13962in</Height>
+              <Width>8.53572in</Width>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border />
+                <VerticalAlign>Top</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="TextBox123">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>will pass to the purchaser upon delivery. Other Terms and Conditions as per our Price List and Overleaf.</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.21188in</Top>
+              <Left>0.07584in</Left>
+              <Height>0.17014in</Height>
+              <Width>8.53711in</Width>
+              <ZIndex>1</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border />
+                <VerticalAlign>Top</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox205">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(Cdbl(ReportItems!Textbox14.Value))</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.45146in</Top>
+              <Left>2.79294cm</Left>
+              <Height>0.16045in</Height>
+              <Width>0.72862in</Width>
+              <ZIndex>2</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox207">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>NET</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.14673cm</Top>
+              <Left>0.88169cm</Left>
+              <Height>0.40754cm</Height>
+              <Width>1.85069cm</Width>
+              <ZIndex>3</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox144">
+              <rd:DefaultName>Textbox143</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>VAT</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.19166cm</Top>
+              <Left>6.37797cm</Left>
+              <Height>0.40754cm</Height>
+              <Width>1.94612cm</Width>
+              <ZIndex>4</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox208">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox51.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.47029in</Top>
+              <Left>8.39464cm</Left>
+              <Height>0.16045in</Height>
+              <Width>0.72862in</Width>
+              <ZIndex>5</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox210">
+              <rd:DefaultName>Textbox197</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Date/Time</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.22341cm</Top>
+              <Left>11.7818cm</Left>
+              <Height>0.40754cm</Height>
+              <Width>2.31447cm</Width>
+              <ZIndex>6</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border />
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox178">
+              <rd:DefaultName>Textbox175</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>PACKED BY</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.67075cm</Top>
+              <Left>0.86363cm</Left>
+              <Height>0.40185cm</Height>
+              <Width>3.8943cm</Width>
+              <ZIndex>7</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border />
+                <VerticalAlign>Top</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox255">
+              <rd:DefaultName>Textbox254</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>CHECKED BY</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.68027cm</Top>
+              <Left>6.31447cm</Left>
+              <Height>0.40185cm</Height>
+              <Width>2.87216cm</Width>
+              <ZIndex>8</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox229">
+              <rd:DefaultName>Textbox204</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Date/Time</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>2.19333cm</Top>
+              <Left>0.85638cm</Left>
+              <Height>0.35463cm</Height>
+              <Width>2.4895cm</Width>
+              <ZIndex>9</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox241">
+              <rd:DefaultName>Textbox235</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ExecutionTime.Date</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <Format>dd/MM/yy</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>2.16511cm</Top>
+              <Left>3.45171cm</Left>
+              <Height>0.38285cm</Height>
+              <Width>2.2589cm</Width>
+              <ZIndex>10</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox242">
+              <rd:DefaultName>Textbox238</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Cstr(Globals!ExecutionTime.Hour)+":"+Cstr(Globals!ExecutionTime.Minute)+":"+Cstr(Globals!ExecutionTime.Second)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <Format>hh:mm:ss</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>2.13349cm</Top>
+              <Left>6.34801cm</Left>
+              <Height>0.41447cm</Height>
+              <Width>4.73654cm</Width>
+              <ZIndex>11</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox140">
+              <rd:DefaultName>Textbox129</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>No Of Pallets/Parcels</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>2.13349cm</Top>
+              <Left>11.12825cm</Left>
+              <Height>0.41447cm</Height>
+              <Width>3.88115cm</Width>
+              <ZIndex>12</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border />
+                <VerticalAlign>Top</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox295">
+              <rd:DefaultName>Textbox221</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>2.13349cm</Top>
+              <Left>15.00939cm</Left>
+              <Height>0.41447cm</Height>
+              <Width>1.7985cm</Width>
+              <ZIndex>13</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox296">
+              <rd:DefaultName>Textbox223</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value />
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>2.13349cm</Top>
+              <Left>16.80785cm</Left>
+              <Height>0.41447cm</Height>
+              <Width>1.79957cm</Width>
+              <ZIndex>14</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+                <VerticalAlign>Top</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox223">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox113.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                        <Color>Red</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.12535in</Top>
+              <Left>26.18713cm</Left>
+              <Height>0.16045in</Height>
+              <Width>0.72862in</Width>
+              <ZIndex>15</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox230">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox116.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.30301in</Top>
+              <Left>26.18714cm</Left>
+              <Height>0.16045in</Height>
+              <Width>0.72862in</Width>
+              <ZIndex>16</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox283">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox260.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.48152in</Top>
+              <Left>26.17827cm</Left>
+              <Height>0.16045in</Height>
+              <Width>0.73487in</Width>
+              <ZIndex>17</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox313">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox288.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.66141in</Top>
+              <Left>26.19415cm</Left>
+              <Height>0.16045in</Height>
+              <Width>0.72862in</Width>
+              <ZIndex>18</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox314">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox320.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.82186in</Top>
+              <Left>26.19415cm</Left>
+              <Height>0.16045in</Height>
+              <Width>0.72862in</Width>
+              <ZIndex>19</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox369">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox346.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.99759in</Top>
+              <Left>26.19415cm</Left>
+              <Height>0.16045in</Height>
+              <Width>0.72862in</Width>
+              <ZIndex>20</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox374">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox15.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.12535in</Top>
+              <Left>22.04973cm</Left>
+              <Height>0.16045in</Height>
+              <Width>1.58978in</Width>
+              <ZIndex>21</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox401">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Inv.Discount Amount"</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.30579in</Top>
+              <Left>22.04973cm</Left>
+              <Height>0.16045in</Height>
+              <Width>1.58978in</Width>
+              <ZIndex>22</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox425">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox164.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.4829in</Top>
+              <Left>22.05326cm</Left>
+              <Height>0.16045in</Height>
+              <Width>1.59902in</Width>
+              <ZIndex>23</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox426">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox171.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.66141in</Top>
+              <Left>22.04973cm</Left>
+              <Height>0.16045in</Height>
+              <Width>1.59715in</Width>
+              <ZIndex>24</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox427">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox190.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.82872in</Top>
+              <Left>22.04973cm</Left>
+              <Height>0.16045in</Height>
+              <Width>1.60041in</Width>
+              <ZIndex>25</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox428">
+              <rd:DefaultName>Textbox200</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Last(ReportItems!Textbox424.Value)</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>0.00;(0.00)</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.00723in</Top>
+              <Left>22.04973cm</Left>
+              <Height>0.16045in</Height>
+              <Width>1.59715in</Width>
+              <ZIndex>26</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox61">
+              <rd:DefaultName>Textbox61</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Total No. of Lines"</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.09368cm</Top>
+              <Left>4.78692cm</Left>
+              <Height>0.02646cm</Height>
+              <Width>3.28341cm</Width>
+              <ZIndex>27</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>5pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox435">
+              <rd:DefaultName>Textbox238</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Qty to Handle"</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <Format>hh:mm:ss</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.09368cm</Top>
+              <Left>11.49025cm</Left>
+              <Height>0.02646cm</Height>
+              <Width>2.28416cm</Width>
+              <ZIndex>28</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Color>LightGrey</Color>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox563">
+              <rd:DefaultName>Textbox235</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Code.GetData(101)'last(Fields!QtyToHandle.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.09368cm</Top>
+              <Left>13.91552cm</Left>
+              <Height>0.02646cm</Height>
+              <Width>1.24377cm</Width>
+              <ZIndex>29</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>5pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox180">
+              <rd:DefaultName>Textbox180</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Code.GetData(100)'Last(Fields!cnt.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.03264cm</Top>
+              <Left>8.07033cm</Left>
+              <Height>0.32887cm</Height>
+              <Width>0.8325cm</Width>
+              <ZIndex>30</ZIndex>
+              <Visibility>
+                <Hidden>=iif(
+(Globals!PageNumber=CInt(Math.Round(Globals!TotalPages/(Fields!NoOfCopies.Value+1),0,MidpointRounding.AwayFromZero)))
+OR
+(Globals!PageNumber=Globals!TotalPages),false,true)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
         <PageHeight>8.27in</PageHeight>
         <PageWidth>11.69in</PageWidth>
         <InteractiveHeight>11in</InteractiveHeight>
