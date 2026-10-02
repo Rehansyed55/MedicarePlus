@@ -18,5 +18,10 @@ tableextension 50035 "Lot No. Information Ext" extends "Lot No. Information"
             DataClassification = ToBeClassified;
             Description = 'Changed in Upgradation';
         }
+        field(50002; "Expiration Date"; Date)
+        {
+            DataClassification = ToBeClassified;
+            //Description = 'Changed in Upgradation';
+        }
     }
 }

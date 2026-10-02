@@ -48,7 +48,8 @@ pageextension 50102 "Sales Order Ext" extends "Sales Order"
                 Image = PickLines;
                 Promoted = true;
                 PromotedCategory = Process;
-                visible = false;
+                visible = true;
+                applicationarea = All;
 
                 trigger OnAction()
                 var
