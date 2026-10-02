@@ -5,7 +5,7 @@ report 60043 "Zonewise quantity-Group by Bin"
 
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    Caption = 'Zonewise quantity-Group by Bin';
+    Caption = 'Inventory Bin Valuation';
     dataset
     {
         dataitem("Bin Content"; "Bin Content")

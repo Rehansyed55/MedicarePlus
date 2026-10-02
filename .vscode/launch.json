@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "MedicarePlus",
+            "environmentName": "Sandbox250926",
             "tenant": "c2f71f4b-2abc-4d62-9f1c-44bd3687eb93",
             "startupObjectId": 22,
             "startupObjectType": "Page",

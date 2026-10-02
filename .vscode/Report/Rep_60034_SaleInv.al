@@ -107,7 +107,7 @@ report 60034 "Sales - Invoice"
             {
             }
             column(NoOfCopies; NoOfCopies)
-            {
+            { 
             }
             // NOTE: CurrReport.PageNo is deprecated since 1.0, but this column is still referenced
             // by a hidden diagnostic textbox in SalesInvoice.rdl (Fields!PageNo.Value) - removing/

@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-09-24T08:52:15.4399336Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-09-30T08:07:32.9778596Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -14303,8 +14303,7 @@ and Fields!No_WhseActivHeader.Value=previous(Fields!No_WhseActivHeader.Value),tr
           <Style />
         </PageHeader>
         <PageFooter>
-          <Height>2.27542cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <Height>3.09563cm</Height>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Textbox Name="Textbox15">
@@ -14315,7 +14314,7 @@ and Fields!No_WhseActivHeader.Value=previous(Fields!No_WhseActivHeader.Value),tr
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Picked By</Value>
+                      <Value EvaluationMode="Constant">Picked by: Name ---------------------- Signature ------------------------- Date ------------------</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -14325,10 +14324,10 @@ and Fields!No_WhseActivHeader.Value=previous(Fields!No_WhseActivHeader.Value),tr
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <Top>0.62075cm</Top>
+              <Top>1.7955cm</Top>
               <Left>0.0696cm</Left>
               <Height>0.38833cm</Height>
-              <Width>2.92063cm</Width>
+              <Width>16.71444cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -14343,7 +14342,7 @@ and Fields!No_WhseActivHeader.Value=previous(Fields!No_WhseActivHeader.Value),tr
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Checked By</Value>
+                      <Value EvaluationMode="Constant">Checked by: Name----------------------------- Signature-----------------------------Date -----------------------</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -14353,10 +14352,10 @@ and Fields!No_WhseActivHeader.Value=previous(Fields!No_WhseActivHeader.Value),tr
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <Top>1.3457cm</Top>
+              <Top>2.52045cm</Top>
               <Left>0.06642cm</Left>
               <Height>0.38833cm</Height>
-              <Width>2.92063cm</Width>
+              <Width>17.6211cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -14364,112 +14363,6 @@ and Fields!No_WhseActivHeader.Value=previous(Fields!No_WhseActivHeader.Value),tr
                 </Border>
               </Style>
             </Textbox>
-            <Line Name="Line1">
-              <Top>1.01196cm</Top>
-              <Left>3.71238cm</Left>
-              <Height>0cm</Height>
-              <Width>3.53188cm</Width>
-              <ZIndex>2</ZIndex>
-              <Style>
-                <Border>
-                  <Style>Solid</Style>
-                </Border>
-              </Style>
-            </Line>
-            <Line Name="Line2">
-              <Top>1.73403cm</Top>
-              <Left>3.71238cm</Left>
-              <Height>0cm</Height>
-              <Width>3.53188cm</Width>
-              <ZIndex>3</ZIndex>
-              <Style>
-                <Border>
-                  <Style>Solid</Style>
-                </Border>
-              </Style>
-            </Line>
-            <Textbox Name="Textbox18">
-              <rd:DefaultName>Textbox14</rd:DefaultName>
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Date</Value>
-                      <Style>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <Top>0.62427cm</Top>
-              <Left>7.89933cm</Left>
-              <Height>0.3848cm</Height>
-              <Width>1.5475cm</Width>
-              <ZIndex>4</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox25">
-              <rd:DefaultName>Textbox14</rd:DefaultName>
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Date</Value>
-                      <Style>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <Top>1.3457cm</Top>
-              <Left>7.89933cm</Left>
-              <Height>0.3848cm</Height>
-              <Width>1.5475cm</Width>
-              <ZIndex>5</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Textbox>
-            <Line Name="Line3">
-              <Top>1.07949cm</Top>
-              <Left>9.95288cm</Left>
-              <Height>0cm</Height>
-              <Width>2.65875cm</Width>
-              <ZIndex>6</ZIndex>
-              <Style>
-                <Border>
-                  <Style>Solid</Style>
-                </Border>
-              </Style>
-            </Line>
-            <Line Name="Line4">
-              <Top>1.73403cm</Top>
-              <Left>9.92114cm</Left>
-              <Height>0cm</Height>
-              <Width>2.65875cm</Width>
-              <ZIndex>7</ZIndex>
-              <Style>
-                <Border>
-                  <Style>Solid</Style>
-                </Border>
-              </Style>
-            </Line>
             <Textbox Name="Textbox1">
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <CanGrow>true</CanGrow>
@@ -14488,11 +14381,11 @@ and Fields!No_WhseActivHeader.Value=previous(Fields!No_WhseActivHeader.Value),tr
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <Top>0.9525cm</Top>
-              <Left>14.39078cm</Left>
+              <Top>0.17639cm</Top>
+              <Left>18.22353cm</Left>
               <Height>0.44879cm</Height>
               <Width>0.43343cm</Width>
-              <ZIndex>8</ZIndex>
+              <ZIndex>2</ZIndex>
               <Visibility>
                 <Hidden>=code.SetData(ReportItems!PageHeaderData.Value)</Hidden>
               </Visibility>
@@ -14505,6 +14398,35 @@ and Fields!No_WhseActivHeader.Value=previous(Fields!No_WhseActivHeader.Value),tr
                 <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
                 <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox18">
+              <rd:DefaultName>Textbox13</rd:DefaultName>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Constant">The warehouse Picker shall sign the Picking List confirming that the product code, product description, quantity, lot number and expiry date have been verified. An independent Warehouse Checker shall physically verify the picked items against the Picking List and countersign the document. Any discrepancies identified during verification shall be reported to the warehouse manager.</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.23685cm</Top>
+              <Left>0.09607cm</Left>
+              <Height>1.28791cm</Height>
+              <Width>19.12282cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
               </Style>
             </Textbox>
           </ReportItems>
