@@ -27,6 +27,22 @@ tableextension 50028 "Production Order Ext" extends "Production Order"
                 "Total No. of Actions" := ROUND(Quantity * "No.of Actions"); //Nikhil_11/02/2021_(CAS-23877-S6C5N4)
             end;
         }
+
+        modify("Routing No.")
+        {
+            trigger OnAfterValidate()
+            var
+                ProdOrderLine: Record "Prod. Order Line";
+            begin
+                // Header Routing No. is not pushed to existing lines/routing lines until the order is refreshed
+                if "Routing No." = xRec."Routing No." then
+                    exit;
+                ProdOrderLine.SetRange(Status, Status);
+                ProdOrderLine.SetRange("Prod. Order No.", "No.");
+                if not ProdOrderLine.IsEmpty() then
+                    Message(RefreshForRoutingMsg, FieldCaption("Routing No."));
+            end;
+        }
         field(50000; "ECMA No."; Code[100])
         {
             Description = 'Upgrade frm Nav5';
@@ -905,5 +921,6 @@ tableextension 50028 "Production Order Ext" extends "Production Order"
         DateSet: Record 2000000007;
         NoofPeople: Integer;
         MfgSetup: Record "Manufacturing Setup";
+        RefreshForRoutingMsg: Label '%1 has been changed. Run Refresh Production Order to apply the new routing to the lines before running Calculate Subcontracts.', Comment = '%1 = Routing No. field caption';
 
 }

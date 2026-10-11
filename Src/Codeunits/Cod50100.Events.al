@@ -116,6 +116,29 @@ codeunit 50000 Events
 
     end;
 
+    // Keep the Routing No. entered on the Production Order header during Refresh Production Order
+    // instead of resetting it to the Item/SKU default. The header is already defaulted from Item/SKU
+    // when Source No./Variant/Location is validated, so a non-blank value here is either the default or a user change.
+    [EventSubscriber(ObjectType::Report, Report::"Refresh Production Order", OnAfterGetRoutingNo, '', false, false)]
+    local procedure "Refresh Production Order_OnAfterGetRoutingNo"(var ProductionOrder: Record "Production Order"; var RoutingNo: Code[20])
+    begin
+        if (ProductionOrder."Source Type" = ProductionOrder."Source Type"::Item) and (ProductionOrder."Routing No." <> '') then
+            RoutingNo := ProductionOrder."Routing No.";
+    end;
+
+    // Apply the header Routing No. to the main Prod. Order Line, so the Prod. Order Routing Lines
+    // (used by Calculate Subcontracts) are built from the routing selected on the header.
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Create Prod. Order Lines", OnAfterInitProdOrderLine, '', false, false)]
+    local procedure "Create Prod. Order Lines_OnAfterInitProdOrderLine"(var ProdOrderLine: Record "Prod. Order Line"; ProdOrder: Record "Production Order"; SalesLine: Record "Sales Line")
+    begin
+        if ProdOrder."Source Type" <> ProdOrder."Source Type"::Item then
+            exit;
+        if (ProdOrder."Routing No." = '') or (ProdOrderLine."Item No." <> ProdOrder."Source No.") then
+            exit;
+        if ProdOrderLine."Routing No." <> ProdOrder."Routing No." then
+            ProdOrderLine.Validate("Routing No.", ProdOrder."Routing No.");
+    end;
+
 
 
     var

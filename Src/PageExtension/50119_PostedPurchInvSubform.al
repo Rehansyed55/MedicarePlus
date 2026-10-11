@@ -18,6 +18,6 @@ pageextension 50119 "PostedPurch.Inv Subform_Ext" extends "Posted Purch. Invoice
     }
 
     var
-        myInt: page "Subcontracting Worksheet";
+        myInt: integer;
 
 }

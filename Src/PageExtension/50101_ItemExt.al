@@ -56,5 +56,5 @@ pageextension 50101 itemCard_Ext extends "Item Card"
     end;
 
     var
-        myInt: page "Subcontracting Worksheet";
+        myInt: integer;
 }
