@@ -816,10 +816,12 @@ report 60050 "Customer Statement New"
                     Caption = 'Option';
                     field(NoOfLoops; NoOfLoops)
                     {
+                        ApplicationArea = All;
                         Caption = 'No Of Copies';
                     }
                     field(PrintToExcel; PrintToExcel)
                     {
+                        ApplicationArea = All;
                         Caption = 'Print To Excel';
                     }
                 }

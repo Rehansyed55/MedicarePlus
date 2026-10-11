@@ -34,14 +34,14 @@ pageextension 60032 InventoryPick extends "Inventory Pick"
                 ApplicationArea = All;
             }
         }
-        modify("TSRD Address Group")
-        {
-            Visible = false;
-        }
-        modify("TSRD Shipping")
-        {
-            Visible = false;
-        }
+        // modify("TSRD Address Group")
+        // {
+        //     Visible = false;
+        // }
+        // modify("TSRD Shipping")
+        // {
+        //     Visible = false;
+        // }
         addlast(Content)
         {
             group(Shipping)

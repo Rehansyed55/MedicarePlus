@@ -237,6 +237,7 @@ page 60030 "Sales Order Subform WS-Web"
                 }
                 field("Batch Qty"; Rec."Batch Qty")
                 {
+                    ApplicationArea = All;
                     Visible = false;
 
                     trigger OnAssistEdit()

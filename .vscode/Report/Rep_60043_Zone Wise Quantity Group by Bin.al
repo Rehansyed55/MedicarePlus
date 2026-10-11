@@ -292,13 +292,16 @@ report 60043 "Zonewise quantity-Group by Bin"
                     Caption = 'option';
                     field(PrintToexcel; Printtoexcel)
                     {
+                        ApplicationArea = All;
                     }
                     field(Startdate; Startdate)
                     {
+                        ApplicationArea = All;
                         Caption = '<Start date>';
                     }
                     field(enddate; enddate)
                     {
+                        ApplicationArea = All;
                         Caption = '<Enddate>';
                     }
                 }

@@ -242,6 +242,7 @@ report 60040 "Overstock Report"
                 {
                     field("Print to Excel"; Printtoexcel)
                     {
+                        ApplicationArea = All;
                     }
                 }
             }

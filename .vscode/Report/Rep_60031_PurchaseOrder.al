@@ -898,14 +898,17 @@ report 60031 "OrderGB"
                     Caption = 'Options';
                     field(NoOfCopies; NoOfCopies)
                     {
+                        ApplicationArea = All;
                         Caption = 'No. of Copies';
                     }
                     field(ShowInternalInfo; ShowInternalInfo)
                     {
+                        ApplicationArea = All;
                         Caption = 'Show Internal Information';
                     }
                     field(ArchiveDocument; ArchiveDocument)
                     {
+                        ApplicationArea = All;
                         Caption = 'Archive Document';
                         Enabled = ArchiveDocumentEnable;
 
@@ -917,6 +920,7 @@ report 60031 "OrderGB"
                     }
                     field(LogInteraction; LogInteraction)
                     {
+                        ApplicationArea = All;
                         Caption = 'Log Interaction';
                         Enabled = LogInteractionEnable;
 

@@ -312,29 +312,35 @@ report 60046 "Bank Acc. Recon. Statement"
                         Caption = 'Statement Period';
                         field(StartDate; StartDate)
                         {
+                            ApplicationArea = All;
                             Caption = 'Starting Date';
                         }
                         field(EndDate; EndDate)
                         {
+                            ApplicationArea = All;
                             Caption = 'Ending Date';
                         }
                     }
                     field(IncludeChecksReq; IncludeChecks)
                     {
+                        ApplicationArea = All;
                         Caption = 'Include Checks';
                     }
                     field(ReqBankAccountNoField; ReqBankAccountNo)
                     {
+                        ApplicationArea = All;
                         Visible = false;
                         Editable = false;
                     }
                     field(ReqStatementNoField; ReqStatementNo)
                     {
+                        ApplicationArea = All;
                         Visible = false;
                         Editable = false;
                     }
                     field(ReqStatementTypeField; ReqStatementType)
                     {
+                        ApplicationArea = All;
                         Visible = false;
                         Editable = false;
                     }

@@ -1088,19 +1088,23 @@ report 60034 "Sales - Invoice"
                     Caption = 'Options';
                     field(NoOfCopies; NoOfCopies)
                     {
+                        ApplicationArea = All;
                         Caption = 'No. of Copies';
                     }
                     field(ShowInternalInfo; ShowInternalInfo)
                     {
+                        ApplicationArea = All;
                         Caption = 'Show Internal Information';
                     }
                     field(LogInteraction; LogInteraction)
                     {
+                        ApplicationArea = All;
                         Caption = 'Log Interaction';
                         Enabled = LogInteractionEnable;
                     }
                     field(CurrencyLCY; CurrencyLCY)
                     {
+                        ApplicationArea = All;
                         Caption = 'Show LCY for FCY';
                     }
                 }

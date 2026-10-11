@@ -222,9 +222,11 @@ report 60042 "Customer By Area"
                 {
                     field("To Date"; "To Date")
                     {
+                        ApplicationArea = All;
                     }
                     field(Printtoexcel; Printtoexcel)
                     {
+                        ApplicationArea = All;
                     }
                 }
             }

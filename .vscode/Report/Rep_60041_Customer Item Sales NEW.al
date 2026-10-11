@@ -243,10 +243,12 @@ report 60041 "Customer/Item Sales NEW"
                     Caption = 'Options';
                     field(PrintOnlyOnePerPage; PrintOnlyOnePerPage)
                     {
+                        ApplicationArea = All;
                         Caption = 'New Page per Customer';
                     }
                     field(PrintToExcel; PrintToExcel)
                     {
+                        ApplicationArea = All;
                         Caption = 'Print to Excel';
                     }
                 }

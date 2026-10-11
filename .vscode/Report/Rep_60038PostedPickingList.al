@@ -471,16 +471,19 @@ report 60038 "Posted Picking List"
                     Caption = 'Options';
                     field(Breakbulk; BreakbulkFilter)
                     {
+                        ApplicationArea = All;
                         Caption = 'Set Breakbulk Filter';
                         Editable = BreakbulkEditable;
                     }
                     field(SumUpLines; SumUpLines)
                     {
+                        ApplicationArea = All;
                         Caption = 'Sum up Lines';
                         Editable = SumUpLinesEditable;
                     }
                     field(LotSerialNo; ShowLotSN)
                     {
+                        ApplicationArea = All;
                         Caption = 'Show Serial/Lot Number';
                     }
                 }

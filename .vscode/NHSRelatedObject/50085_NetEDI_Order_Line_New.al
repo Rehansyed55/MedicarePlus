@@ -22,6 +22,7 @@ page 60031 NetEDI_Order_Line_New
             {
                 field(Type; Rec.Type)
                 {
+                    ApplicationArea = All;
 
                     trigger OnValidate()
                     begin
@@ -30,9 +31,11 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Document No."; Rec."Document No.")
                 {
+                    ApplicationArea = All;
                 }
                 field("No."; Rec."No.")
                 {
+                    ApplicationArea = All;
 
                     trigger OnValidate()
                     begin
@@ -42,6 +45,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Cross-Reference No."; Rec."Item Reference No.")
                 {
+                    ApplicationArea = All;
                     Visible = false;
 
                     trigger OnLookup(var Text: Text): Boolean
@@ -57,18 +61,22 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("IC Partner Code"; Rec."IC Partner Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("IC Partner Ref. Type"; Rec."IC Partner Ref. Type")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("IC Partner Reference"; Rec."IC Partner Reference")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Variant Code"; Rec."Variant Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
 
                     trigger OnValidate()
@@ -78,38 +86,47 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Substitution Available"; Rec."Substitution Available")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Purchasing Code"; Rec."Purchasing Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field(Nonstock; Rec.Nonstock)
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("VAT Prod. Posting Group"; Rec."VAT Prod. Posting Group")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field(Description; Rec.Description)
                 {
+                    ApplicationArea = All;
                     QuickEntry = false;
                 }
                 field("Drop Shipment"; Rec."Drop Shipment")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Special Order"; Rec."Special Order")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Return Reason Code"; Rec."Return Reason Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Location Code"; Rec."Location Code")
                 {
+                    ApplicationArea = All;
                     QuickEntry = false;
 
                     trigger OnValidate()
@@ -142,10 +159,12 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Bin Code"; Rec."Bin Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field(Reserve; Rec.Reserve)
                 {
+                    ApplicationArea = All;
                     Visible = false;
 
                     trigger OnValidate()
@@ -155,6 +174,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field(Quantity; Rec.Quantity)
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
 
                     trigger OnValidate()
@@ -164,6 +184,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Batch Qty"; Rec."Batch Qty")
                 {
+                    ApplicationArea = All;
                     Visible = false;
 
                     trigger OnAssistEdit()
@@ -287,6 +308,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Qty. to Assemble to Order"; Rec."Qty. to Assemble to Order")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
                     Visible = false;
 
@@ -302,11 +324,13 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Reserved Quantity"; Rec."Reserved Quantity")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
                     QuickEntry = false;
                 }
                 field("Unit of Measure Code"; Rec."Unit of Measure Code")
                 {
+                    ApplicationArea = All;
                     QuickEntry = false;
 
                     trigger OnValidate()
@@ -316,21 +340,25 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Unit of Measure"; Rec."Unit of Measure")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Unit Cost (LCY)"; Rec."Unit Cost (LCY)")
                 {
+                    ApplicationArea = All;
                     Editable = false;
                     Visible = false;
                 }
                 field(SalesPriceExist; Rec.PriceExists)
                 {
+                    ApplicationArea = All;
                     Caption = 'Sales Price Exists';
                     Editable = false;
                     Visible = false;
                 }
                 field("Unit Price"; Rec."Unit Price")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
 
                     trigger OnValidate()
@@ -358,47 +386,57 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Line Amount"; Rec."Line Amount")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
                     Editable = false;
                 }
                 field(SalesLineDiscExists; Rec.LineDiscExists)
                 {
+                    ApplicationArea = All;
                     Caption = 'Sales Line Disc. Exists';
                     Editable = false;
                     Visible = false;
                 }
                 field("Line Discount %"; Rec."Line Discount %")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
                     Visible = false;
                 }
                 field("Line Discount Amount"; Rec."Line Discount Amount")
                 {
+                    ApplicationArea = All;
                     Editable = false;
                     Visible = false;
                 }
                 field("Prepayment %"; Rec."Prepayment %")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Prepmt. Line Amount"; Rec."Prepmt. Line Amount")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Prepmt. Amt. Inv."; Rec."Prepmt. Amt. Inv.")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Allow Invoice Disc."; Rec."Allow Invoice Disc.")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Inv. Discount Amount"; Rec."Inv. Discount Amount")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Qty. to Ship"; Rec."Qty. to Ship")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
 
                     trigger OnValidate()
@@ -411,31 +449,38 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Quantity Shipped"; Rec."Quantity Shipped")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
                     QuickEntry = false;
                 }
                 field("Qty. to Invoice"; Rec."Qty. to Invoice")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
                 }
                 field("Quantity Invoiced"; Rec."Quantity Invoiced")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
                 }
                 field("Prepmt Amt to Deduct"; Rec."Prepmt Amt to Deduct")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Prepmt Amt Deducted"; Rec."Prepmt Amt Deducted")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Allow Item Charge Assignment"; Rec."Allow Item Charge Assignment")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Qty. to Assign"; Rec."Qty. to Assign")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
                     QuickEntry = false;
 
@@ -448,6 +493,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Qty. Assigned"; Rec."Qty. Assigned")
                 {
+                    ApplicationArea = All;
                     BlankZero = true;
                     QuickEntry = false;
 
@@ -460,21 +506,26 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Requested Delivery Date"; Rec."Requested Delivery Date")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Promised Delivery Date"; Rec."Promised Delivery Date")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Planned Delivery Date"; Rec."Planned Delivery Date")
                 {
+                    ApplicationArea = All;
                     QuickEntry = false;
                 }
                 field("Planned Shipment Date"; Rec."Planned Shipment Date")
                 {
+                    ApplicationArea = All;
                 }
                 field("Shipment Date"; Rec."Shipment Date")
                 {
+                    ApplicationArea = All;
                     QuickEntry = false;
 
                     trigger OnValidate()
@@ -484,86 +535,107 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Shipping Agent Code"; Rec."Shipping Agent Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Shipping Agent Service Code"; Rec."Shipping Agent Service Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Shipping Time"; Rec."Shipping Time")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Work Type Code"; Rec."Work Type Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Whse. Outstanding Qty."; Rec."Whse. Outstanding Qty.")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Whse. Outstanding Qty. (Base)"; Rec."Whse. Outstanding Qty. (Base)")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("ATO Whse. Outstanding Qty."; Rec."ATO Whse. Outstanding Qty.")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("ATO Whse. Outstd. Qty. (Base)"; Rec."ATO Whse. Outstd. Qty. (Base)")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Outbound Whse. Handling Time"; Rec."Outbound Whse. Handling Time")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Blanket Order No."; Rec."Blanket Order No.")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Blanket Order Line No."; Rec."Blanket Order Line No.")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("FA Posting Date"; Rec."FA Posting Date")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Depr. until FA Posting Date"; Rec."Depr. until FA Posting Date")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Depreciation Book Code"; Rec."Depreciation Book Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Use Duplication List"; Rec."Use Duplication List")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Duplicate in Depreciation Book"; Rec."Duplicate in Depreciation Book")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Appl.-from Item Entry"; Rec."Appl.-from Item Entry")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Appl.-to Item Entry"; Rec."Appl.-to Item Entry")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Shortcut Dimension 1 Code"; Rec."Shortcut Dimension 1 Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field("Shortcut Dimension 2 Code"; Rec."Shortcut Dimension 2 Code")
                 {
+                    ApplicationArea = All;
                     Visible = false;
                 }
                 field(ShortcutDimCode3; ShortcutDimCode[3])
                 {
+                    ApplicationArea = All;
                     CaptionClass = '1,2,3';
                     Visible = false;
 
@@ -579,6 +651,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field(ShortcutDimCode4; ShortcutDimCode[4])
                 {
+                    ApplicationArea = All;
                     CaptionClass = '1,2,4';
                     Visible = false;
 
@@ -594,6 +667,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field(ShortcutDimCode5; ShortcutDimCode[5])
                 {
+                    ApplicationArea = All;
                     CaptionClass = '1,2,5';
                     Visible = false;
 
@@ -609,6 +683,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field(ShortcutDimCode6; ShortcutDimCode[6])
                 {
+                    ApplicationArea = All;
                     CaptionClass = '1,2,6';
                     Visible = false;
 
@@ -624,6 +699,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field(ShortcutDimCode7; ShortcutDimCode[7])
                 {
+                    ApplicationArea = All;
                     CaptionClass = '1,2,7';
                     Visible = false;
 
@@ -639,6 +715,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field(ShortcutDimCode8; ShortcutDimCode[8])
                 {
+                    ApplicationArea = All;
                     CaptionClass = '1,2,8';
                     Visible = false;
 
@@ -654,6 +731,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 field("Line No."; Rec."Line No.")
                 {
+                    ApplicationArea = All;
                 }
             }
         }
@@ -673,6 +751,7 @@ page 60031 NetEDI_Order_Line_New
                     Image = ItemAvailability;
                     action("<Action3>")
                     {
+                        ApplicationArea = All;
                         Caption = 'Event';
                         Image = "Event";
 
@@ -683,6 +762,7 @@ page 60031 NetEDI_Order_Line_New
                     }
                     action(Period)
                     {
+                        ApplicationArea = All;
                         Caption = 'Period';
                         Image = Period;
 
@@ -693,6 +773,7 @@ page 60031 NetEDI_Order_Line_New
                     }
                     action(Variant)
                     {
+                        ApplicationArea = All;
                         Caption = 'Variant';
                         Image = ItemVariant;
 
@@ -703,6 +784,7 @@ page 60031 NetEDI_Order_Line_New
                     }
                     action(Location)
                     {
+                        ApplicationArea = All;
                         Caption = 'Location';
                         Image = Warehouse;
 
@@ -713,6 +795,7 @@ page 60031 NetEDI_Order_Line_New
                     }
                     action("BOM Level")
                     {
+                        ApplicationArea = All;
                         Caption = 'BOM Level';
                         Image = BOMLevel;
 
@@ -724,6 +807,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action("Reservation Entries")
                 {
+                    ApplicationArea = All;
                     Caption = 'Reservation Entries';
                     Image = ReservationLedger;
 
@@ -734,6 +818,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action(ItemTrackingLines)
                 {
+                    ApplicationArea = All;
                     Caption = 'Item &Tracking Lines';
                     Image = ItemTrackingLines;
                     ShortCutKey = 'Shift+Ctrl+I';
@@ -745,6 +830,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action("Select Item Substitution")
                 {
+                    ApplicationArea = All;
                     Caption = 'Select Item Substitution';
                     Image = SelectItemSubstitution;
 
@@ -755,6 +841,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action(Dimensions)
                 {
+                    ApplicationArea = All;
                     Caption = 'Dimensions';
                     Image = Dimensions;
                     ShortCutKey = 'Shift+Ctrl+D';
@@ -766,6 +853,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action("Co&mments")
                 {
+                    ApplicationArea = All;
                     Caption = 'Co&mments';
                     Image = ViewComments;
 
@@ -776,6 +864,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action("Item Charge &Assignment")
                 {
+                    ApplicationArea = All;
                     Caption = 'Item Charge &Assignment';
 
                     trigger OnAction()
@@ -785,6 +874,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action(OrderPromising)
                 {
+                    ApplicationArea = All;
                     Caption = 'Order &Promising';
                     Image = OrderPromising;
 
@@ -795,6 +885,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action("Bin Contents")
                 {
+                    ApplicationArea = All;
 
                     trigger OnAction()
                     begin
@@ -811,6 +902,7 @@ page 60031 NetEDI_Order_Line_New
                     Image = AssemblyBOM;
                     action(AssembleToOrderLines)
                     {
+                        ApplicationArea = All;
                         Caption = 'Assemble-to-Order Lines';
 
                         trigger OnAction()
@@ -820,6 +912,7 @@ page 60031 NetEDI_Order_Line_New
                     }
                     action("Roll Up &Price")
                     {
+                        ApplicationArea = All;
                         Caption = 'Roll Up &Price';
                         Ellipsis = true;
 
@@ -830,6 +923,7 @@ page 60031 NetEDI_Order_Line_New
                     }
                     action("Roll Up &Cost")
                     {
+                        ApplicationArea = All;
                         Caption = 'Roll Up &Cost';
                         Ellipsis = true;
 
@@ -846,6 +940,7 @@ page 60031 NetEDI_Order_Line_New
                 Image = "Action";
                 action(GetPrice)
                 {
+                    ApplicationArea = All;
                     Caption = 'Get Price';
                     Ellipsis = true;
                     Image = Price;
@@ -857,6 +952,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action("Get Li&ne Discount")
                 {
+                    ApplicationArea = All;
                     Caption = 'Get Li&ne Discount';
                     Ellipsis = true;
                     Image = LineDiscount;
@@ -868,6 +964,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action(ExplodeBOM_Functions)
                 {
+                    ApplicationArea = All;
                     Caption = 'E&xplode BOM';
                     Image = ExplodeBOM;
 
@@ -878,6 +975,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action("Insert Ext. Texts")
                 {
+                    ApplicationArea = All;
                     Caption = 'Insert &Ext. Texts';
                     Image = Text;
 
@@ -888,6 +986,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action(R_Reserve)
                 {
+                    ApplicationArea = All;
                     Caption = '&Reserve';
                     Ellipsis = true;
                     Image = Reserve;
@@ -900,6 +999,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action(OrderTracking)
                 {
+                    ApplicationArea = All;
                     Caption = 'Order &Tracking';
                     Image = OrderTracking;
 
@@ -910,6 +1010,7 @@ page 60031 NetEDI_Order_Line_New
                 }
                 action("Nonstoc&k Items")
                 {
+                    ApplicationArea = All;
                     Caption = 'Nonstoc&k Items';
                     Image = NonStockItem;
 
@@ -929,6 +1030,7 @@ page 60031 NetEDI_Order_Line_New
                     Image = Delivery;
                     action("Purchase &Order")
                     {
+                        ApplicationArea = All;
                         Caption = 'Purchase &Order';
                         Image = Document;
 
@@ -944,6 +1046,7 @@ page 60031 NetEDI_Order_Line_New
                     Image = SpecialOrder;
                     action(OpenSpecialPurchaseOrder)
                     {
+                        ApplicationArea = All;
                         Caption = 'Purchase &Order';
                         Image = Document;
 

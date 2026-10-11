@@ -28,6 +28,7 @@ page 60033 "Sales Order WS"
                 Caption = 'General';
                 field("No."; Rec."No.")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
 
                     trigger OnAssistEdit()
@@ -38,6 +39,7 @@ page 60033 "Sales Order WS"
                 }
                 field("Sell-to Customer No."; Rec."Sell-to Customer No.")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
 
                     trigger OnValidate()
@@ -47,6 +49,7 @@ page 60033 "Sales Order WS"
                 }
                 field("Sell-to Contact No."; Rec."Sell-to Contact No.")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
 
                     trigger OnValidate()
@@ -58,64 +61,80 @@ page 60033 "Sales Order WS"
                 }
                 field("Sell-to Customer Name"; Rec."Sell-to Customer Name")
                 {
+                    ApplicationArea = All;
                     QuickEntry = false;
                 }
                 field("Sell-to Address"; Rec."Sell-to Address")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Sell-to Address 2"; Rec."Sell-to Address 2")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Sell-to City"; Rec."Sell-to City")
                 {
+                    ApplicationArea = All;
                 }
                 field("Sell-to County"; Rec."Sell-to County")
                 {
+                    ApplicationArea = All;
                 }
                 field("Sell-to Post Code"; Rec."Sell-to Post Code")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Sell-to Contact"; Rec."Sell-to Contact")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("No. of Archived Versions"; Rec."No. of Archived Versions")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Posting Date"; Rec."Posting Date")
                 {
+                    ApplicationArea = All;
                     QuickEntry = false;
                 }
                 field("Order Date"; Rec."Order Date")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
                     QuickEntry = false;
                 }
                 field("Document Date"; Rec."Document Date")
                 {
+                    ApplicationArea = All;
                     QuickEntry = false;
                 }
                 field("Requested Delivery Date"; Rec."Requested Delivery Date")
                 {
+                    ApplicationArea = All;
                 }
                 field("Promised Delivery Date"; Rec."Promised Delivery Date")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Quote No."; Rec."Quote No.")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("External Document No."; Rec."External Document No.")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
                 }
                 field("Salesperson Code"; Rec."Salesperson Code")
                 {
+                    ApplicationArea = All;
                     QuickEntry = false;
 
                     trigger OnValidate()
@@ -125,36 +144,44 @@ page 60033 "Sales Order WS"
                 }
                 field("Campaign No."; Rec."Campaign No.")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Opportunity No."; Rec."Opportunity No.")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Responsibility Center"; Rec."Responsibility Center")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Assigned User ID"; Rec."Assigned User ID")
                 {
+                    ApplicationArea = All;
                     Editable = false;
                     Importance = Additional;
                 }
                 field("Shipment Method Code"; Rec."Shipment Method Code")
                 {
+                    ApplicationArea = All;
                 }
                 field("Job Queue Status"; Rec."Job Queue Status")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field(Status; Rec.Status)
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
                     QuickEntry = false;
                 }
             }
             part(SalesLines; 60031)
             {
+                ApplicationArea = All;
                 SubPageLink = "Document No." = FIELD("No.");
             }
             group(Invoicing)
@@ -162,6 +189,7 @@ page 60033 "Sales Order WS"
                 Caption = 'Invoicing';
                 field("Bill-to Customer No."; Rec."Bill-to Customer No.")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
 
                     trigger OnValidate()
@@ -171,35 +199,44 @@ page 60033 "Sales Order WS"
                 }
                 field("Bill-to Contact No."; Rec."Bill-to Contact No.")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Bill-to Name"; Rec."Bill-to Name")
                 {
+                    ApplicationArea = All;
                 }
                 field("Bill-to Address"; Rec."Bill-to Address")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Bill-to Address 2"; Rec."Bill-to Address 2")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Bill-to City"; Rec."Bill-to City")
                 {
+                    ApplicationArea = All;
                 }
                 field("Bill-to County"; Rec."Bill-to County")
                 {
+                    ApplicationArea = All;
                 }
                 field("Bill-to Post Code"; Rec."Bill-to Post Code")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Bill-to Contact"; Rec."Bill-to Contact")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Shortcut Dimension 1 Code"; Rec."Shortcut Dimension 1 Code")
                 {
+                    ApplicationArea = All;
 
                     trigger OnValidate()
                     begin
@@ -208,6 +245,7 @@ page 60033 "Sales Order WS"
                 }
                 field("Shortcut Dimension 2 Code"; Rec."Shortcut Dimension 2 Code")
                 {
+                    ApplicationArea = All;
 
                     trigger OnValidate()
                     begin
@@ -216,23 +254,29 @@ page 60033 "Sales Order WS"
                 }
                 field("Payment Terms Code"; Rec."Payment Terms Code")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
                 }
                 field("Due Date"; Rec."Due Date")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
                 }
                 field("Payment Discount %"; Rec."Payment Discount %")
                 {
+                    ApplicationArea = All;
                 }
                 field("Pmt. Discount Date"; Rec."Pmt. Discount Date")
                 {
+                    ApplicationArea = All;
                 }
                 field("Payment Method Code"; Rec."Payment Method Code")
                 {
+                    ApplicationArea = All;
                 }
                 field("Prices Including VAT"; Rec."Prices Including VAT")
                 {
+                    ApplicationArea = All;
 
                     trigger OnValidate()
                     begin
@@ -241,9 +285,11 @@ page 60033 "Sales Order WS"
                 }
                 field("VAT Bus. Posting Group"; Rec."VAT Bus. Posting Group")
                 {
+                    ApplicationArea = All;
                 }
                 field("Customer Price Group"; Rec."Customer Price Group")
                 {
+                    ApplicationArea = All;
                 }
             }
             group(Shipping)
@@ -251,65 +297,82 @@ page 60033 "Sales Order WS"
                 Caption = 'Shipping';
                 field("Ship-to Code"; Rec."Ship-to Code")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
                 }
                 field("Ship-to Name"; Rec."Ship-to Name")
                 {
+                    ApplicationArea = All;
                 }
                 field("Ship-to Address"; Rec."Ship-to Address")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Ship-to Address 2"; Rec."Ship-to Address 2")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Ship-to City"; Rec."Ship-to City")
                 {
+                    ApplicationArea = All;
                 }
                 field("Ship-to County"; Rec."Ship-to County")
                 {
+                    ApplicationArea = All;
                 }
                 field("Ship-to Post Code"; Rec."Ship-to Post Code")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
                 }
                 field("Ship-to Contact"; Rec."Ship-to Contact")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Location Code"; Rec."Location Code")
                 {
+                    ApplicationArea = All;
                 }
                 field("Outbound Whse. Handling Time"; Rec."Outbound Whse. Handling Time")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Shipping Agent Code"; Rec."Shipping Agent Code")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Shipping Agent Service Code"; Rec."Shipping Agent Service Code")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Shipping Time"; Rec."Shipping Time")
                 {
+                    ApplicationArea = All;
                 }
                 field("Late Order Shipping"; Rec."Late Order Shipping")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Package Tracking No."; Rec."Package Tracking No.")
                 {
+                    ApplicationArea = All;
                     Importance = Additional;
                 }
                 field("Shipment Date"; Rec."Shipment Date")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
                 }
                 field("Shipping Advice"; Rec."Shipping Advice")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
 
                     trigger OnValidate()
@@ -325,6 +388,7 @@ page 60033 "Sales Order WS"
                 Caption = 'Foreign Trade';
                 field("Currency Code"; Rec."Currency Code")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
 
                     trigger OnAssistEdit()
@@ -348,21 +412,27 @@ page 60033 "Sales Order WS"
                 }
                 field("EU 3-Party Trade"; Rec."EU 3-Party Trade")
                 {
+                    ApplicationArea = All;
                 }
                 field("Transaction Type"; Rec."Transaction Type")
                 {
+                    ApplicationArea = All;
                 }
                 field("Transaction Specification"; Rec."Transaction Specification")
                 {
+                    ApplicationArea = All;
                 }
                 field("Transport Method"; Rec."Transport Method")
                 {
+                    ApplicationArea = All;
                 }
                 field("Exit Point"; Rec."Exit Point")
                 {
+                    ApplicationArea = All;
                 }
                 field("Area"; Rec."Area")
                 {
+                    ApplicationArea = All;
                 }
             }
             group(Prepayment)
@@ -370,6 +440,7 @@ page 60033 "Sales Order WS"
                 Caption = 'Prepayment';
                 field("Prepayment %"; Rec."Prepayment %")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
 
                     trigger OnValidate()
@@ -379,19 +450,24 @@ page 60033 "Sales Order WS"
                 }
                 field("Compress Prepayment"; Rec."Compress Prepayment")
                 {
+                    ApplicationArea = All;
                 }
                 field("Prepmt. Payment Terms Code"; Rec."Prepmt. Payment Terms Code")
                 {
+                    ApplicationArea = All;
                 }
                 field("Prepayment Due Date"; Rec."Prepayment Due Date")
                 {
+                    ApplicationArea = All;
                     Importance = Promoted;
                 }
                 field("Prepmt. Payment Discount %"; Rec."Prepmt. Payment Discount %")
                 {
+                    ApplicationArea = All;
                 }
                 field("Prepmt. Pmt. Discount Date"; Rec."Prepmt. Pmt. Discount Date")
                 {
+                    ApplicationArea = All;
                 }
             }
         }
@@ -399,21 +475,25 @@ page 60033 "Sales Order WS"
         {
             part(Control9080; "Sales Hist. Sell-to FactBox")
             {
+                ApplicationArea = All;
                 SubPageLink = "No." = FIELD("Sell-to Customer No.");
                 Visible = true;
             }
             part(Control9082; "Customer Statistics FactBox")
             {
+                ApplicationArea = All;
                 SubPageLink = "No." = FIELD("Bill-to Customer No.");
                 Visible = false;
             }
             part(Control9084; "Customer Details FactBox")
             {
+                ApplicationArea = All;
                 SubPageLink = "No." = FIELD("Sell-to Customer No.");
                 Visible = false;
             }
             part(Control9087; "Sales Line FactBox")
             {
+                ApplicationArea = All;
                 Provider = SalesLines;
                 SubPageLink = "Document Type" = FIELD("Document Type"),
                               "Document No." = FIELD("Document No."),
@@ -422,12 +502,14 @@ page 60033 "Sales Order WS"
             }
             part(Control9089; "Item Invoicing FactBox")
             {
+                ApplicationArea = All;
                 Provider = SalesLines;
                 SubPageLink = "No." = FIELD("No.");
                 Visible = false;
             }
             part(Control9092; "Approval FactBox")
             {
+                ApplicationArea = All;
                 SubPageLink = "Table ID" = CONST(36),
                               "Document Type" = FIELD("Document Type"),
                               "Document No." = FIELD("No.");
@@ -435,27 +517,32 @@ page 60033 "Sales Order WS"
             }
             part(Control9108; "Resource Details FactBox")
             {
+                ApplicationArea = All;
                 Provider = SalesLines;
                 SubPageLink = "No." = FIELD("No.");
                 Visible = false;
             }
             part(Control9109; "Item Warehouse FactBox")
             {
+                ApplicationArea = All;
                 Provider = SalesLines;
                 SubPageLink = "No." = FIELD("No.");
                 Visible = false;
             }
             part(Control9081; "Sales Hist. Bill-to FactBox")
             {
+                ApplicationArea = All;
                 SubPageLink = "No." = FIELD("Bill-to Customer No.");
                 Visible = false;
             }
             systempart(Control1900383207; Links)
             {
+                ApplicationArea = All;
                 Visible = false;
             }
             systempart(Control1905902307; Notes)
             {
+                ApplicationArea = All;
                 Visible = true;
             }
         }
@@ -471,6 +558,7 @@ page 60033 "Sales Order WS"
                 Image = "Order";
                 action(Statistics)
                 {
+                    ApplicationArea = All;
                     Caption = 'Statistics';
                     Image = Statistics;
                     Promoted = true;
@@ -486,6 +574,7 @@ page 60033 "Sales Order WS"
                 }
                 action(Card)
                 {
+                    ApplicationArea = All;
                     Caption = 'Card';
                     Image = EditLines;
                     RunObject = page "Customer Card";
@@ -494,6 +583,7 @@ page 60033 "Sales Order WS"
                 }
                 action(Dimensions)
                 {
+                    ApplicationArea = All;
                     Caption = 'Dimensions';
                     Image = Dimensions;
                     ShortCutKey = 'Shift+Ctrl+D';
@@ -506,6 +596,7 @@ page 60033 "Sales Order WS"
                 }
                 action("A&pprovals")
                 {
+                    ApplicationArea = All;
                     Caption = 'A&pprovals';
                     Image = Approvals;
 
@@ -520,6 +611,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Co&mments")
                 {
+                    ApplicationArea = All;
                     Caption = 'Co&mments';
                     Image = ViewComments;
                     RunObject = Page "Sales Comment Sheet";
@@ -538,6 +630,7 @@ page 60033 "Sales Order WS"
                 // }
                 action("Assembly Orders")
                 {
+                    ApplicationArea = All;
                     Caption = 'Assembly Orders';
                     Image = AssemblyOrder;
 
@@ -555,6 +648,7 @@ page 60033 "Sales Order WS"
                 Image = Documents;
                 action("S&hipments")
                 {
+                    ApplicationArea = All;
                     Caption = 'S&hipments';
                     Image = Shipment;
                     RunObject = Page "Posted Sales Shipments";
@@ -563,6 +657,7 @@ page 60033 "Sales Order WS"
                 }
                 action(Invoices)
                 {
+                    ApplicationArea = All;
                     Caption = 'Invoices';
                     Image = Invoice;
                     RunObject = Page "Posted Sales Invoices";
@@ -576,6 +671,7 @@ page 60033 "Sales Order WS"
                 Image = Warehouse;
                 action("In&vt. Put-away/Pick Lines")
                 {
+                    ApplicationArea = All;
                     Caption = 'In&vt. Put-away/Pick Lines';
                     Image = PickLines;
                     RunObject = Page "Warehouse Activity List";
@@ -585,6 +681,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Whse. Shipment Lines")
                 {
+                    ApplicationArea = All;
                     Caption = 'Whse. Shipment Lines';
                     Image = ShipmentLines;
                     RunObject = Page "Whse. Shipment Lines";
@@ -600,6 +697,7 @@ page 60033 "Sales Order WS"
                 Image = Prepayment;
                 action("Prepa&yment Invoices")
                 {
+                    ApplicationArea = All;
                     Caption = 'Prepa&yment Invoices';
                     Image = PrepaymentInvoice;
                     RunObject = Page "Posted Sales Invoices";
@@ -608,6 +706,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Prepayment Credi&t Memos")
                 {
+                    ApplicationArea = All;
                     Caption = 'Prepayment Credi&t Memos';
                     Image = PrepaymentCreditMemo;
                     RunObject = Page "Posted Sales Credit Memos";
@@ -624,6 +723,7 @@ page 60033 "Sales Order WS"
                 Image = ReleaseDoc;
                 action(Release)
                 {
+                    ApplicationArea = All;
                     Caption = 'Re&lease';
                     Image = ReleaseDoc;
                     Promoted = true;
@@ -660,6 +760,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Re&open")
                 {
+                    ApplicationArea = All;
                     Caption = 'Re&open';
                     Image = ReOpen;
                     Promoted = true;
@@ -679,6 +780,7 @@ page 60033 "Sales Order WS"
                 Image = "Action";
                 action("Calculate &Invoice Discount")
                 {
+                    ApplicationArea = All;
                     Caption = 'Calculate &Invoice Discount';
                     Image = CalculateInvoiceDiscount;
 
@@ -689,6 +791,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Get St&d. Cust. Sales Codes")
                 {
+                    ApplicationArea = All;
                     Caption = 'Get St&d. Cust. Sales Codes';
                     Ellipsis = true;
                     Image = CustomerCode;
@@ -702,6 +805,7 @@ page 60033 "Sales Order WS"
                 }
                 action(CopyDocument)
                 {
+                    ApplicationArea = All;
                     Caption = 'Copy Document';
                     Ellipsis = true;
                     Image = CopyDocument;
@@ -717,6 +821,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Move Negative Lines")
                 {
+                    ApplicationArea = All;
                     Caption = 'Move Negative Lines';
                     Ellipsis = true;
                     Image = MoveNegativeLines;
@@ -731,6 +836,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Archive Document")
                 {
+                    ApplicationArea = All;
                     Caption = 'Archi&ve Document';
                     Image = Archive;
 
@@ -742,6 +848,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Send IC Sales Order Cnfmn.")
                 {
+                    ApplicationArea = All;
                     Caption = 'Send IC Sales Order Cnfmn.';
                     Image = IntercompanyOrder;
 
@@ -760,6 +867,7 @@ page 60033 "Sales Order WS"
                 Image = Planning;
                 action("Order &Promising")
                 {
+                    ApplicationArea = All;
                     Caption = 'Order &Promising';
                     Image = OrderPromising;
 
@@ -774,6 +882,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Demand Overview")
                 {
+                    ApplicationArea = All;
                     Caption = 'Demand Overview';
                     Image = Forecast;
 
@@ -789,6 +898,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Pla&nning")
                 {
+                    ApplicationArea = All;
                     Caption = 'Pla&nning';
                     Image = Planning;
 
@@ -807,6 +917,7 @@ page 60033 "Sales Order WS"
                 Image = SendApprovalRequest;
                 action("Send A&pproval Request")
                 {
+                    ApplicationArea = All;
                     Caption = 'Send A&pproval Request';
                     Image = SendApprovalRequest;
 
@@ -820,6 +931,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Cancel Approval Re&quest")
                 {
+                    ApplicationArea = All;
                     Caption = 'Cancel Approval Re&quest';
                     Image = Cancel;
 
@@ -837,6 +949,7 @@ page 60033 "Sales Order WS"
                     Image = AuthorizeCreditCard;
                     action(Authorize)
                     {
+                        ApplicationArea = All;
                         Caption = 'Authorize';
                         Image = AuthorizeCreditCard;
 
@@ -847,6 +960,7 @@ page 60033 "Sales Order WS"
                     }
                     action("Void A&uthorize")
                     {
+                        ApplicationArea = All;
                         Caption = 'Void A&uthorize';
                         Image = VoidCreditCard;
 
@@ -863,6 +977,7 @@ page 60033 "Sales Order WS"
                 Image = Warehouse;
                 action("Create Inventor&y Put-away / Pick")
                 {
+                    ApplicationArea = All;
                     Caption = 'Create Inventor&y Put-away / Pick';
                     Ellipsis = true;
                     Image = CreateInventoryPickup;
@@ -879,6 +994,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Create &Whse. Shipment")
                 {
+                    ApplicationArea = All;
                     Caption = 'Create &Whse. Shipment';
                     Image = NewShipment;
 
@@ -899,6 +1015,7 @@ page 60033 "Sales Order WS"
                 Image = Post;
                 action(Post)
                 {
+                    ApplicationArea = All;
                     Caption = 'P&ost';
                     Ellipsis = true;
                     Image = PostOrder;
@@ -914,6 +1031,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Post and &Print")
                 {
+                    ApplicationArea = All;
                     Caption = 'Post and &Print';
                     Ellipsis = true;
                     Image = PostPrint;
@@ -929,6 +1047,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Test Report")
                 {
+                    ApplicationArea = All;
                     Caption = 'Test Report';
                     Ellipsis = true;
                     Image = TestReport;
@@ -940,6 +1059,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Post &Batch")
                 {
+                    ApplicationArea = All;
                     Caption = 'Post &Batch';
                     Ellipsis = true;
                     Image = PostBatch;
@@ -952,6 +1072,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Remove From Job Queue")
                 {
+                    ApplicationArea = All;
                     Caption = 'Remove From Job Queue';
                     Image = RemoveLine;
                     Visible = JobQueueVisible;
@@ -967,6 +1088,7 @@ page 60033 "Sales Order WS"
                     Image = Prepayment;
                     action("Prepayment &Test Report")
                     {
+                        ApplicationArea = All;
                         Caption = 'Prepayment &Test Report';
                         Ellipsis = true;
                         Image = PrepaymentSimulation;
@@ -978,6 +1100,7 @@ page 60033 "Sales Order WS"
                     }
                     action(PostPrepaymentInvoice)
                     {
+                        ApplicationArea = All;
                         Caption = 'Post Prepayment &Invoice';
                         Ellipsis = true;
                         Image = PrepaymentPost;
@@ -992,6 +1115,7 @@ page 60033 "Sales Order WS"
                     }
                     action("Post and Print Prepmt. Invoic&e")
                     {
+                        ApplicationArea = All;
                         Caption = 'Post and Print Prepmt. Invoic&e';
                         Ellipsis = true;
                         Image = PrepaymentPostPrint;
@@ -1006,6 +1130,7 @@ page 60033 "Sales Order WS"
                     }
                     action(PostPrepaymentCreditMemo)
                     {
+                        ApplicationArea = All;
                         Caption = 'Post Prepayment &Credit Memo';
                         Ellipsis = true;
                         Image = PrepaymentPost;
@@ -1020,6 +1145,7 @@ page 60033 "Sales Order WS"
                     }
                     action("Post and Print Prepmt. Cr. Mem&o")
                     {
+                        ApplicationArea = All;
                         Caption = 'Post and Print Prepmt. Cr. Mem&o';
                         Ellipsis = true;
                         Image = PrepaymentPostPrint;
@@ -1040,6 +1166,7 @@ page 60033 "Sales Order WS"
                 Image = Print;
                 action("Order Profit")
                 {
+                    ApplicationArea = All;
                     Caption = 'Order Profit';
 
                     trigger OnAction()
@@ -1054,6 +1181,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Order Confirmation")
                 {
+                    ApplicationArea = All;
                     Caption = 'Order Confirmation';
                     Ellipsis = true;
                     Image = Print;
@@ -1065,6 +1193,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Work Order")
                 {
+                    ApplicationArea = All;
                     Caption = 'Work Order';
                     Ellipsis = true;
                     Image = Print;
@@ -1076,6 +1205,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Pick Instruction")
                 {
+                    ApplicationArea = All;
                     Caption = 'Pick Instruction';
                     Image = Print;
 
@@ -1086,6 +1216,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Proforma Invoice")
                 {
+                    ApplicationArea = All;
                     Caption = 'Proforma Invoice';
                     Promoted = true;
                     PromotedIsBig = true;
@@ -1102,6 +1233,7 @@ page 60033 "Sales Order WS"
                 }
                 action("Email Proforma Invoice as Attachment")
                 {
+                    ApplicationArea = All;
                     Caption = 'Email Proforma Invoice as Attachment';
                     Image = Email;
                     Promoted = true;
