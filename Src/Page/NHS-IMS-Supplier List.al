@@ -3,6 +3,7 @@ page 50121 "NHS-IMS-Supplier List"
     // version CHEM-280
 
     Editable = false;
+    ApplicationArea = All;
     PageType = List;
     SourceTable = "NHS-IMS-Supplier Data";
 

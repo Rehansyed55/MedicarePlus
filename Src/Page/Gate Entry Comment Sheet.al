@@ -7,6 +7,7 @@ page 50102 "Gate Entry Comment Sheet"
     DataCaptionFields = "Gate Entry Type", "No.";
     DelayedInsert = true;
     MultipleNewLines = true;
+    ApplicationArea = All;
     PageType = Worksheet;
     SourceTable = "Gate Entry Comment Line1";
    

@@ -23,7 +23,7 @@ pageextension 50116 ReleasedProductionOrder extends "Released Production Order"
             }
             field("BPR Version No."; Rec."BPR Version No.")
             {
-                // ApplicationArea = All;
+                ApplicationArea = All;
             }
             field("PLPI No."; Rec."PLPI No.")
             {
