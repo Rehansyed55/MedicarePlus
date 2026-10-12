@@ -176,6 +176,10 @@ tableextension 50033 "Warehouse Activity Line Ext" extends "Warehouse Activity L
             var
                 WarehouseActivityHeader: Record "Warehouse Activity Header";
             begin
+                // Only the user who checked the item can uncheck it
+                if not "Checked" and ("Checked By" <> '') and ("Checked By" <> UserId) then
+                    Error('This item was checked by %1. Only %1 can uncheck it.', "Checked By");
+
                 "Activity header".RESET;
                 "Activity header".SETRANGE("Activity header".Type, "Activity Type");
                 "Activity header".SETRANGE("Activity header"."No.", "No.");
@@ -183,19 +187,6 @@ tableextension 50033 "Warehouse Activity Line Ext" extends "Warehouse Activity L
                     "Activity header"."Checking Status" := "Activity header"."Checking Status"::"In Process";
                     "Activity header".MODIFY(TRUE);
                 END;
-
-                IF xRec.Checked = TRUE THEN BEGIN
-                    Checked := TRUE;
-                    "Activity header".RESET;
-                    "Activity header".SETRANGE("Activity header".Type, "Activity Type");
-                    "Activity header".SETRANGE("Activity header"."No.", "No.");
-                    IF "Activity header".FINDFIRST THEN BEGIN
-                        "Activity header"."Checking Status" := "Activity header"."Checking Status"::"In Process";
-                        "Activity header".MODIFY(TRUE);
-                    END;
-                END;
-                IF "Checked By" = '' THEN
-                    VALIDATE("Checked By", USERID);
 
                 // User must pick the item before checking it
                 if "Checked" and not "Process Status" then

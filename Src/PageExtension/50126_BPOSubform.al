@@ -31,6 +31,19 @@ pageextension 50126 BPOSubformExt extends "Blanket Purchase Order Subform"
                 visible = true;
             }
         }
+        addfirst(Control1)
+        {
+            field("Line No."; Rec."Line No.")
+            {
+                ApplicationArea = all;
+                visible = true;
+            }
+            field("Order Date"; Rec."Order Date")
+            {
+                ApplicationArea = all;
+                visible = true;
+            }
+        }
     }
 
     actions
