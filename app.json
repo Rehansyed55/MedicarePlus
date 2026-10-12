@@ -2,7 +2,7 @@
   "id": "a07a78f7-3634-4815-a31d-6b9a1df5b7f6",
   "name": "MedicareReport",
   "publisher": "Default Publisher",
-  "version": "1.0.0.0",
+  "version": "1.0.0.1",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -24,7 +24,7 @@
   "idRanges": [
     {
       "from":  60030,
-      "to": 60050
+      "to": 60052
     }
   ],
   "resourceExposurePolicy": {

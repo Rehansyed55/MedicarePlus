@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-09-14T11:06:52.6731852Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-10-12T11:08:58.9685407Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -6626,7 +6626,7 @@ Cstr(Fields!BuyfromVendorNo_PurchaseHeader.Value)</Value>
       <Width>19.02684cm</Width>
       <Page>
         <PageHeader>
-          <Height>11.17223cm</Height>
+          <Height>10.69598cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -7751,6 +7751,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>9pt</FontSize>
                         <FontWeight>Bold</FontWeight>
+                        <Color>Red</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -7762,6 +7763,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
               <Height>10pt</Height>
               <Width>1.38875cm</Width>
               <ZIndex>38</ZIndex>
+              <Visibility>
+                <Hidden>true</Hidden>
+              </Visibility>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -7845,6 +7849,7 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>9pt</FontSize>
+                        <Color>Red</Color>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -7858,6 +7863,9 @@ iif(First(Fields!CompanyName.Value, "DataSet_Result")="Medicareplus Internationa
               <Height>10pt</Height>
               <Width>6.99962cm</Width>
               <ZIndex>41</ZIndex>
+              <Visibility>
+                <Hidden>true</Hidden>
+              </Visibility>
               <DataElementOutput>NoOutput</DataElementOutput>
               <Style>
                 <Border />
