@@ -31,6 +31,17 @@ pageextension 50111 "Purchase Invoice" extends "Purchase Invoice"
             }
 
         }
+        addafter("Vendor Order No.")
+        {
+            field("Technical Agreement No."; Rec."Technical Agreement No.")
+            {
+                ApplicationArea = all;
+            }
+            field("Your Reference"; Rec."Your Reference")
+            {
+                ApplicationArea = all;
+            }
+        }
     }
 
     actions

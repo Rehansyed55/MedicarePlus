@@ -9,6 +9,10 @@ pageextension 50118 "Posted Purchase Invoice Ext" extends "Posted Purchase Invoi
             {
                 ApplicationArea = all;
             }
+            field("Your Reference"; Rec."Your Reference")
+            {
+                ApplicationArea = all;
+            }
         }
     }
 
