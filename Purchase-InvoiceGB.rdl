@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-10-12T18:01:52.1423323Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-10-13T08:11:26.1644317Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -10181,8 +10181,7 @@ Cstr(Fields!BuyVendNo_PurchInvHeaderCaption.Value)
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.GetData(21,3)
-'First(Fields!DueDate_PurchInvHeader.Value, "DataSet_Result")</Value>
+                      <Value>=Fields!DueDate_PurchInvHeader.Value</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -10302,8 +10301,7 @@ Cstr(Fields!BuyVendNo_PurchInvHeaderCaption.Value)
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.GetData(20,3)
-'First(Fields!PurchInvHeader_DocumentDate.Value, "DataSet_Result")</Value>
+                      <Value>=Fields!PurchInvHeader_DocumentDate.Value</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>

@@ -412,6 +412,8 @@ report 60033 "Picking List New"
                 CompInfo.GET;
                 CompInfo.CALCFIELDS(CompInfo.Picture);
 
+                CALCFIELDS("Shipping Method", "Requested Delivery Date", "Promised Delivery Date");
+
                 GetLocation("Location Code");
                 InvtPick := Type = Type::"Invt. Pick";
 
@@ -548,6 +550,7 @@ report 60033 "Picking List New"
         ShippingMethod: code[20];
         RequestedDeliveryDate: date;
         PromisedDeliveryDate: date;
+        R:Report 7303;
 
     local procedure GetLocation(LocationCode: Code[10])
     begin
