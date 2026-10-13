@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-10-13T08:59:01.7062553Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-10-13T10:40:30.1420556Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -2409,7 +2409,7 @@ Cstr(Fields!PaymentDesc.Value) + Chr(177) + Cstr(Fields!VendorAddress1.Value) + 
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
-                                                      <Format>0;(0)</Format>
+                                                      <Format>#,0;(#,0)</Format>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
