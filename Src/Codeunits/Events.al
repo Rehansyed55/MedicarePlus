@@ -20,6 +20,27 @@ codeunit 50102 Events2
         PostedInvtPickHeader."Shipping Agent Service Code" := WarehouseActivityHeader."Shipping Agent Service Code";
     end;
 
+    //Rehan++
+    // Inventory Picks must always post with today's date, regardless of the Posting Date
+    // stored on the header when the pick was created. Whse.-Activity-Post re-reads the header
+    // right after this event, so the new date flows into the sales header, item and warehouse entries.
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Whse.-Activity-Post", 'OnBeforeCode', '', false, false)]
+    local procedure OnBeforeWhseActivityPostSetInvtPickPostingDateToday(var WarehouseActivityLine: Record "Warehouse Activity Line"; var SuppressCommit: Boolean; var IsHandled: Boolean)
+    var
+        WarehouseActivityHeader: Record "Warehouse Activity Header";
+    begin
+        if WarehouseActivityLine."Activity Type" <> WarehouseActivityLine."Activity Type"::"Invt. Pick" then
+            exit;
+        if not WarehouseActivityHeader.Get(WarehouseActivityLine."Activity Type", WarehouseActivityLine."No.") then
+            exit;
+        if WarehouseActivityHeader."Posting Date" = Today() then
+            exit;
+
+        WarehouseActivityHeader.Validate("Posting Date", Today());
+        WarehouseActivityHeader.Modify(true);
+    end;
+    //Rehan--
+
 
     [EventSubscriber(ObjectType::Report, Report::"Create Invt Put-away/Pick/Mvmt", 'OnAfterInitWhseActivHeader', '', false, false)]
     local procedure OnAfterInitWhseActivHeader(var WarehouseActivityHeader: Record "Warehouse Activity Header"; var WarehouseRequest: Record "Warehouse Request")
