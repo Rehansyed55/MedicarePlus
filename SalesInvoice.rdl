@@ -7418,9 +7418,7 @@ Code.GetData(94)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=iif(Code.GetData(96)=1,"Customer Copy","Office Copy")
-
- 'Code.GetData(96)</Value>
+                      <Value>=Code.GetCopyLabel(ReportItems!PageHeaderData.Value)</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -8935,6 +8933,22 @@ Public Function Copyfun(ByVal Value As Decimal)
         Return "Office Copy"
     end if
    Return Value
+End Function
+
+Shared LastCopyNo as String
+
+' Copy label for the page header. Reads the copy number (slot 96) straight from this page's
+' PageHeaderData instead of GetData, which can still hold the previous copy's data when the label
+' is drawn before SetData runs. PageHeaderData only exists on the first page of each copy, so the
+' later pages of that copy keep the last value.
+Public Function GetCopyLabel(ByVal Value As Object) As String
+    If Not (Value Is Nothing) AndAlso Cstr(Value) &lt;&gt; "" Then
+        LastCopyNo = Split(Cstr(Value), Chr(177))(95)
+    End If
+    If LastCopyNo = "1" Then
+        Return "Office Copy"
+    End If
+    Return "Customer Copy"
 End Function</Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>

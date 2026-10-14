@@ -107,7 +107,7 @@ report 60034 "Sales - Invoice"
             {
             }
             column(NoOfCopies; NoOfCopies)
-            { 
+            {
             }
             // NOTE: CurrReport.PageNo is deprecated since 1.0, but this column is still referenced
             // by a hidden diagnostic textbox in SalesInvoice.rdl (Fields!PageNo.Value) - removing/
@@ -1133,8 +1133,25 @@ report 60034 "Sales - Invoice"
     {
     }
 
+    trigger OnPreRendering(var RenderingPayload: JsonObject)
+    var
+        PDFDocument: Codeunit "PDF Document";
+        AppendInStr: InStream;
+    begin
+        // Packing list pages added after the invoice on inventory pick Post and Print
+        if not PdfToAppend.HasValue() then
+            exit;
+
+        PDFDocument.Initialize();
+        PdfToAppend.CreateInStream(AppendInStr);
+        PDFDocument.AddStreamToAppend(AppendInStr);
+        PDFDocument.ToJson(RenderingPayload);
+    end;
+
     trigger OnInitReport()
     begin
+        // Default here too, so Office Copy also prints when run without request page (e.g. Post and Print)
+        NoOfCopies := 1;
         GLSetup.GET;
         CompanyInfo.GET;
         SalesSetup.GET;
@@ -1285,6 +1302,12 @@ report 60034 "Sales - Invoice"
         Pipcode: Code[20];
         LanguageMgt: Codeunit Language;
         Description: text[50];
+        PdfToAppend: Codeunit "Temp Blob";
+
+    procedure SetPdfToAppend(var NewPdfToAppend: Codeunit "Temp Blob")
+    begin
+        PdfToAppend := NewPdfToAppend;
+    end;
 
     procedure InitLogInteraction()
     begin

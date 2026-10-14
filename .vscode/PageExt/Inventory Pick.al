@@ -108,9 +108,19 @@ pageextension 60032 InventoryPick extends "Inventory Pick"
         {
             trigger OnBeforeAction()
             begin
-                InvPick := Rec."No.";
-                PrintPackingList := Rec."Print Packing List";
+                SavePickStateBeforePosting(false);
+            end;
 
+            trigger OnAfterAction()
+            begin
+                PrintPackingListIfRequested();
+            end;
+        }
+        modify(PostAndPrint)
+        {
+            trigger OnBeforeAction()
+            begin
+                SavePickStateBeforePosting(true);
             end;
 
             trigger OnAfterAction()
@@ -122,17 +132,48 @@ pageextension 60032 InventoryPick extends "Inventory Pick"
     }
 
 
+    local procedure SavePickStateBeforePosting(HoldBackInvoicePrint: Boolean)
+    var
+        PostedInvtPickHeader: Record "Posted Invt. Pick Header";
+    begin
+        InvPick := Rec."No.";
+        PrintPackingList := Rec."Print Packing List";
+
+        // Remember the latest posted pick that already exists, so a cancelled post doesn't reprint it
+        LastPostedInvtPickNo := '';
+        PostedInvtPickHeader.SetRange("Invt Pick No.", InvPick);
+        if PostedInvtPickHeader.FindLast() then
+            LastPostedInvtPickNo := PostedInvtPickHeader."No.";
+
+        // Drop any binding/state left over from a previous post on this page that ended in an error
+        if UnbindSubscription(PackingListPrint) then;
+        Clear(PackingListPrint);
+
+        // Post and Print: hold back the standard invoice print so it can be merged with the packing list
+        if PrintPackingList and HoldBackInvoicePrint then begin
+            PackingListPrint.SetSalesOrderNo(Rec."Source No.");
+            BindSubscription(PackingListPrint);
+        end;
+    end;
+
     local procedure PrintPackingListIfRequested()
     var
         PostedInvtPickHeader: Record "Posted Invt. Pick Header";
     begin
         if not PrintPackingList then
             exit;
+        if UnbindSubscription(PackingListPrint) then;
 
-        PostedInvtPickHeader.Reset();
         PostedInvtPickHeader.SetRange("Invt Pick No.", InvPick);
-        if PostedInvtPickHeader.FindFirst() then
-            Report.RunModal(Report::"Packing List new", false, false, PostedInvtPickHeader);
+        if PostedInvtPickHeader.FindLast() then
+            if PostedInvtPickHeader."No." <> LastPostedInvtPickNo then begin
+                PostedInvtPickHeader.SetRecFilter();
+                PackingListPrint.PrintInvoiceWithPackingList(PostedInvtPickHeader);
+                exit;
+            end;
+
+        // No new posted pick found - still make sure a held back invoice is printed
+        PackingListPrint.PrintHeldBackInvoice();
     end;
 
 
@@ -143,6 +184,8 @@ pageextension 60032 InventoryPick extends "Inventory Pick"
         InvPick: Code[20];
         UserSetup: Record "User Setup";
         PrintPackingList: Boolean;
+        LastPostedInvtPickNo: Code[20];
+        PackingListPrint: Codeunit "Invt. Pick Packing List Print";
 
 
 
