@@ -412,13 +412,14 @@ report 60033 "Picking List New"
                 CompInfo.GET;
                 CompInfo.CALCFIELDS(CompInfo.Picture);
 
-                CALCFIELDS("Shipping Method", "Requested Delivery Date", "Promised Delivery Date");
-
                 GetLocation("Location Code");
                 InvtPick := Type = Type::"Invt. Pick";
 
                 IF NOT CurrReport.PREVIEW THEN
                     WhseCountPrinted.RUN("Warehouse Activity Header");
+
+                // Calculate after Whse.-Printed: its Find() re-reads the record and clears FlowFields
+                CALCFIELDS("Shipping Method", "Requested Delivery Date", "Promised Delivery Date");
 
 
                 IF Salesorder.GET(Salesorder."Document Type"::Order, "Warehouse Activity Header"."Source No.") THEN BEGIN

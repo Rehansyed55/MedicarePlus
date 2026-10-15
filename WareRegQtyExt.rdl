@@ -24,103 +24,6 @@
       <rd:DataSourceID>3aa43ab7-f38b-4372-8826-f8ceaeac8638</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="TodayFormatted">
-          <DataField>TodayFormatted</DataField>
-        </Field>
-        <Field Name="CompanyName">
-          <DataField>CompanyName</DataField>
-        </Field>
-        <Field Name="WhseRegisterCaptionWithFilter">
-          <DataField>WhseRegisterCaptionWithFilter</DataField>
-        </Field>
-        <Field Name="WhseRegFilter">
-          <DataField>WhseRegFilter</DataField>
-        </Field>
-        <Field Name="No_WarehouseRegister">
-          <DataField>No_WarehouseRegister</DataField>
-        </Field>
-        <Field Name="CurrReportPageNoCaption">
-          <DataField>CurrReportPageNoCaption</DataField>
-        </Field>
-        <Field Name="WarehouseRegisterQuantityCaption">
-          <DataField>WarehouseRegisterQuantityCaption</DataField>
-        </Field>
-        <Field Name="WarehouseEntryRegisteringDateCaption">
-          <DataField>WarehouseEntryRegisteringDateCaption</DataField>
-        </Field>
-        <Field Name="ItemDescriptionCaption">
-          <DataField>ItemDescriptionCaption</DataField>
-        </Field>
-        <Field Name="WarehouseRegisterNoCaption">
-          <DataField>WarehouseRegisterNoCaption</DataField>
-        </Field>
-        <Field Name="EntryNo_WarehouseEntry">
-          <DataField>EntryNo_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="Quantity_WarehouseEntry">
-          <DataField>Quantity_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="Quantity_WarehouseEntryFormat">
-          <DataField>Quantity_WarehouseEntryFormat</DataField>
-        </Field>
-        <Field Name="ItemNo_WarehouseEntry">
-          <DataField>ItemNo_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="WhseDocNo_WarehouseEntry">
-          <DataField>WhseDocNo_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="RegDate_WarehouseEntry">
-          <DataField>RegDate_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="ZoneCode_WarehouseEntry">
-          <DataField>ZoneCode_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="BinCode_WarehouseEntry">
-          <DataField>BinCode_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="Cubage_WarehouseEntry">
-          <DataField>Cubage_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="Cubage_WarehouseEntryFormat">
-          <DataField>Cubage_WarehouseEntryFormat</DataField>
-        </Field>
-        <Field Name="Weight_WarehouseEntry">
-          <DataField>Weight_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="Weight_WarehouseEntryFormat">
-          <DataField>Weight_WarehouseEntryFormat</DataField>
-        </Field>
-        <Field Name="UOMCode_WarehouseEntry">
-          <DataField>UOMCode_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="VariantCode_WarehouseEntry">
-          <DataField>VariantCode_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="ItemDescription">
-          <DataField>ItemDescription</DataField>
-        </Field>
-        <Field Name="SerialNo_WarehouseEntry">
-          <DataField>SerialNo_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="LotNo_WarehouseEntry">
-          <DataField>LotNo_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="EntryType_WarehouseEntry">
-          <DataField>EntryType_WarehouseEntry</DataField>
-        </Field>
-        <Field Name="Source_No_">
-          <DataField>Source_No_</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -3631,4 +3534,101 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="TodayFormatted">
+          <DataField>TodayFormatted</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="WhseRegisterCaptionWithFilter">
+          <DataField>WhseRegisterCaptionWithFilter</DataField>
+        </Field>
+        <Field Name="WhseRegFilter">
+          <DataField>WhseRegFilter</DataField>
+        </Field>
+        <Field Name="No_WarehouseRegister">
+          <DataField>No_WarehouseRegister</DataField>
+        </Field>
+        <Field Name="CurrReportPageNoCaption">
+          <DataField>CurrReportPageNoCaption</DataField>
+        </Field>
+        <Field Name="WarehouseRegisterQuantityCaption">
+          <DataField>WarehouseRegisterQuantityCaption</DataField>
+        </Field>
+        <Field Name="WarehouseEntryRegisteringDateCaption">
+          <DataField>WarehouseEntryRegisteringDateCaption</DataField>
+        </Field>
+        <Field Name="ItemDescriptionCaption">
+          <DataField>ItemDescriptionCaption</DataField>
+        </Field>
+        <Field Name="WarehouseRegisterNoCaption">
+          <DataField>WarehouseRegisterNoCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_WarehouseEntry">
+          <DataField>EntryNo_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="Quantity_WarehouseEntry">
+          <DataField>Quantity_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="Quantity_WarehouseEntryFormat">
+          <DataField>Quantity_WarehouseEntryFormat</DataField>
+        </Field>
+        <Field Name="ItemNo_WarehouseEntry">
+          <DataField>ItemNo_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="WhseDocNo_WarehouseEntry">
+          <DataField>WhseDocNo_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="RegDate_WarehouseEntry">
+          <DataField>RegDate_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="ZoneCode_WarehouseEntry">
+          <DataField>ZoneCode_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="BinCode_WarehouseEntry">
+          <DataField>BinCode_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="Cubage_WarehouseEntry">
+          <DataField>Cubage_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="Cubage_WarehouseEntryFormat">
+          <DataField>Cubage_WarehouseEntryFormat</DataField>
+        </Field>
+        <Field Name="Weight_WarehouseEntry">
+          <DataField>Weight_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="Weight_WarehouseEntryFormat">
+          <DataField>Weight_WarehouseEntryFormat</DataField>
+        </Field>
+        <Field Name="UOMCode_WarehouseEntry">
+          <DataField>UOMCode_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="VariantCode_WarehouseEntry">
+          <DataField>VariantCode_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="ItemDescription">
+          <DataField>ItemDescription</DataField>
+        </Field>
+        <Field Name="SerialNo_WarehouseEntry">
+          <DataField>SerialNo_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="LotNo_WarehouseEntry">
+          <DataField>LotNo_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="EntryType_WarehouseEntry">
+          <DataField>EntryType_WarehouseEntry</DataField>
+        </Field>
+        <Field Name="Source_No_">
+          <DataField>Source_No_</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
