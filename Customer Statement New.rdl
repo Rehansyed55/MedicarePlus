@@ -1,13 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>4768194e-22e0-4e2e-ba88-22c0a278fbe5</rd:ReportID>
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.1.30001.02</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.1.30001.02</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2026-10-15T11:16:51.4828746Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
+      <rd:SecurityType>None</rd:SecurityType>
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
         <ConnectString />
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>f652688c-c5cd-46de-9ef2-ea9f11f40f55</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -53,7 +66,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value EvaluationMode="Auto">=
+                                                <Value>=
 Cstr(Fields!CustAddr_1_.Value) + Chr(177) + 
 Cstr(Fields!CustAddr_2_.Value) + Chr(177) + 
 Cstr(Fields!CustAddr_3_.Value) + Chr(177) +
@@ -104,7 +117,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value EvaluationMode="Auto">=IIF(Code.IsNewPage(),TRUE,FALSE)</Value>
+                                                <Value>=IIF(Code.IsNewPage(),TRUE,FALSE)</Value>
                                                 <Style>
                                                   <Color>Red</Color>
                                                 </Style>
@@ -192,7 +205,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Posting_Date_.Value</Value>
+                                                    <Value>=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Posting_Date_.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -220,7 +233,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Document_No__.Value</Value>
+                                                    <Value>=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Document_No__.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -245,7 +258,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Document_Type_.Value</Value>
+                                                    <Value>=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Document_Type_.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -270,7 +283,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!ExternalDocumentNo_CustLedgerEntry.Value</Value>
+                                                    <Value>=Fields!ExternalDocumentNo_CustLedgerEntry.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -295,7 +308,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Due_Date_.Value</Value>
+                                                    <Value>=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Due_Date_.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -321,7 +334,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=IIF(Fields!OverDueBy.Value &lt;= 0, "", Fields!OverDueBy.Value)</Value>
+                                                    <Value>=IIF(Fields!OverDueBy.Value &lt;= 0, "", Fields!OverDueBy.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -347,7 +360,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry__Amount.Value</Value>
+                                                    <Value>=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry__Amount.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -373,7 +386,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Remaining_Amount_.Value</Value>
+                                                    <Value>=Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Remaining_Amount_.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -394,13 +407,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox7">
+                                            <rd:DefaultName>Textbox7</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!var_.Value</Value>
+                                                    <Value>=Fields!var_.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -413,7 +427,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox7</rd:DefaultName>
                                             <Style />
                                           </Textbox>
                                         </CellContents>
@@ -426,20 +439,20 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox79">
+                                            <rd:DefaultName>Textbox79</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox79</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -451,20 +464,20 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox80">
+                                            <rd:DefaultName>Textbox80</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox80</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -476,20 +489,20 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox81">
+                                            <rd:DefaultName>Textbox81</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox81</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -522,7 +535,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                                             <Paragraph>
                                                               <TextRuns>
                                                                 <TextRun>
-                                                                  <Value EvaluationMode="Auto">=First(Fields!Total_in______CurrencyCode________.Value)</Value>
+                                                                  <Value>=First(Fields!Total_in______CurrencyCode________.Value)</Value>
                                                                   <Style>
                                                                     <FontFamily>Helvetica Neue</FontFamily>
                                                                     <FontSize>8pt</FontSize>
@@ -586,7 +599,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Sum(Fields!Cust__Ledger_Entry__Cust__Ledger_Entry__Amount.Value)</Value>
+                                                    <Value>=Sum(Fields!Cust__Ledger_Entry__Cust__Ledger_Entry__Amount.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -614,7 +627,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Sum(Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Remaining_Amount_.Value)</Value>
+                                                    <Value>=Sum(Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Remaining_Amount_.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -637,13 +650,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox19">
+                                            <rd:DefaultName>Textbox19</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -656,7 +670,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox19</rd:DefaultName>
                                             <Style>
                                               <VerticalAlign>Bottom</VerticalAlign>
                                             </Style>
@@ -743,13 +756,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox5">
+                                            <rd:DefaultName>Textbox5</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Not Due</Value>
+                                                    <Value>Not Due</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -762,7 +776,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox5</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -775,13 +788,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox6">
+                                            <rd:DefaultName>Textbox6</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Overdue by</Value>
+                                                    <Value>Overdue by</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -794,7 +808,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox6</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -807,13 +820,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox8">
+                                            <rd:DefaultName>Textbox8</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Overdue by</Value>
+                                                    <Value>Overdue by</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -826,7 +840,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox8</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -839,13 +852,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox13">
+                                            <rd:DefaultName>Textbox13</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Overdue by</Value>
+                                                    <Value>Overdue by</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -858,7 +872,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox13</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -871,13 +884,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox16">
+                                            <rd:DefaultName>Textbox16</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">Overdue by</Value>
+                                                    <Value>Overdue by</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -890,7 +904,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox16</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -908,13 +921,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox17">
+                                            <rd:DefaultName>Textbox17</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto" />
+                                                    <Value />
                                                     <Style>
                                                       <FontSize>8pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
@@ -926,7 +940,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox17</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -939,13 +952,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox12">
+                                            <rd:DefaultName>Textbox6</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">0-30 Days</Value>
+                                                    <Value>0-30 Days</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -958,7 +972,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox6</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -971,13 +984,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox14">
+                                            <rd:DefaultName>Textbox8</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">30-60 Days</Value>
+                                                    <Value>30-60 Days</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -990,7 +1004,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox8</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1003,13 +1016,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox15">
+                                            <rd:DefaultName>Textbox13</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">60-90 Days</Value>
+                                                    <Value>60-90 Days</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1022,7 +1036,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox13</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1035,13 +1048,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox18">
+                                            <rd:DefaultName>Textbox16</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">90+ Days</Value>
+                                                    <Value>90+ Days</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1054,7 +1068,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox16</rd:DefaultName>
                                             <Style>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
@@ -1072,13 +1085,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox48">
+                                            <rd:DefaultName>Textbox35</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!AgingBandBuf__Column_1_Amt__.Value</Value>
+                                                    <Value>=Fields!AgingBandBuf__Column_1_Amt__.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1092,7 +1106,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox35</rd:DefaultName>
                                             <Style>
                                               <Border />
                                               <PaddingLeft>2pt</PaddingLeft>
@@ -1106,13 +1119,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox52">
+                                            <rd:DefaultName>Textbox36</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!AgingBandBuf__Column_5_Amt__.Value</Value>
+                                                    <Value>=Fields!AgingBandBuf__Column_5_Amt__.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1126,7 +1140,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox36</rd:DefaultName>
                                             <Style>
                                               <Border />
                                               <PaddingLeft>2pt</PaddingLeft>
@@ -1140,13 +1153,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox53">
+                                            <rd:DefaultName>Textbox44</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!AgingBandBuf__Column_4_Amt__.Value</Value>
+                                                    <Value>=Fields!AgingBandBuf__Column_4_Amt__.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1160,7 +1174,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox44</rd:DefaultName>
                                             <Style>
                                               <Border />
                                               <PaddingLeft>2pt</PaddingLeft>
@@ -1174,13 +1187,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox54">
+                                            <rd:DefaultName>Textbox45</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!AgingBandBuf__Column_3_Amt__.Value</Value>
+                                                    <Value>=Fields!AgingBandBuf__Column_3_Amt__.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1194,7 +1208,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox45</rd:DefaultName>
                                             <Style>
                                               <Border />
                                               <PaddingLeft>2pt</PaddingLeft>
@@ -1208,13 +1221,14 @@ Cstr(Fields!PageNo.Value)</Value>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox55">
+                                            <rd:DefaultName>Textbox46</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Fields!AgingBandBuf__Column_2_Amt__.Value</Value>
+                                                    <Value>=Fields!AgingBandBuf__Column_2_Amt__.Value</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1228,7 +1242,6 @@ Cstr(Fields!PageNo.Value)</Value>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox46</rd:DefaultName>
                                             <Style>
                                               <Border />
                                               <PaddingLeft>2pt</PaddingLeft>
@@ -1304,7 +1317,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=First(Fields!Total_in______CurrencyCode________.Value)</Value>
+                                                    <Value>=First(Fields!Total_in______CurrencyCode________.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1382,7 +1395,7 @@ Cstr(Fields!PageNo.Value)</Value>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value EvaluationMode="Auto">=Sum(Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Remaining_Amount_.Value)</Value>
+                                                    <Value>=Sum(Fields!Cust__Ledger_Entry__Cust__Ledger_Entry___Remaining_Amount_.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Helvetica Neue</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1500,7 +1513,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto" />
+                      <Value />
                       <Style>
                         <Color>#ff0000</Color>
                       </Style>
@@ -1525,13 +1538,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox2">
+              <rd:DefaultName>Textbox2</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Statement</Value>
+                      <Value>Statement</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -1542,7 +1556,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>0.05936cm</Top>
               <Left>11.68866cm</Left>
               <Height>0.6cm</Height>
@@ -1559,13 +1572,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox3">
+              <rd:DefaultName>Textbox2</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Page</Value>
+                      <Value>Page</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -1575,7 +1589,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>0.69716cm</Top>
               <Left>11.68866cm</Left>
               <Height>0.6cm</Height>
@@ -1592,13 +1605,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox4">
+              <rd:DefaultName>Textbox2</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(22,1)</Value>
+                      <Value>=Code.GetData(22,1)</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -1610,7 +1624,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox2</rd:DefaultName>
               <Top>0.69716cm</Top>
               <Left>12.77755cm</Left>
               <Height>0.6cm</Height>
@@ -1633,7 +1646,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(8,1)</Value>
+                      <Value>=Code.GetData(8,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1661,7 +1674,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(7,1)</Value>
+                      <Value>=Code.GetData(7,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1689,7 +1702,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(6,1)</Value>
+                      <Value>=Code.GetData(6,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1717,7 +1730,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(5,1)</Value>
+                      <Value>=Code.GetData(5,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1745,7 +1758,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(4,1)</Value>
+                      <Value>=Code.GetData(4,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1773,7 +1786,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(3,1)</Value>
+                      <Value>=Code.GetData(3,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1801,7 +1814,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(2,1)</Value>
+                      <Value>=Code.GetData(2,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1829,7 +1842,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(1,1)</Value>
+                      <Value>=Code.GetData(1,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1857,7 +1870,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(15,1)</Value>
+                      <Value>=Code.GetData(15,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1884,7 +1897,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(14,1)</Value>
+                      <Value>=Code.GetData(14,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1911,7 +1924,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(12,1)+" "+Code.GetData(13,1)</Value>
+                      <Value>=Code.GetData(12,1)+" "+Code.GetData(13,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1938,7 +1951,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(11,1)</Value>
+                      <Value>=Code.GetData(11,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1965,7 +1978,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(10,1)</Value>
+                      <Value>=Code.GetData(10,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -1992,7 +2005,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(9,1)</Value>
+                      <Value>=Code.GetData(9,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2014,13 +2027,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox9">
+              <rd:DefaultName>Textbox9</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Phone No :</Value>
+                      <Value>Phone No :</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -2030,7 +2044,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox9</rd:DefaultName>
               <Top>3.94026cm</Top>
               <Left>11.39005cm</Left>
               <Height>10pt</Height>
@@ -2043,13 +2056,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox10">
+              <rd:DefaultName>Textbox9</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Emai ::</Value>
+                      <Value>Emai ::</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -2059,7 +2073,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox9</rd:DefaultName>
               <Top>4.36359cm</Top>
               <Left>11.38961cm</Left>
               <Height>10pt</Height>
@@ -2072,13 +2085,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox11">
+              <rd:DefaultName>Textbox9</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">VAT Reg No:</Value>
+                      <Value>VAT Reg No:</Value>
                       <Style>
                         <FontSize>9pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -2088,7 +2102,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox9</rd:DefaultName>
               <Top>4.80748cm</Top>
               <Left>11.38961cm</Left>
               <Height>10pt</Height>
@@ -2107,7 +2120,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(16,1)
+                      <Value>=Code.GetData(16,1)
 'First(Fields!BuyfromContact_PurchaseHeader.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
@@ -2139,7 +2152,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">finance@medicareplus.co.uk</Value>
+                      <Value>finance@medicareplus.co.uk</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2170,7 +2183,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(18,1)
+                      <Value>=Code.GetData(18,1)
 'First(Fields!VendorFax.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
@@ -2202,7 +2215,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(19,1)</Value>
+                      <Value>=Code.GetData(19,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2233,7 +2246,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Statement No.</Value>
+                      <Value>Statement No.</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2264,7 +2277,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(20,1)
+                      <Value>=Code.GetData(20,1)
 'First(Fields!VendorFax.Value, "DataSet_Result")</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
@@ -2296,7 +2309,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Customer No.</Value>
+                      <Value>Customer No.</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2327,7 +2340,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Code.GetData(21,1)</Value>
+                      <Value>=Code.GetData(21,1)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2367,13 +2380,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Image>
             <Textbox Name="Textbox21">
+              <rd:DefaultName>Textbox5</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Date</Value>
+                      <Value>Date</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2386,7 +2400,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox5</rd:DefaultName>
               <Top>7.11804cm</Top>
               <Left>0.05in</Left>
               <Height>0.5559cm</Height>
@@ -2399,13 +2412,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox26">
+              <rd:DefaultName>Textbox21</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">="Doc.No."</Value>
+                      <Value>="Doc.No."</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2418,7 +2432,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox21</rd:DefaultName>
               <Top>7.11804cm</Top>
               <Left>1.40099cm</Left>
               <Height>0.5559cm</Height>
@@ -2431,13 +2444,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox56">
+              <rd:DefaultName>Textbox22</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Type</Value>
+                      <Value>Type</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2450,7 +2464,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox22</rd:DefaultName>
               <Top>7.11804cm</Top>
               <Left>3.41434cm</Left>
               <Height>0.5559cm</Height>
@@ -2463,13 +2476,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox57">
+              <rd:DefaultName>Textbox24</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Description</Value>
+                      <Value>Order No.</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2482,7 +2496,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox24</rd:DefaultName>
               <Top>7.11804cm</Top>
               <Left>5.33128cm</Left>
               <Height>0.5559cm</Height>
@@ -2495,13 +2508,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox58">
+              <rd:DefaultName>Textbox29</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Due Date</Value>
+                      <Value>Due Date</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2514,7 +2528,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox29</rd:DefaultName>
               <Top>7.09158cm</Top>
               <Left>8.24659cm</Left>
               <Height>0.5559cm</Height>
@@ -2527,13 +2540,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox59">
+              <rd:DefaultName>Textbox25</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Over Due By</Value>
+                      <Value>Over Due By</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2546,7 +2560,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox25</rd:DefaultName>
               <Top>7.09158cm</Top>
               <Left>10.59228cm</Left>
               <Height>0.5559cm</Height>
@@ -2559,13 +2572,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox60">
+              <rd:DefaultName>Textbox26</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Inv Amount</Value>
+                      <Value>Inv Amount</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2578,7 +2592,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox26</rd:DefaultName>
               <Top>7.09158cm</Top>
               <Left>12.38379cm</Left>
               <Height>0.5559cm</Height>
@@ -2591,13 +2604,14 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox61">
+              <rd:DefaultName>Textbox27</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Balance O/S.</Value>
+                      <Value>Balance O/S.</Value>
                       <Style>
                         <FontFamily>Helvetica Neue</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -2610,7 +2624,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox27</rd:DefaultName>
               <Top>7.09158cm</Top>
               <Left>14.91554cm</Left>
               <Height>0.5559cm</Height>
@@ -2623,6 +2636,7 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox62">
+              <rd:DefaultName>Textbox25</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -2642,7 +2656,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox25</rd:DefaultName>
               <Top>7.07622cm</Top>
               <Left>17.11184cm</Left>
               <Height>0.5559cm</Height>
@@ -2673,7 +2686,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Please pay all the invoices today</Value>
+                      <Value>Please pay all the invoices today</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2704,7 +2717,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">If you have any queries concern this</Value>
+                      <Value>If you have any queries concern this</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2730,7 +2743,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">="Statement please telephone"+""+ Fields!CompanyInfo__Phone_No__.Value +""</Value>
+                      <Value>="Statement please telephone"+""+ Fields!CompanyInfo__Phone_No__.Value +""</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2756,7 +2769,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">="Fax"+""+ Fields!CompanyInfo__Fax_No__.Value +""</Value>
+                      <Value>="Fax"+""+ Fields!CompanyInfo__Fax_No__.Value +""</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2791,7 +2804,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">="Term"+" "+ Fields!Cust_PaymentTremCode.Value +" "+"from Document Date"</Value>
+                      <Value>="Term"+" "+ Fields!Cust_PaymentTremCode.Value +" "+"from Document Date"</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2817,7 +2830,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Yours Sincerely,</Value>
+                      <Value>Yours Sincerely,</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2843,7 +2856,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Credit Control Manager</Value>
+                      <Value>Credit Control Manager</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2870,7 +2883,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">Account Department</Value>
+                      <Value>Account Department</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2897,7 +2910,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">="For and on behalf of"+" "+Fields!CompanyinfoName.Value</Value>
+                      <Value>="For and on behalf of"+" "+Fields!CompanyinfoName.Value</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -2918,6 +2931,7 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox69">
+              <rd:DefaultName>Textbox69</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -2935,7 +2949,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox69</rd:DefaultName>
               <Top>0.18459cm</Top>
               <Left>10.79158cm</Left>
               <Height>0.48002cm</Height>
@@ -2951,6 +2964,7 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox70">
+              <rd:DefaultName>Textbox69</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -2967,7 +2981,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox69</rd:DefaultName>
               <Top>1.13733cm</Top>
               <Left>10.79158cm</Left>
               <Height>0.4395cm</Height>
@@ -2989,12 +3002,13 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox33">
+              <rd:DefaultName>Textbox28</rd:DefaultName>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Fields!AccountNo.Value</Value>
+                      <Value>=Fields!AccountNo.Value</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -3005,7 +3019,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox28</rd:DefaultName>
               <Top>1.12897cm</Top>
               <Left>13.31157cm</Left>
               <Height>0.44786cm</Height>
@@ -3030,12 +3043,13 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox34">
+              <rd:DefaultName>Textbox30</rd:DefaultName>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Fields!SortCode.Value</Value>
+                      <Value>=Fields!SortCode.Value</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -3046,7 +3060,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox30</rd:DefaultName>
               <Top>1.5807cm</Top>
               <Left>13.31157cm</Left>
               <Height>0.4214cm</Height>
@@ -3071,12 +3084,13 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox36">
+              <rd:DefaultName>Textbox32</rd:DefaultName>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Fields!CompanyinfoName.Value</Value>
+                      <Value>=Fields!CompanyinfoName.Value</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -3087,7 +3101,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox32</rd:DefaultName>
               <Top>2.01268cm</Top>
               <Left>13.31157cm</Left>
               <Height>0.41972cm</Height>
@@ -3309,7 +3322,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=FormatNumber(Fields!FinalVAT0.Value,2)</Value>
+                      <Value>=FormatNumber(Fields!FinalVAT0.Value,2)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -3350,7 +3363,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=FormatNumber(Fields!FinalBase0.Value,2)</Value>
+                      <Value>=FormatNumber(Fields!FinalBase0.Value,2)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -3391,7 +3404,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">5%</Value>
+                      <Value>5%</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -3429,7 +3442,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=FormatNumber(Fields!FinalVAT5.Value,2)</Value>
+                      <Value>=FormatNumber(Fields!FinalVAT5.Value,2)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -3470,7 +3483,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=FormatNumber(Fields!FinalBase5.Value,2)</Value>
+                      <Value>=FormatNumber(Fields!FinalBase5.Value,2)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -3511,7 +3524,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">20%</Value>
+                      <Value>20%</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -3546,7 +3559,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=FormatNumber(Fields!FinalVAT20.Value,2)</Value>
+                      <Value>=FormatNumber(Fields!FinalVAT20.Value,2)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -3590,7 +3603,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=FormatNumber(Fields!FinalBase20.Value,2)</Value>
+                      <Value>=FormatNumber(Fields!FinalBase20.Value,2)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -3634,7 +3647,7 @@ Cstr(Fields!PageNo.Value)</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=FormatNumber(Fields!FinalVAT20.Value + Fields!FinalBase20.Value,2)</Value>
+                      <Value>=FormatNumber(Fields!FinalVAT20.Value + Fields!FinalBase20.Value,2)</Value>
                       <Style>
                         <FontStyle>Normal</FontStyle>
                         <FontFamily>Helvetica Neue</FontFamily>
@@ -3672,6 +3685,7 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox71">
+              <rd:DefaultName>Textbox69</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -3688,7 +3702,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox69</rd:DefaultName>
               <Top>1.58036cm</Top>
               <Left>10.78625cm</Left>
               <Height>0.42695cm</Height>
@@ -3710,6 +3723,7 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox72">
+              <rd:DefaultName>Textbox69</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -3726,7 +3740,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox69</rd:DefaultName>
               <Top>1.9879cm</Top>
               <Left>10.78625cm</Left>
               <Height>0.4445cm</Height>
@@ -3745,6 +3758,7 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox73">
+              <rd:DefaultName>Textbox69</rd:DefaultName>
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -3761,7 +3775,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox69</rd:DefaultName>
               <Top>0.68866cm</Top>
               <Left>10.79448cm</Left>
               <Height>0.4395cm</Height>
@@ -3783,12 +3796,13 @@ Cstr(Fields!PageNo.Value)</Value>
               </Style>
             </Textbox>
             <Textbox Name="Textbox35">
+              <rd:DefaultName>Textbox28</rd:DefaultName>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value EvaluationMode="Auto">=Fields!BankName.Value</Value>
+                      <Value>=Fields!BankName.Value</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
@@ -3799,7 +3813,6 @@ Cstr(Fields!PageNo.Value)</Value>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox28</rd:DefaultName>
               <Top>0.68448cm</Top>
               <Left>13.31392cm</Left>
               <Height>0.44786cm</Height>
@@ -3932,8 +3945,6 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>4768194e-22e0-4e2e-ba88-22c0a278fbe5</rd:ReportID>
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
