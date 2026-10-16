@@ -1,0 +1,39 @@
+{
+  "id": "a07a78f7-3634-4815-a31d-6b9a1df5b7f6",
+  "name": "MedicareReport",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.7",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "cb13c495-e057-46e2-8ba1-5c6759959f00",
+      "name": "Robosol Extension",
+      "publisher": "Robosol",
+      "version": "1.0.0.2"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from":  60030,
+      "to": 60099
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "15.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
