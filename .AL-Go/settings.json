@@ -1,0 +1,9 @@
+{
+  "country": "gb",
+  "appFolders": [
+    "Medicare_Reports",
+    "Medicare_Plus_Upgrade"
+  ],
+  "testFolders": [],
+  "bcptTestFolders": []
+}
